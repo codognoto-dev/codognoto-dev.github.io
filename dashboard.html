@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Admin Campo Vivo</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- JavaScript de proteção de rota -->
+  <script defer src="js/protect.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- Header com logo -->
+  <header class="bg-white shadow-md p-4 flex items-center justify-between sticky top-0 z-50">
+    <a href="../index.html">
+      <img src="../public/assets/imagens/logo.png" alt="Logo Campo Vivo" class="h-12">
+    </a>
+    <h1 class="text-lg sm:text-xl font-semibold text-[#2b4039]">Painel Administrativo Campo Vivo</h1>
+  </header>
+
+  <main class="px-6 sm:px-8 md:px-10 xl:px-32 py-16">
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#2b4039] mb-10 text-center sm:text-left">Bem-vindo ao Dashboard da Campo Vivo</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <a href="publicar_blog.html" class="p-6 sm:p-8 bg-white rounded-xl shadow hover:shadow-lg transition text-center border border-gray-200">
+        <h3 class="text-xl font-semibold text-[#2b4039] mb-2">Publicar no Blog</h3>
+        <p class="text-gray-600 text-sm">Crie postagens para o Blog Campo Vivo.</p>
+      </a>
+      <a href="dados_form.html" class="p-6 sm:p-8 bg-white rounded-xl shadow hover:shadow-lg transition text-center border border-gray-200">
+        <h3 class="text-xl font-semibold text-[#2b4039] mb-2">Ver Dados dos Formulários</h3>
+        <p class="text-gray-600 text-sm">Acesse os dados enviados pelos usuários.</p>
+      </a>
+    </div>
+  </main>
+
+</body>
+</html>

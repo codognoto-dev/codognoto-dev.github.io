@@ -16,8 +16,6 @@
   <!-- Incluir o Swiper.js -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="bg-white text-gray-800">
@@ -47,9 +45,9 @@
         <!-- Menu desktop -->
         <nav class="hidden md:flex ml-auto">
             <ul class="flex space-x-6 text-gray-800 text-sm md:text-[17px] font-normal">
-                <li class="relative group"><a href="index.html" class="hover-underline text-[#15803d]">Início</a></li>
+                <li class="relative group"><a href="index.html" class="hover-underline">Início</a></li>
                 <li class="relative group"><a href="a-copran.html" class="hover-underline">A Copran</a></li>
-                <li class="relative group"><a href="produtos.html" class="hover-underline">Produtos</a></li>
+                <li class="relative group"><a href="produtos.html" class="hover-underline text-[#15803d]">Produtos</a></li>
                 <li class="relative group"><a href="cooperativas.html" class="hover-underline">Cooperativas</a></li>
                 <li class="relative group"><a href="blog.html" class="hover-underline">Blog Campo Vivo</a></li>
                 <li class="relative group"><a href="catalogo.html" class="hover-underline">Catálogo</a></li>
@@ -64,102 +62,22 @@
         <button id="menu-close" class="absolute top-20 right-10 text-3xl text-gray-700 z-50">&times;</button>
 
         <!-- Itens do menu -->
-        <a href="index.html" class="hover:text-green-700 text-[#15803d]">Início</a>
+        <a href="index.html" class="hover:text-green-700">Início</a>
         <a href="a-copran.html" class="hover:text-green-700">A Copran</a>
-        <a href="produtos.html" class="hover:text-green-700">Produtos</a>
+        <a href="produtos.html" class="hover:text-green-700 text-[#15803d]">Produtos</a>
         <a href="cooperativas.html" class="hover:text-green-700">Cooperativas</a>
         <a href="blog.html" class="hover:text-green-700">Blog Campo Vivo</a>
         <a href="catalogo.html" class="hover:text-green-700">Catálogo</a>
     </div>
 </header>
 
-<!-- Banner -->
-<section class="pt-[136px] md:pt-[160px]">
-  <div class="banner-hero w-full">
+<section class="pt-32 mt-32 pb-20 bg-white text-[#2b4039]">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Conheça nossos produtos</h2>
+    <p class="text-lg mb-12 max-w-2xl mx-auto">Selecionados com cuidado, direto das cooperativas para você. Frescor e qualidade garantidos.</p>
   </div>
 </section>
-
-
-<!-- Container geral -->
-<div class="bg-[#15803d]">
-
-  <!-- Onda superior para desktop -->
-  <div class="onda-topo relative w-full -mt-24 md:-mt-28 z-10 overflow-hidden hidden md:block leading-[0]">
-    <svg class="w-full h-[120px]" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="#15803d" d="M0,128L48,144C96,160,192,192,288,213.3C384,235,480,245,576,245.3C672,245,768,235,864,213.3C960,192,1056,160,1152,160C1248,160,1344,192,1392,213.3L1440,235L1440,320L0,320Z"></path>
-    </svg>
-  </div>
-
-  <!-- Onda superior para mobile (visível apenas no mobile) -->
-  <div class="onda-topo relative w-full -mt-20 md:hidden z-10 overflow-hidden leading-[0]">
-    <svg class="w-full h-[100px]" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="#15803d" d="M0,224L48,218.7C96,213,192,203,288,186.7C384,171,480,149,576,160C672,171,768,213,864,229.3C960,245,1056,235,1152,218.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L0,320Z"></path>
-    </svg>
-  </div>
-
-  <!-- Faixa Verde -->
-  <div class="faixa-verde w-full text-white">
-    <div class="max-w-[1200px] mx-auto px-4 pt-0 pb-6 md:py-6 z-0">
-
-      <!-- Desktop -->
-      <div class="valores-desktop md:flex hidden items-center justify-center gap-12">
-        <div class="bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg flex space-x-8">
-          <div class="valor-item flex items-center">
-            <img src="../public/assets/imagens/icons8-saudável-100.png" alt="Saudável" class="w-8 h-8 mr-2">
-            <span>Saudável</span>
-          </div>
-          <span class="mx-2">|</span>
-          <div class="valor-item flex items-center">
-            <img src="../public/assets/imagens/icons8-verdura-100.png" alt="Natural" class="w-8 h-8 mr-2">
-            <span>Natural</span>
-          </div>
-          <span class="mx-2">|</span>
-          <div class="valor-item flex items-center">
-            <img src="../public/assets/imagens/icons8-queijo-100.png" alt="Fresco" class="w-8 h-8 mr-2">
-            <span>Fresco</span>
-          </div>
-          <span class="mx-2">|</span>
-          <div class="valor-item flex items-center">
-            <img src="../public/assets/imagens/icons8-confiança-100.png" alt="Confiável" class="w-8 h-8 mr-2">
-            <span>Confiável</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile: Slide automático com Blur -->
-      <div class="valores-mobile md:hidden pt-5">
-        <div class="valores-slider">
-          <div class="valor-item mx-4">
-            <div class="card">
-              <img src="../public/assets/imagens/icons8-saudável-100.png" alt="Saudável" class="w-8 h-8 mb-2">
-              <span>Saudável</span>
-            </div>
-          </div>
-          <div class="valor-item mx-4">
-            <div class="card">
-              <img src="../public/assets/imagens/icons8-verdura-100.png" alt="Natural" class="w-8 h-8 mb-2">
-              <span>Natural</span>
-            </div>
-          </div>
-          <div class="valor-item mx-4">
-            <div class="card">
-              <img src="../public/assets/imagens/icons8-queijo-100.png" alt="Fresco" class="w-8 h-8 mb-2">
-              <span>Fresco</span>
-            </div>
-          </div>
-          <div class="valor-item mx-4">
-            <div class="card">
-              <img src="../public/assets/imagens/icons8-confiança-100.png" alt="Confiável" class="w-8 h-8 mb-2">
-              <span>Confiável</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</div>
+  
 
 <!--Lançamentos-->
 <section class="py-16 bg-[#15803d] px-8">
@@ -357,95 +275,7 @@
 
   </section>
 
-<!--Blog-->
-<section class="bg-gray-50 py-20 px-6">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-2xl md:text-3xl font-semibold text-[#2b4039] text-center mb-12">Do Campo para o Blog</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Post 1 -->
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-        <img src="./public/assets/imagens/default-post.jpg" alt="Post 1" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-lg font-semibold text-[#2b4039] mb-2">Como nasce um produto orgânico</h3>
-          <p class="text-gray-600 text-sm">Descubra o caminho dos alimentos saudáveis direto do campo até a sua mesa.</p>
-        </div>
-      </div>
-
-      <!-- Post 2 -->
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-        <img src="./public/assets/imagens/default-post.jpg" alt="Post 2" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-lg font-semibold text-[#2b4039] mb-2">A importância das cooperativas</h3>
-          <p class="text-gray-600 text-sm">Entenda como o cooperativismo fortalece o pequeno produtor e a comunidade.</p>
-        </div>
-      </div>
-
-      <!-- Post 3 -->
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-        <img src="./public/assets/imagens/default-post.jpg" alt="Post 2" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-lg font-semibold text-[#2b4039] mb-2">A importância das cooperativas</h3>
-          <p class="text-gray-600 text-sm">Entenda como o cooperativismo fortalece o pequeno produtor e a comunidade.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!--Copran-->
-<section class="bg-gray-50 py-20 px-6">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-    
-    <!-- Texto -->
-    <div>
-      <h2 class="text-3xl md:text-4xl font-bold text-[#2b4039] mb-6">
-        Sobre a Copran
-      </h2>
-      <p class="text-gray-700 mb-4 text-lg leading-relaxed">
-        A <strong>Copran</strong> é uma cooperativa comprometida com a produção e comercialização de alimentos saudáveis, naturais e com origem responsável. Fundada por pequenos produtores, ela atua promovendo o desenvolvimento sustentável e valorizando o trabalho no campo.
-      </p>
-      <p class="text-gray-700 mb-4 text-lg leading-relaxed">
-        Nosso objetivo é levar qualidade à mesa dos consumidores, fortalecendo a economia local e criando oportunidades para as comunidades envolvidas.
-      </p>
-
-      <div class="mt-6 space-y-3">
-        <!-- Item 1 - Famílias cooperadas -->
-        <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#2b4039]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-          </svg>
-          <span class="text-gray-700">Mais de 200 famílias cooperadas</span>
-        </div>
-        
-        <!-- Item 2 - Produção sustentável -->
-        <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#2b4039]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
-          <span class="text-gray-700">Produção sustentável e orgânica</span>
-        </div>
-        
-        <!-- Item 3 - Comprometimento -->
-        <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#2b4039]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
-          <span class="text-gray-700">Comprometimento com a qualidade</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Imagem -->
-    <div class="rounded-lg overflow-hidden shadow-lg">
-      <img src="../public/assets/imagens/copran.jpg" alt="Imagem da Copran" class="w-full h-auto object-cover">
-    </div>
-  </div>
-</section>
-
-  <!-- Rodapé -->
+<!-- Rodapé -->
 <footer class="bg-[#15803d] text-white pt-16 pb-8 px-6">
     <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
   
@@ -461,9 +291,9 @@
       <div>
         <h4 class="text-lg font-semibold mb-4">Mapa do Site</h4>
         <ul class="space-y-2 text-sm text-gray-300">
-          <li><a href="index.html" class="hover:underline text-[#24db67]">Início</a></li>
+          <li><a href="index.html" class="hover:underline">Início</a></li>
           <li><a href="a-copran.html" class="hover:underline">A Copran</a></li>
-          <li><a href="produtos.html" class="hover:underline">Produtos</a></li>
+          <li><a href="produtos.html" class="hover:underline text-[#24db67]">Produtos</a></li>
           <li><a href="cooperativas.html" class="hover:underline">Cooperativas</a></li>
           <li><a href="blog.html" class="hover:underline">Blog Campo Vivo</a></li>
           <li><a href="catalogo.html" class="hover:underline">Catálogo</a></li>
@@ -503,7 +333,7 @@
       <p>&copy; 2025 Copran. Todos os direitos reservados.</p>
       <p class="mt-2 sm:mt-0">
         Site desenvolvido por 
-        <a href="" target="_blank" class="text-white hover:text-green-400 font-medium transition">Torin</a>
+        <a href="https://torin.digital" target="_blank" class="text-white hover:text-green-400 font-medium transition">Torin</a>
       </p>
     </div>
   </div>
