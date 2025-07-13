@@ -1,67 +1,40 @@
 // public/assets/js/post.js
-import { db, collection, getDocs } from './firebase-config.js';
+import { db, doc, getDoc, updateDoc, increment } from './firebase-config.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
+  const container = document.getElementById('post-container');
+
   const urlParams = new URLSearchParams(window.location.search);
   const postId = urlParams.get('id');
-  
+
   if (!postId) {
-    window.location.href = 'blog.html';
+    container.innerHTML = `<p class="text-center text-red-500">Post inválido.</p>`;
     return;
   }
 
-  const postLoading = document.getElementById('post-loading');
-  const postContent = document.getElementById('post-content');
-  
   try {
-    // Encontrar o post específico
-    const querySnapshot = await getDocs(collection(db, 'posts'));
-    let post = null;
-    
-    querySnapshot.forEach(doc => {
-      if (doc.data().id === postId) {
-        post = doc.data();
-      }
-    });
+    const docRef = doc(db, 'posts', postId);
+    const postSnap = await getDoc(docRef);
 
-    if (!post) {
-      throw new Error('Post não encontrado');
+    if (!postSnap.exists()) {
+      container.innerHTML = `<p class="text-center text-gray-500">Post não encontrado.</p>`;
+      return;
     }
 
-    // Atualizar contador de visualizações
-    // Nota: Sem increment() precisamos fazer manualmente
-    const updatedViews = (post.visualizacoes || 0) + 1;
-    await addDoc(collection(db, 'posts'), {
-      ...post,
-      visualizacoes: updatedViews
-    });
+    const post = postSnap.data();
+    await updateDoc(docRef, { visualizacoes: increment(1) });
 
-    const postDate = post.dataPublicacao?.toDate() || new Date();
-    
-    document.title = `${post.titulo} | Blog Campo Vivo`;
-    document.getElementById('post-image').src = post.imagemUrl;
-    document.getElementById('post-image').alt = post.titulo;
-    document.getElementById('post-title').textContent = post.titulo;
-    document.getElementById('post-date').textContent = postDate.toLocaleDateString('pt-BR', {
-      day: '2-digit',
-      month: 'long',
-      year: 'numeric'
-    });
-    document.getElementById('post-views').textContent = `${updatedViews} visualizações`;
-    document.getElementById('post-body').innerHTML = `
-      <p class="text-lg mb-6">${post.resumo}</p>
-      <div>${post.conteudo.replace(/\n/g, '<br>')}</div>
+    const postDate = post.dataPublicacao?.toDate()?.toLocaleDateString('pt-BR') || '';
+
+    container.innerHTML = `
+      <h1 class="text-3xl font-bold text-[#2b4039]">${post.titulo}</h1>
+      <p class="text-gray-500 text-sm">${postDate} • ${post.visualizacoes + 1 || 1} visualizações</p>
+      <img src="${post.imagemUrl}" alt="${post.titulo}" class="w-full rounded-lg shadow-md my-6">
+      <p class="text-lg text-gray-700">${post.resumo}</p>
+      <div class="prose prose-lg max-w-none pt-4">${post.conteudo.replace(/\n/g, '<br>')}</div>
     `;
-    
-    postLoading.classList.add('hidden');
-    postContent.classList.remove('hidden');
   } catch (error) {
-    console.error('Erro ao carregar post:', error);
-    postLoading.innerHTML = `
-      <div class="text-center py-12">
-        <p class="text-red-500 mb-4">Erro ao carregar o post.</p>
-        <a href="blog.html" class="text-[#2b4039] hover:underline">Voltar para o blog</a>
-      </div>
-    `;
+    console.error(error);
+    container.innerHTML = `<p class="text-center text-red-500">Erro ao carregar o post.</p>`;
   }
 });

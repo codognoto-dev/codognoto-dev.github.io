@@ -25,10 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         throw new Error('Por favor, preencha todos os campos obrigatórios.');
       }
 
-      // Gerar um ID único baseado no título + timestamp
       const postId = generatePostId(titulo);
 
-      // Criar o post com o ID definido manualmente
       await setDoc(doc(db, 'posts', postId), {
         id: postId,
         titulo,
@@ -56,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function generatePostId(titulo) {
     return titulo
       .toLowerCase()
-      .replace(/[^\w\s]/gi, '') // remove pontuação
-      .replace(/\s+/g, '-')     // substitui espaços por traços
-      .substring(0, 50) + '-' + Date.now(); // garante unicidade
+      .replace(/[^\w\s]/gi, '')
+      .replace(/\s+/g, '-')
+      .substring(0, 50) + '-' + Date.now();
   }
 });

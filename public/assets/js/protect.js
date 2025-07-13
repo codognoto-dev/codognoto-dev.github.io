@@ -1,18 +1,8 @@
-// public/assets/js/firebase-config.js
+// public/assets/js/protect.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-import {
-  getFirestore,
-  collection,
-  addDoc,
-  getDocs,
-  doc,
-  setDoc,
-  getDoc,
-  updateDoc,
-  increment,
-  serverTimestamp
-} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 
+// Configuração do Firebase (mesma do seu firebase-config.js)
 const firebaseConfig = {
   apiKey: "AIzaSyBWF1lQmxzD6mLyGXb9HQNb0K3tu0rISJc",
   authDomain: "campo-vivo-website.firebaseapp.com",
@@ -23,18 +13,14 @@ const firebaseConfig = {
   measurementId: "G-19Y3XLPGF3"
 };
 
+// Inicializar Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const auth = getAuth(app);
 
-export {
-  db,
-  collection,
-  addDoc,
-  getDocs,
-  doc,
-  setDoc,
-  getDoc,
-  updateDoc,
-  increment,
-  serverTimestamp
-};
+// Verificar se o usuário está logado
+onAuthStateChanged(auth, (user) => {
+  if (!user) {
+    // Usuário não está logado, redirecionar para a página de login
+    window.location.href = "login.html";
+  }
+});

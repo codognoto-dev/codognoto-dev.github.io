@@ -6,36 +6,24 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     const querySnapshot = await getDocs(collection(db, 'posts'));
-    
     postsContainer.innerHTML = '';
-    
-    if (querySnapshot.empty) {
-      postsContainer.innerHTML = `
-        <div class="col-span-3 text-center py-12">
-          <p class="text-gray-500">Nenhum post publicado ainda.</p>
-        </div>
-      `;
-      return;
-    }
 
-    // Converter para array e ordenar por data
     const posts = [];
     querySnapshot.forEach(doc => {
       posts.push(doc.data());
     });
-    
+
     posts.sort((a, b) => {
       const dateA = a.dataPublicacao?.toDate() || new Date(0);
       const dateB = b.dataPublicacao?.toDate() || new Date(0);
-      return dateB - dateA; // Ordem decrescente
+      return dateB - dateA;
     });
 
-    // Exibir posts ordenados
     posts.forEach(post => {
       if (post.publicado) {
         const postDate = post.dataPublicacao?.toDate() || new Date();
         const formattedDate = postDate.toLocaleDateString('pt-BR');
-        
+
         postsContainer.innerHTML += `
           <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <a href="post.html?id=${post.id}">
