@@ -201,56 +201,58 @@
 
 
 <!--Hero-->
-<section class="relative min-h-screen flex items-center justify-start md:justify-center px-4 py-20 md:py-32 text-white overflow-hidden">
+<section class="relative min-h-screen flex items-center justify-center px-4 py-16 md:py-32 text-white overflow-hidden">
   <!-- Background image -->
   <div class="absolute inset-0 bg-cover bg-center md:bg-right" style="background-image: url('./img/background_hero.png'); background-position: right center;"></div>
   
   <!-- Overlay gradiente -->
   <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent md:from-black/75 md:via-black/50 md:to-black/30"></div>
 
-  <!-- Container principal com posicionamento relativo para o selo absoluto -->
-  <div class="relative z-10 w-full max-w-4xl mx-4 md:mx-auto">
-    <!-- Card único principal -->
-    <div class="backdrop-blur-sm bg-black/40 p-6 md:p-8 rounded-xl shadow-2xl pb-12 md:pb-14 mt-8 md:mt-12"> 
-      <!-- Título -->
-      <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-6 text-center md:text-left">
-        Proteção garantida contra pragas com <span class="text-green-400">confiança e segurança</span>
+  <!-- Container principal com margin-top -->
+  <div class="relative z-10 w-full max-w-4xl mx-4 md:mx-auto mt-12 md:mt-0">
+    <!-- Card único principal com ajustes de texto -->
+    <div class="backdrop-blur-sm bg-black/40 p-6 md:p-10 rounded-xl shadow-2xl">
+      <!-- Título principal com tamanho reduzido no mobile -->
+      <h1 class="text-2xl md:text-5xl font-bold leading-tight mb-6 md:mb-8 text-center">
+        Proteção garantida contra pragas com <span class="text-[#5CAE36]">confiança e segurança</span>
       </h1>
 
       <!-- Lista de benefícios -->
-      <ul class="space-y-3 mb-6 md:mb-8">
+      <ul class="space-y-3 md:space-y-4 mb-6 md:mb-8 max-w-2xl mx-auto md:mx-0 md:ml-4">
         <li class="flex items-start">
-          <svg class="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-6 h-6 md:w-7 md:h-7 text-[#5CAE36] mr-2 md:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
-          <span class="text-base md:text-lg">Garantia de devolução do dinheiro em 30 dias</span>
+          <span class="text-lg md:text-2xl">Garantia de devolução do dinheiro em 30 dias</span>
         </li>
         <li class="flex items-start">
-          <svg class="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-6 h-6 md:w-7 md:h-7 text-[#5CAE36] mr-2 md:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
-          <span class="text-base md:text-lg">Retorno gratuito caso as pragas reapareçam</span>
+          <span class="text-lg md:text-2xl">Retorno gratuito caso as pragas reapareçam</span>
         </li>
         <li class="flex items-start">
-          <svg class="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-6 h-6 md:w-7 md:h-7 text-[#5CAE36] mr-2 md:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
-          <span class="text-base md:text-lg">Reembolso do último pagamento se não resolver</span>
+          <span class="text-lg md:text-2xl">Reembolso do último pagamento se não resolver</span>
         </li>
       </ul>
 
-      <!-- Rodapé com cláusulas -->
-      <div class="pt-4 mt-4 border-t border-gray-600/50">
-        <div class="text-xs leading-relaxed opacity-90 space-y-1.5">
-          <p>*Pragas Padrão Cobertas: baratas, camundongos, ratos, traças, formigas "domésticas" (exceto formigas carpinteiras, formigas de fogo, formigas faraó e formigas loucas), traças de roupa, aranhas (exceto viúvas-negras e aranhas-marrons).</p>
-          <p>**Tratamentos e Pragas Cobertas definidos no seu Plano. Limitações se aplicam.</p>
-        </div>
+      <!-- Texto de garantia -->
+      <div class="mb-8 md:mb-10 text-center">
+        <p class="text-xl md:text-3xl font-bold text-[#5CAE36]">Seu problema resolvido ou seu dinheiro de volta</p>
       </div>
 
-      <!-- Selo de garantia sobrepondo o card (para ambos mobile e desktop) -->
-      <div class="absolute -right-12 -bottom-12 z-20">
-        <img src="./img/garantia.png" alt="Selo de Garantia" 
-             class="w-24 h-24 md:w-32 md:h-32 object-contain drop-shadow-lg animate-pulse hover:animate-none hover:scale-110 transition-all duration-300">
+      <!-- Container dos selos -->
+      <div class="flex flex-col items-center space-y-4 md:space-y-6 mb-2 md:mb-4">
+        <div class="flex justify-center space-x-6 md:space-x-16">
+          <img src="./img/garantia.png" alt="Selo de Garantia" 
+               class="w-24 h-24 md:w-32 md:h-32 object-contain">
+          <img src="./img/certificado-ra1000-1024x538.png" alt="Certificado RA1000" 
+               class="w-28 h-28 md:w-40 md:h-40 object-contain">
+        </div>
+        <p class="text-xs md:text-sm text-gray-300 text-center italic">*Consulte condições para aplicação da garantia</p>
       </div>
     </div>
   </div>
