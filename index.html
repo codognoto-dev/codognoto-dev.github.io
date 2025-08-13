@@ -74,7 +74,7 @@
     </section>
 
     <!--SOLUÇÕES-->
-    <section id="solucoes" class="relative overflow-hidden w-full py-20">
+    <section id="solucoes" class="relative overflow-hidden w-full py-20 pb-32">
         <!-- BG gradiente full -->
         <div class="absolute inset-0 bg-gradient-to-br from-[#1E1E1E] via-[#2C2C2C] to-[#1E1E1E]"></div>
 
@@ -110,7 +110,7 @@
                         </div>  
                         <!-- Card 2 -->
                         <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="200">
-                          <h3 class="text-xl font-title text-white">Tráfego Pago <span class="text-[#FF530D]">&</span> Tecnologia</h3>
+                          <h3 class="text-xl font-title text-white">Tráfego Pago <span class="text-[#F30775]">&</span> Tecnologia</h3>
                         </div>  
                         <!-- Card 3 -->
                         <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="300">
@@ -118,7 +118,7 @@
                         </div>  
                         <!-- Card 4 -->
                         <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="400">
-                          <h3 class="text-xl font-title text-white">Social Media <span class="text-[#FF530D]">&</span> Conteúdo</h3>
+                          <h3 class="text-xl font-title text-white">Social Media <span class="text-[#F30775]">&</span> Conteúdo</h3>
                         </div>  
                         <!-- Card 5 -->
                         <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="500" data-colspan="sm:col-span-2">
@@ -128,8 +128,8 @@
                 
                     <!-- Botão "Confira mais soluções" -->
                     <div class="mt-8 js-animate" data-animation="fade-in-up" data-delay="600">
-                        <button class="bg-gradient-to-r from-[#F30775] to-[#FF530D] text-white font-medium py-3 px-8 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                          Confira mais soluções!
+                        <button class="bg-gradient-to-r from-[#F30775] to-[#FF530D] text-white font-bold text-lg py-4 px-10 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                            Confira mais soluções!
                         </button>
                     </div>
                 </div>
@@ -189,38 +189,129 @@
     </section>
 
 
-  <!-- CASES 
-  <section id="cases" class="py-20 bg-[#2C2C2C]">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-title">Cases de sucesso</h2>
-        <p class="text-gray-300 mt-2">Projetos que entregaram resultados de verdade</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-[#1A1A1A] rounded-xl overflow-hidden group">
-          <img src="https://via.placeholder.com/400x250" class="w-full group-hover:scale-105 transition" alt="Case 1" />
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-[#FF530D]">Cliente X</h3>
-            <p class="text-gray-400 mt-2">Estratégia de mídia e branding que aumentou as conversões em 200%.</p>
+<section id="cases" class="relative py-20 sm:py-28 bg-[#F6D1E5] overflow-visible">
+  <!-- Curva escorrendo rotacionada 180º no topo -->
+  <div 
+    class="absolute -top-32 left-0 w-full overflow-visible pointer-events-none" 
+    style="height: 140px; z-index: 10; transform: rotate(180deg); transform-origin: center;">
+    <svg class="w-full h-full" viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#F6D1E5" d="
+        M0,140 
+        C200,20 350,100 480,40 
+        C610,-20 720,110 840,60 
+        C960,10 1100,140 1440,30 
+        L1440,0 
+        L0,0 
+        Z
+      "></path>
+  </svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+    <!-- Card container -->
+    <div class="relative rounded-3xl shadow-xl p-8 sm:p-12 space-y-12 overflow-hidden"
+         style="background: linear-gradient(135deg, #1E1E1E, #2C2C2C, #1E1E1E);">
+
+      <!-- Focos decorativos -->
+      <div class="absolute -top-20 -left-20 w-56 h-56 sm:w-72 sm:h-72 bg-[#F30775] opacity-20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 right-0 w-72 h-72 sm:w-96 sm:h-96 bg-[#FF530D] opacity-20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/3 left-1/2 w-56 h-56 sm:w-80 sm:h-80 bg-[#F30775] opacity-15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-1/4 left-10 w-48 h-48 sm:w-64 sm:h-64 bg-[#FF530D] opacity-15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- Conteúdo interno -->
+      <div class="relative z-10">
+
+        <!-- Cabeçalho -->
+        <div class="text-center js-animate" data-animation="fade-in-up" data-delay="100" style="opacity: 0;">
+          <span class="inline-block text-[#FF530D] font-title mb-2 text-base sm:text-lg tracking-wider">CASES</span>
+          <h2 class="text-2xl sm:text-3xl md:text-5xl font-title mb-4 sm:mb-6">
+            <span class="text-white">Resultados que</span> 
+            <span class="text-[#F30775]">falam por si</span>
+          </h2>
+          <div class="max-w-3xl mx-auto px-4 sm:px-0">
+            <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+              Na SheSocial, criamos estratégias únicas que 
+              <span class="text-[#FF530D] font-medium">transformam marcas</span> em referências e 
+              <span class="text-[#F30775] font-medium">números</span> em histórias de sucesso.
+            </p>
           </div>
         </div>
-        <div class="bg-[#1A1A1A] rounded-xl overflow-hidden group">
-          <img src="https://via.placeholder.com/400x250" class="w-full group-hover:scale-105 transition" alt="Case 2" />
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-[#FF530D]">Cliente Y</h3>
-            <p class="text-gray-400 mt-2">Campanha de tráfego pago com ROI de 350%.</p>
+
+        <!-- Grid de cases -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-20">
+          <!-- Case 1 -->
+          <div class="bg-[#1E1E1E] hover:bg-[#1E1E1E]/90 rounded-xl overflow-hidden group transition-all duration-500 border border-[#1E1E1E] hover:border-[#F30775]/40 hover:shadow-lg js-animate" data-animation="slide-in-left" data-delay="200" style="opacity: 0;">
+            <div class="relative overflow-hidden h-48 sm:h-64">
+              <img src="./public/assets/imagens/cases/case1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Case 1" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+              <span class="absolute bottom-3 left-3 bg-[#F30775] text-white text-xs sm:text-sm font-bold px-2 py-1 rounded-full">+200%</span>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-title text-white mb-1 sm:mb-2">Estratégia Digital Completa</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Redesenhamos a presença digital de uma marca de moda, elevando seu reconhecimento e vendas.</p>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="bg-[#1E1E1E] hover:bg-[#1E1E1E]/90 rounded-xl overflow-hidden group transition-all duration-500 border border-[#1E1E1E] hover:border-[#FF530D]/40 hover:shadow-lg js-animate" data-animation="slide-in-left" data-delay="300" style="opacity: 0;">
+            <div class="relative overflow-hidden h-48 sm:h-64">
+              <img src="./public/assets/imagens/cases/case2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Case 2" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+              <span class="absolute bottom-3 left-3 bg-[#FF530D] text-white text-xs sm:text-sm font-bold px-2 py-1 rounded-full">+400%</span>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-title text-white mb-1 sm:mb-2">Campanha de Performance</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Crescimento exponencial para startup de tecnologia com tráfego inteligente.</p>
+            </div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="bg-[#1E1E1E] hover:bg-[#1E1E1E]/90 rounded-xl overflow-hidden group transition-all duration-500 border border-[#1E1E1E] hover:border-[#FEB008]/40 hover:shadow-lg js-animate" data-animation="slide-in-left" data-delay="400" style="opacity: 0;">
+            <div class="relative overflow-hidden h-48 sm:h-64">
+              <img src="./public/assets/imagens/cases/case3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Case 3" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+              <span class="absolute bottom-3 left-3 bg-[#FEB008] text-[#1E1E1E] text-xs sm:text-sm font-bold px-2 py-1 rounded-full">+350%</span>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-title text-white mb-1 sm:mb-2">Rebranding Estratégico</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Reposicionamento completo de marca com foco em geração de leads qualificados.</p>
+            </div>
           </div>
         </div>
-        <div class="bg-[#1A1A1A] rounded-xl overflow-hidden group">
-          <img src="https://via.placeholder.com/400x250" class="w-full group-hover:scale-105 transition" alt="Case 3" />
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-[#FF530D]">Cliente Z</h3>
-            <p class="text-gray-400 mt-2">Projeto de social media que elevou a presença digital da marca.</p>
+
+        <!-- Marcas -->
+        <div class="mt-16 sm:mt-20 js-animate" data-animation="fade-in-up" data-delay="500" style="opacity: 0;">
+          <h3 class="text-center text-white mb-8 text-2xl sm:text-3xl font-title">
+            <span class="text-[#F30775]">Marcas</span> que confiam na 
+            <span class="text-[#FF530D]">SHE</span>
+          </h3>
+          <div class="flex flex-wrap justify-center items-center gap-12 sm:gap-16 px-2 sm:px-4">
+            <div class="w-24 sm:w-32 md:w-48 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+              <img src="./public/assets/imagens/clientes/cliente1.jpg" alt="Cliente 1" class="w-full h-auto object-contain max-h-20 sm:max-h-24">
+            </div>
+            <div class="w-24 sm:w-32 md:w-48 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+              <img src="./public/assets/imagens/clientes/cliente1.jpg" alt="Cliente 2" class="w-full h-auto object-contain max-h-20 sm:max-h-24">
+            </div>
+            <div class="w-24 sm:w-32 md:w-48 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+              <img src="./public/assets/imagens/clientes/cliente1.jpg" alt="Cliente 3" class="w-full h-auto object-contain max-h-20 sm:max-h-24">
+            </div>
+            <div class="w-24 sm:w-32 md:w-48 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+              <img src="./public/assets/imagens/clientes/cliente1.jpg" alt="Cliente 4" class="w-full h-auto object-contain max-h-20 sm:max-h-24">
+            </div>
           </div>
         </div>
+
+        <!-- CTA Final -->
+        <div class="text-center mt-16 sm:mt-20 js-animate" data-animation="fade-in-up" data-delay="600" style="opacity: 0;">
+          <button class="bg-gradient-to-r from-[#F30775] to-[#FF530D] text-white font-bold py-3 sm:py-4 px-8 sm:px-10 rounded-full hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            Ver todos os cases
+          </button>
+        </div>
+
       </div>
     </div>
-  </section>-->
+  </div>
+</section>
 
   <!-- SOBRE 
   <section id="quemsomos" class="py-20 max-w-7xl mx-auto px-6">
