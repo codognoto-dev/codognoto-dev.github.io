@@ -1,713 +1,308 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MMX9ZNS2');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MWHSNGKF');</script>
-  <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Fraud Blocker Tracker -->
-  <script type="text/javascript">
-    (function () {
-      var s = document.createElement("script"), 
-        h = document.head;
-      s.async = 1;
-      s.src = "https://monitor.fraudblocker.com/fbt.js?sid=RhsokD7NmtZKwcL0G2ozc";
-      h.appendChild(s);
-    })();
-  </script>
-  <noscript>
-    <a href="https://fraudblocker.com" rel="nofollow">
-      <img src="https://monitor.fraudblocker.com/fbt.gif?sid=RhsokD7NmtZKwcL0G2ozc" alt="Fraud Blocker" />
-    </a>
-  </noscript>
-  <!-- End Fraud Blocker Tracker -->
-
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <title> Previna Ambiental | Dedetização em Londrina </title>
-
-  <meta name="description" content="Empresa de dedetização em Londrina. Soluções contra pragas com segurança, qualidade e responsabilidade ambiental. Ligue já!">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://previnaambiental.com.br/" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <title>SheSocial | Estratégia, Criatividade e Performance</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Tipografia -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
 
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    .font-logo { font-family: 'Aller', sans-serif; }
-
-  @keyframes pulse-soft {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-  }
-  70% {
-    transform: scale(1.05);
-    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-  }
-}
-
-.animate-pulse-soft {
-  animation: pulse-soft 2s infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.logo-track {
-  width: max-content;
-  min-width: 200%; /* Garante que há espaço para deslizar no mobile */
-  animation: scroll 6s linear infinite;
-}
-
-
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(-150%);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideOutLeft {
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-
-    100% {
-      transform: translateX(-150%);
-      opacity: 0;
-    }
-  }
-
-  .slide-in-left {
-    animation: slideInLeft 0.5s forwards;
-  }
-
-  .slide-out-left {
-    animation: slideOutLeft 0.5s forwards;
-  }
-
-  </style>
+  <link rel="stylesheet" href="./public/assets/css/style.css" />
 </head>
+<body class="bg-[#2C2C2C] text-white font-body">
 
-<body class="bg-white text-[#1A3210]">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMX9ZNS2"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWHSNGKF"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#2C2C2C]/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <img src="./public/assets/imagens/she-logo.svg" alt="Logo SheSocial" class="h-10 w-auto" />
+          </div>  
+          <!-- Menu Desktop -->
+          <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wide font-title">
+            <a href="#home" class="hover:text-[#F30775]">Home</a>
+            <a href="#solucoes" class="hover:text-[#F30775]">Soluções</a>
+            <a href="#quemsomos" class="hover:text-[#F30775]">Quem Somos</a>
+            <a href="#talentos" class="hover:text-[#F30775]">She Sisters</a>
+          </nav>  
+          <!-- Botão CTA Desktop -->
+          <a href="#contato" class="hidden md:inline-block bg-[#FF530D] hover:bg-[#FEB008] text-white px-5 py-2 rounded-full text-sm transition font-title">
+            Vamos conversar
+          </a>    
+          <!-- Botão Menu Hambúrguer Mobile -->
+          <button id="menu-btn" aria-label="Abrir menu" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none">
+            <span class="block w-8 h-0.5 bg-white rounded-sm transition-transform origin-left"></span>
+            <span class="block w-8 h-0.5 bg-white rounded-sm"></span>
+            <span class="block w-8 h-0.5 bg-white rounded-sm transition-transform origin-left"></span>
+          </button>
+        </div>    
+        <!-- Menu Mobile -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-[#2C2C2C] border-t border-gray-700 uppercase tracking-wide font-title text-center">
+          <a href="#home" class="block py-4 border-b border-gray-700 hover:text-[#F30775]">Home</a>
+          <a href="#solucoes" class="block py-4 border-b border-gray-700 hover:text-[#F30775]">Soluções</a>
+          <a href="#quemsomos" class="block py-4 border-b border-gray-700 hover:text-[#F30775]">Quem Somos</a>
+          <a href="#talentos" class="block py-4 border-b border-gray-700 hover:text-[#F30775]">She Sisters</a>
+          <a href="#contato" class="block py-4 hover:text-[#FEB008] font-semibold">Vamos conversar</a>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <header class="fixed w-full bg-[#f7f7f7] shadow z-50">
-    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-      <!-- Logo e Nome dentro do Link -->
-      <a href="index.html" class="flex items-center space-x-3">
-        <img src="./img/logo.svg" alt="Previna Ambiental" class="h-20 w-auto" />
-      </a>
-      
-      <!-- Botão mobile -->
-      <button id="menu-btn" class="md:hidden text-[#1A3210] focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-  
-      <!-- Navegação desktop com underline animado -->
-      <nav id="menu" class="hidden md:flex space-x-6 text-[#1A3210]">
-        <a href="index.html" class="relative group text-[#5CAE36]">
-          Home
-          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#5CAE36] transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="sobrenos.html" class="relative group">
-          Sobre Nós
-          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#5CAE36] transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="https://desentupidoraprevina.com.br/" target="_blank" class="relative group" >
-          Desentupimentos
-          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#5CAE36] transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="servicos.html" class="relative group">
-          Serviços
-          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#5CAE36] transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#depoimentos" class="relative group">
-          Clientes
-          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#5CAE36] transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#certificacoes" class="relative group">
-          Certificações
-          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#5CAE36] transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#faq" class="relative group">
-          FAQ
-          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#5CAE36] transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="contato.html" class="relative group">
-          Fale Conosco
-          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#5CAE36] transition-all duration-300 group-hover:w-full"></span>
-        </a>
-      </nav>
-    </div>
-  
-    <!-- Menu mobile -->
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
-      <a href="index.html" class="block py-2">Home</a>
-      <a href="sobrenos.html" class="block py-2">Sobre Nós</a>
-      <a href="https://desentupidoraprevina.com.br/" target="_blank" class="block py-2">Desentupimentos</a>
-      <a href="servicos.html" class="block py-2">Serviços</a>
-      <a href="#depoimentos" class="block py-2">Clientes</a>
-      <a href="#certificacoes" class="block py-2">Certificações</a>
-      <a href="#faq" class="block py-2">FAQ</a>
-      <a href="contato.html" class="block py-2">Fale Conosco</a>
-    </div>
-  </header>
+    <!-- HERO -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center text-center px-6 pt-20 overflow-hidden">
+        <!-- Vídeo de fundo -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="./public/assets/imagens/video/video-hero.mp4" type="video/mp4" />Seu navegador não suporta o vídeo de fundo.
+        </video>
 
+        <!-- Overlay escuro -->
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
-<!--Hero-->
-<section class="relative min-h-screen flex items-center justify-center px-4 py-16 md:py-32 text-white overflow-hidden">
-  <!-- Background image -->
-  <div class="absolute inset-0 bg-cover bg-center md:bg-right" style="background-image: url('./img/background_hero.png'); background-position: right center;"></div>
-  
-  <!-- Overlay gradiente -->
-  <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent md:from-black/75 md:via-black/50 md:to-black/30"></div>
+        <!-- Estrelas decorativas -->
+        <div class="absolute top-10 left-10 w-40 h-40 star-entry star-left" style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;" aria-label="Estrela decorativa" role="img"></div>
 
-  <!-- Container principal com margin-top -->
-  <div class="relative z-10 w-full max-w-4xl mx-4 md:mx-auto mt-12 md:mt-0">
-    <!-- Card único principal com ajustes de texto -->
-    <div class="backdrop-blur-sm bg-black/40 p-6 md:p-10 rounded-xl shadow-2xl">
-      <!-- Título principal com tamanho reduzido no mobile -->
-      <h1 class="text-2xl md:text-5xl font-bold leading-tight mb-6 md:mb-8 text-center">
-        Proteção garantida contra pragas com <span class="text-[#5CAE36]">confiança e segurança</span>
-      </h1>
+        <div class="absolute bottom-10 right-10 w-32 h-32 star-entry star-right" style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;" aria-label="Estrela decorativa" role="img"></div>
 
-      <!-- Lista de benefícios -->
-      <ul class="space-y-3 md:space-y-4 mb-6 md:mb-8 max-w-2xl mx-auto md:mx-0 md:ml-4">
-        <li class="flex items-start">
-          <svg class="w-6 h-6 md:w-7 md:h-7 text-[#5CAE36] mr-2 md:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <span class="text-lg md:text-2xl">Garantia de devolução do dinheiro em 30 dias</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="w-6 h-6 md:w-7 md:h-7 text-[#5CAE36] mr-2 md:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <span class="text-lg md:text-2xl">Retorno gratuito caso as pragas reapareçam</span>
-        </li>
-        <li class="flex items-start">
-          <svg class="w-6 h-6 md:w-7 md:h-7 text-[#5CAE36] mr-2 md:mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <span class="text-lg md:text-2xl">Reembolso do último pagamento se não resolver</span>
-        </li>
-      </ul>
-
-      <!-- Texto de garantia -->
-      <div class="mb-8 md:mb-10 text-center">
-        <p class="text-xl md:text-3xl font-bold text-[#5CAE36]">Seu problema resolvido ou seu dinheiro de volta</p>
-      </div>
-
-      <!-- Container dos selos -->
-      <div class="flex flex-col items-center space-y-4 md:space-y-6 mb-2 md:mb-4">
-        <div class="flex justify-center space-x-6 md:space-x-16">
-          <img src="./img/garantia.png" alt="Selo de Garantia" 
-               class="w-24 h-24 md:w-32 md:h-32 object-contain">
-          <img src="./img/certificado-ra1000-1024x538.png" alt="Certificado RA1000" 
-               class="w-28 h-28 md:w-40 md:h-40 object-contain">
+        <!-- Conteúdo texto -->
+        <div class="relative z-10 max-w-3xl text-white font-title animate-text">
+            <h1 class="text-4xl md:text-5xl leading-tight mb-6">
+                Marketing com
+                <span class="text-[#F30775] font-body">performance, presença e propósito</span><br />
+                nada menos que resultado — por quem faz.
+            </h1>
         </div>
-        <p class="text-xs md:text-sm text-gray-300 text-center italic">*Consulte condições para aplicação da garantia</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-  <!-- Serviços -->
-  <section id="servicos" class="py-16 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-10 text-[#1A3210]">Nossos Serviços</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!--SOLUÇÕES-->
+    <section id="solucoes" class="relative overflow-hidden w-full py-20">
+        <!-- BG gradiente full -->
+        <div class="absolute inset-0 bg-gradient-to-br from-[#1E1E1E] via-[#2C2C2C] to-[#1E1E1E]"></div>
+
+        <!-- Focos decorativos -->
+        <div class="absolute -top-20 -left-20 w-72 h-72 bg-[#F30775] opacity-20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#FF530D] opacity-20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 left-1/2 w-80 h-80 bg-[#F30775] opacity-15 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 left-10 w-64 h-64 bg-[#FF530D] opacity-15 rounded-full blur-3xl"></div>
+
+        <!-- Conteúdo -->
+        <div class="relative container mx-auto px-6 py-12">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Lado esquerdo - Texto e cards -->
+                <div class="lg:w-1/2">
+                    <!-- Texto com animação -->
+                    <div class="text-left mb-12 js-animate" data-animation="fade-in-up">
+                        <h2 class="text-4xl md:text-5xl font-title mb-6 text-white">
+                          Nossas <span class="text-[#FF530D] font-body">Soluções</span>
+                        </h2>
+                        <div class="max-w-2xl">
+                          <p class="text-gray-300 leading-relaxed">
+                            Na SheSocial, cada setor é um pilar estratégico para gerar presença, autoridade e resultado real.
+                            Conheça nossas frentes de atuação.
+                          </p>
+                        </div>
+                    </div>
+                
+                    <!-- Cards em grid 2 colunas com animação -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Card 1 -->
+                        <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="100">
+                          <h3 class="text-xl font-title text-white">Comercial <span class="text-[#FF530D]">&</span> Atendimento</h3>
+                        </div>  
+                        <!-- Card 2 -->
+                        <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="200">
+                          <h3 class="text-xl font-title text-white">Tráfego Pago <span class="text-[#FF530D]">&</span> Tecnologia</h3>
+                        </div>  
+                        <!-- Card 3 -->
+                        <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="300">
+                          <h3 class="text-xl font-title text-white">Planejamento <span class="text-[#FF530D]">&</span> Inbound</h3>
+                        </div>  
+                        <!-- Card 4 -->
+                        <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="400">
+                          <h3 class="text-xl font-title text-white">Social Media <span class="text-[#FF530D]">&</span> Conteúdo</h3>
+                        </div>  
+                        <!-- Card 5 -->
+                        <div class="bg-[#2C2C2C]/70 hover:bg-[#2C2C2C] border-l-4 border-transparent hover:border-[#F30775] p-5 transition-all duration-300 cursor-pointer js-animate" data-animation="slide-in-left" data-delay="500" data-colspan="sm:col-span-2">
+                          <h3 class="text-xl font-title text-white">Design <span class="text-[#FF530D]">&</span> Criação</h3>
+                        </div>
+                    </div>
+                
+                    <!-- Botão "Confira mais soluções" -->
+                    <div class="mt-8 js-animate" data-animation="fade-in-up" data-delay="600">
+                        <button class="bg-gradient-to-r from-[#F30775] to-[#FF530D] text-white font-medium py-3 px-8 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                          Confira mais soluções!
+                        </button>
+                    </div>
+                </div>
+            
+                <!-- Lado direito - Imagens sobrepostas com profundidade realista -->
+                <div class="lg:w-1/2 relative h-[400px] sm:h-[500px] js-animate" data-animation="fade-in">
+                    <!-- Imagem de fundo (mais distante) -->
+                    <div class="absolute bottom-0 right-0 w-[60%] h-[60%] rounded-xl overflow-hidden z-10 transform translate-x-6 translate-y-6 transition-all duration-700 ease-out js-animate" 
+                         data-animation="fade-in-right" 
+                         data-delay="300"
+                         style="
+                           box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+                           filter: brightness(0.8) saturate(0.9);
+                         ">
+                      <img src="./public/assets/imagens/solucoes.png" alt="Solução 1" class="w-full h-full object-cover transform scale-[1.03]">
+                    </div>  
+                    <!-- Imagem sobreposta (mais próxima) -->
+                    <div class="absolute top-0 left-0 w-[60%] h-[60%] rounded-xl overflow-hidden z-20 transition-all duration-700 ease-out js-animate" 
+                         data-animation="fade-in-right" 
+                         data-delay="500"
+                         style="
+                           border: 4px solid #2C2C2C;
+                           box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6), 
+                                       0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+                           transform: 
+                             perspective(1000px) 
+                             rotateX(3deg) 
+                             rotateY(-5deg) 
+                             translate3d(-40px, -40px, 20px);
+                         ">
+                      <img src="./public/assets/imagens/solucoes.png" alt="Solução 2" class="w-full h-full object-cover transform scale-[1.01]">
+                    </div>  
+                    <!-- Efeito de brilho sutil na imagem frontal -->
+                    <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-30">
+                      <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-[#F30775] opacity-10 rounded-full blur-xl"></div>
+                    </div>
+                </div>
+            </div>
         
-        <!-- Serviço 1 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/controle_pragas.svg" alt="Ícone de controle de pragas" class="w-20 h-20">
-            </div> 
-            <h3 class="text-xl font-semibold mb-2">Controle Integrado de Pragas</h3>
-            <p class="text-sm text-gray-600">Utilizamos uma abordagem completa para controlar pragas de forma sustentável, combinando técnicas avançadas e minimizando o uso de produtos químicos.</p>
-        </div>
-  
-        <!-- Serviço 2 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/detetizacao.svg" alt="Ícone de detetização" class="w-20 h-20">
-            </div> 
-            <h3 class="text-xl font-semibold mb-2">Dedetização</h3>
-            <p class="text-sm text-gray-600">Eliminamos insetos como baratas e formigas com produtos químicos eficazes, garantindo um ambiente livre dessas pragas.</p>
-        </div>
-  
-        <!-- Serviço 3 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/desratizacao.svg" alt="Ícone de desratização" class="w-20 h-20">
-            </div> 
-            <h3 class="text-xl font-semibold mb-2">Desratização</h3>
-            <p class="text-sm text-gray-600">Realizamos o controle e procedimento para eliminação de roedores, como ratos e camundongos em ambientes urbanos.</p>
-        </div>
+            <!-- Banner com frase de impacto -->
+            <div class="mt-20 bg-gradient-to-r from-[#2C2C2C] to-[#1E1E1E] border border-[#FF530D]/30 rounded-2xl p-8 md:p-12 relative overflow-hidden js-animate" data-animation="fade-in-up" data-delay="700">
+              <div class="absolute -right-20 -top-20 w-64 h-64 bg-[#F30775] opacity-10 rounded-full blur-3xl"></div>
+              <div class="absolute -left-10 bottom-0 w-48 h-48 bg-[#FF530D] opacity-10 rounded-full blur-3xl"></div>
+            
+              <h3 class="text-3xl md:text-4xl font-title text-center text-white max-w-4xl mx-auto leading-tight">
+                <span class="text-[#F30775]">Transformamos</span> sua presença digital em 
+                <span class="text-[#FF530D]">resultados concretos</span> e crescimento sustentável
+              </h3>
 
-        <!-- Serviço 4 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/descupinizacao.svg" alt="Ícone de descupinização" class="w-24 h-24">
-            </div> 
-            <h3 class="text-xl font-semibold mb-2">Descupinização</h3>
-            <p class="text-sm text-gray-600">Protegemos sua propriedade contra cupins, aplicando tratamentos especializados que erradicam essas pragas e evitam danos à madeira.</p>
-        </div>
-
-          <!-- Serviço 5 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/morcego.svg" alt="Ícone de desalojamento de pombos e morcegos" class="w-24 h-24">
-            </div> 
-            <h3 class="text-xl font-semibold mb-2">Desalojamento de Pombos e Morcegos</h3>
-            <p class="text-sm text-gray-600">Removemos pombos e morcegos de forma ética e segura, prevenindo problemas de saúde e danos às estruturas.</p>
-        </div>
-
-            <!-- Serviço 6 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/limpeza_caixa.svg" alt="Ícone de limpeza da caixa d'água" class="w-20 h-20">
-            </div> 
-          <h3 class="text-xl font-semibold mb-2">Limpeza de Caixa D'água</h3>
-          <p class="text-sm text-gray-600">Higienizamos sua caixa d’água, eliminando resíduos  e contaminantes, garantindo água limpa e segura para o consumo.</p>
-        </div>
-
-        <!-- Serviço 7 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/potabilidade.svg" alt="Ícone de controle de potabilidade" class="w-20 h-20">
-            </div> 
-            <h3 class="text-xl font-semibold mb-2">Controle de Potabilidade</h3>
-            <p class="text-sm text-gray-600">Avaliamos e tratamos a água para garantir que ela esteja dentro dos padrões de potabilidade, assegurando sua segurança para consumo humano.</p>
-        </div>
-
-        <!-- Serviço 8 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/hidrojateamento.svg" alt="Ícone de hidrojateamento" class="w-24 h-24">
-            </div> 
-            <h3 class="text-xl font-semibold mb-2">Hidrojateamento</h3>
-            <p class="text-sm text-gray-600">O Hidrojateamento de Alta Pressão utiliza água pressurizada por motobombas e bicos rotativos acoplados a lanças ou mangueiras. É indicado para desobstrução de tubulações, limpeza de superfícies entre outros.</p>
-        </div>
-
-        <!-- Serviço 9 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <div class="flex items-center justify-center mb-4 text-[#5CAE36]">
-                <img src="./img/icones/desentupimentos.svg" alt="Ícone de desentupimento" class="w-20 h-20">
-            </div> 
-            <h3 class="text-xl font-semibold mb-2">Desentupimentos</h3>
-            <p class="text-sm text-gray-600">O serviço de desentupimento consiste na remoção de obstruções em encanamentos, pias, ralos, vasos sanitários e redes de esgoto. Utilizamos equipamentos específicos para restaurar o fluxo normal e evitar danos maiores.  funcionamento do sistema hidráulico.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Clientes + Depoimentos -->
-<section id="depoimentos" class="py-20 bg-[#1A3210]">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-      Nossos Clientes & Depoimentos
-    </h2>
-
-    <!-- Carrossel de logos -->
-    <div class="relative overflow-hidden">
-      <div class="logo-track flex items-center gap-12 animate-scroll">
-        <!-- Duplicamos o bloco inteiro para criar o loop perfeito -->
-        <div class="flex items-center gap-12">
-          <img src="./img/clientes/anapimenta.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/caopanheiro.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/diagsolution.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/divesa.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/fimm.png" class="h-24 w-auto" />
-          <img src="./img/clientes/igrejapresbiteriana.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/madero.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/saojoseoperario.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/thebestacai.jpg" class="h-24 w-auto" />
-        </div>
-        <div class="flex items-center gap-12">
-          <img src="./img/clientes/anapimenta.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/caopanheiro.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/diagsolution.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/divesa.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/fimm.png" class="h-24 w-auto" />
-          <img src="./img/clientes/igrejapresbiteriana.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/madero.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/saojoseoperario.jpg" class="h-24 w-auto" />
-          <img src="./img/clientes/thebestacai.jpg" class="h-24 w-auto" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Depoimentos estilo Google -->
-    <div class="bg-white rounded-3xl mt-12 p-10 shadow-xl">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Depoimento 1 -->
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/clientes/cliente_1.png" alt="Liége Báccaro Toledo" class="w-12 h-12 rounded-full" />
-            <div>
-              <h4 class="font-semibold text-[#1A3210]">Liége Báccaro Toledo</h4>
-              <div class="flex text-yellow-400">
-                ★★★★★
+              <div class="flex justify-center mt-8">
+                <button class="bg-white text-[#1E1E1E] font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
+                  Fale com nossos especialistas
+                </button>
               </div>
             </div>
-          </div>
-          <p class="text-gray-700">Mudamos recentemente para um novo apartamento e tivemos uma surpresa desagradável, uma infestação de baratas pequenas, muito resistentes. Como eu tenho fobia grave, foi uma situação muito difícil, mas o pessoal da Previne me atendeu no meio da madrugada por mais de uma vez, solícitos, retirando dúvidas e me acalmando quanto ao processo. As danadas estão morrendo e diminuindo e, se necessário, faremos ainda uma terceira aplicação. São claros e honestos quanto ao processo e tem toda a documentação em dia. O atendimento atencioso e muito gentil fez toda a diferença para mim, por causa da fobia. Recomendo!</p>
         </div>
+    </section>
 
-        <!-- Depoimento 2 -->
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/clientes/cliente_2.png" alt="Daniele Santos" class="w-12 h-12 rounded-full" />
-            <div>
-              <h4 class="font-semibold text-[#1A3210]">Daniele Santos</h4>
-              <div class="flex text-yellow-400">
-                ★★★★★
-              </div>
-            </div>
+
+  <!-- CASES 
+  <section id="cases" class="py-20 bg-[#2C2C2C]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-title">Cases de sucesso</h2>
+        <p class="text-gray-300 mt-2">Projetos que entregaram resultados de verdade</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-[#1A1A1A] rounded-xl overflow-hidden group">
+          <img src="https://via.placeholder.com/400x250" class="w-full group-hover:scale-105 transition" alt="Case 1" />
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-[#FF530D]">Cliente X</h3>
+            <p class="text-gray-400 mt-2">Estratégia de mídia e branding que aumentou as conversões em 200%.</p>
           </div>
-          <p class="text-gray-700">Contatarei a empresa para descupinização.
-            Trabalho super bem feito da equipe, com cuidado em cada detalhe. Além de serem muito organizados, deixaram tudo limpinho e sem sujeira. Ótimo profissionalismo e dedicação.</p>
         </div>
-
-        <!-- Depoimento 3 -->
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/clientes/cliente_3.png" alt="Selma Melo" class="w-12 h-12 rounded-full" />
-            <div>
-              <h4 class="font-semibold text-[#1A3210]">Selma Melo</h4>
-              <div class="flex text-yellow-400">
-                ★★★★★
-              </div>
-            </div>
+        <div class="bg-[#1A1A1A] rounded-xl overflow-hidden group">
+          <img src="https://via.placeholder.com/400x250" class="w-full group-hover:scale-105 transition" alt="Case 2" />
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-[#FF530D]">Cliente Y</h3>
+            <p class="text-gray-400 mt-2">Campanha de tráfego pago com ROI de 350%.</p>
           </div>
-          <p class="text-gray-700">Excelente atendimento, meninos educadissimos e profissionais ,me tem como cliente e admiração obrigada vou indicar para quem me perguntar até a próxima 💥💥</p>
+        </div>
+        <div class="bg-[#1A1A1A] rounded-xl overflow-hidden group">
+          <img src="https://via.placeholder.com/400x250" class="w-full group-hover:scale-105 transition" alt="Case 3" />
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-[#FF530D]">Cliente Z</h3>
+            <p class="text-gray-400 mt-2">Projeto de social media que elevou a presença digital da marca.</p>
+          </div>
         </div>
       </div>
     </div>
-    
-  </div>
-</section>
+  </section>-->
 
-  <!-- Certificações -->
-  <section id="certificacoes" class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-10">Certificações</h2>
-  
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        
-        <!-- Card 1 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center">
-          <img src="./img/nr33.svg" alt="imagem da norma regulamentadora 33" class="w-24 h-24 mx-auto mb-4">
-          <h3 class="text-lg font-semibold text-[#1A3210]">NR33 - Trabalhos Confinados</h3>
-        </div>
-  
-        <!-- Card 2 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center">
-          <img src="./img/nr35.svg" alt="imagem da norma regulamentadora 35" class="w-24 h-24 mx-auto mb-4">
-          <h3 class="text-lg font-semibold text-[#1A3210]">NR35 - Trabalho em Altura</h3>
-        </div>
-  
-        <!-- Card 3 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center">
-          <img src="./img/conselho_quimica.svg" alt="imagem do conselho regional de quimcia" class="w-24 h-24 mx-auto mb-4">
-          <h3 class="text-lg font-semibold text-[#1A3210]">Conselho Regional de Química</h3>
-        </div>
-  
-        <!-- Card 4 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center">
-          <img src="./img/sema.svg" alt="imagem da secretaria do meio ambiente" class="w-24 h-24 mx-auto mb-4">
-          <h3 class="text-lg font-semibold text-[#1A3210]">SEMA - Secretaria do Meio Ambiente</h3>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center flex flex-col items-center">
-          <div class="w-24 h-24 mb-4"></div>
-          <h3 class="text-lg font-semibold text-[#1A3210]">ANVISA - Agência Nacional de Vigilância Sanitária</h3>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-
-  <!-- Perguntas Frequentes -->
-  <section id="faq" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-8 text-center">Perguntas Frequentes</h2>
-      <div class="space-y-6">
-        <details class="border rounded-lg p-4">
-          <summary class="font-semibold cursor-pointer">Quanto tempo dura o efeito da dedetização?</summary>
-          <p class="mt-2">Depende do tipo de praga e do ambiente, mas em média 3 meses. A manutenção periódica é recomendada.</p>
-        </details>
-        <details class="border rounded-lg p-4">
-          <summary class="font-semibold cursor-pointer">É preciso sair do local após a dedetização?</summary>
-          <p class="mt-2">Sim, é recomendado que pessoas e animais se ausentem por cerca de 4 horas após o procedimento.</p>
-        </details>
-        <details class="border rounded-lg p-4">
-          <summary class="font-semibold cursor-pointer">A dedetização tem cheiro forte?</summary>
-          <p class="mt-2">Utilizamos produtos com baixo odor e registro na Anvisa, garantindo segurança e conforto.</p>
-        </details>
-        <details class="border rounded-lg p-4">
-          <summary class="font-semibold cursor-pointer">Vocês emitem certificado para empresas?</summary>
-          <p class="mt-2">Sim, emitimos certificados para órgãos fiscalizadores e exigências legais.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tecnico -->
-  <section class="bg-gray-50 py-16 px-4 relative overflow-hidden">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center relative z-10">
+  <!-- SOBRE 
+  <section id="quemsomos" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <h2 class="text-3xl font-bold text-green-900 mb-4">Responsável Técnico</h2>
-        <p class="text-xl font-semibold text-gray-800">Pedro Quaglio</p>
-        <p class="text-gray-700 mb-4">Químico – CRQ 094.406.809 | 9ª Região – Curitiba/PR</p>
-        <p class="text-gray-600 leading-relaxed">
-          Com sólida experiência no setor e registro ativo no Conselho Regional de Química, atuo como responsável técnico da Previna Ambiental. Estou em constante atualização técnica, participando de cursos, certificações e eventos especializados, garantindo que cada serviço siga os mais altos padrões de qualidade e segurança.
+        <h2 class="text-3xl font-title mb-4">Sobre a SheSocial</h2>
+        <p class="text-gray-300 mb-4">
+          A SheSocial traduz o equilíbrio entre estratégia, criatividade e performance. Entregamos marketing digital com clareza, método e resultado.
+        </p>
+        <p class="text-gray-300">
+          Nosso time é jovem, ousado e movido por propósito, tecnologia e inovação.
         </p>
       </div>
-  
-      <div class="relative flex justify-center items-center">
-        <img src="./img/pedro2.png" alt="Foto de Pedro Quaglio, químico responsável"
-          class="rounded-2xl shadow-xl w-[250px] object-cover z-10">
+      <div>
+        <img src="https://via.placeholder.com/500x400" alt="Equipe SheSocial" class="rounded-xl" />
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <!-- CTA Contato -->
-  <section id="contato" class="py-20 bg-[#5CAE36] text-white text-center px-4">
-    <h2 class="text-3xl font-bold mb-4">Entre em contato com a Previna Ambiental</h2>
-    <p class="text-lg mb-6">Estamos prontos para proteger seu ambiente de forma segura e eficiente.</p>
-    <a href="https://api.whatsapp.com/send?phone=554330392838&text=Ol%C3%A1,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os!" class="inline-block bg-white text-[#1A3210] font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition">Fale Conosco</a>
-  </section>
+  <!-- TALENTOS 
+  <section id="talentos" class="py-20 max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-title mb-8">Talentos</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto">
+      Conheça nossos profissionais que impulsionam resultados com criatividade e dedicação.
+    </p>
+ Você pode adicionar cards ou conteúdo de talentos aqui 
+  </section> -->
 
-    <!-- Footer -->
-    <footer class="bg-[#1A3210] text-white py-12">
-      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-    
-          <!-- Logo -->
-          <div>
-              <img src="./img/logo_footer.svg" alt="Logo Previna Ambiental" class="w-32">
-              <p class="text-sm leading-relaxed">Soluções em controle de pragas com responsabilidade ambiental e excelência técnica.</p>
-          </div>
-      
-          <!-- Mapa do site -->
-          <div>
-              <h3 class="text-lg font-semibold mb-3">Mapa do site</h3>
-              <ul class="space-y-2 text-sm">
-                <li><a href="index.html" class="hover:underline text-[#5CAE36]">Home</a></li>
-                <li><a href="sobrenos.html" class="hover:underline">Sobre Nós</a></li>
-                <li><a href="https://desentupidoraprevina.com.br/" target="_blank" class="hover:underline">Desentupimentos</a></li>
-                <li><a href="servicos.html" class="hover:underline">Serviços</a></li>
-                <li><a href="index.html#clientes" class="hover:underline">Clientes</a></li>
-                <li><a href="index.html#certificacoes" class="hover:underline">Certificações</a></li>
-                <li><a href="index.html#faq" class="hover:underline">FAQ</a></li>
-                <li><a href="contato.html" class="hover:underline">Fale Conosco</a></li>
-                <li><a href="politica-privacidade.html" target="_blank" class="hover:underline">Política de Privacidade</a></li>
-              </ul>
-          </div>
-      
-          <!-- Contato -->
-          <div>
-              <h3 class="text-lg font-semibold mb-3">Contato</h3>
-              <ul class="text-sm space-y-3">
-              
-                  <!-- Telefone -->
-                  <li>
-                      <a href="tel:+554330392838" 
-                         class="flex items-center gap-2 text-gray-white hover:text-green-700 transition-colors" 
-                         aria-label="Ligar para (43) 3039-2838">
-                        <img src="./img/icones/icons8-telefone-100.png" alt="Ícone Telefone" class="w-7 h-7">
-                        (43) 3039-2838
-                      </a>
-                  </li>
-              
-                  <!-- Email -->
-                  <li>
-                      <a href="mailto:contato@previnaambiental.com.br" 
-                         class="flex items-center gap-2 text-white-800 hover:text-green-700 transition-colors" 
-                         aria-label="Enviar email para contato@previnaambiental.com.br">
-                        <img src="./img/icones/icons8-nova-mensagem-100.png" alt="Ícone E-mail" class="w-7 h-7">
-                        contato@previnaambiental.com.br
-                      </a>
-                  </li>
-              
-                  <!-- Localização -->
-                  <li>
-                      <a href="https://www.google.com/maps?q=Rua+Francisco+Rossi+Filho,+135,+Londrina,+PR" 
-                         target="_blank" 
-                         rel="noopener" 
-                         class="flex items-start gap-2 text-white-800 hover:text-green-700 transition-colors" 
-                         aria-label="Ver localização no Google Maps">
-                        <img src="./img/icones/icons8-endereço-100.png" alt="Ícone Localização" class="w-7 h-7 mt-1">
-                        <span>
-                          Rua Francisco Rossi Filho, 135<br>
-                          Res. Q. Norte<br>
-                          Londrina, Paraná - Brasil
-                        </span>
-                      </a>
-                  </li>
-  
-              </ul>
-          </div>
-      
-          <!-- Redes Sociais -->
-          <div>
-              <h3 class="text-lg font-semibold mb-3">Redes Sociais</h3>
-              <div class="flex space-x-4 items-center">
-                <a href="https://www.instagram.com/previnaambiental/" class="hover:opacity-50 transition" aria-label="Instagram">
-                  <img src="./img/icones/icons8-instagram.svg" alt="Instagram" class="w-10 h-10">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61572728309524" class="hover:opacity-50 transition" aria-label="Instagram">
-                  <img src="./img/icones/icons8-facebook.svg" alt="Instagram" class="w-10 h-10">
-                </a>
-              </div>
-          </div>
-    
-      </div>
-    
-      <!-- Barra inferior -->
-      <div class="border-t border-white/20 mt-10 pt-6 text-center text-sm">
-        © 2025 Previna Ambiental. Todos os direitos reservados.
-      </div>
-    </footer>
+  <!-- CONTATO 
+  <section id="contato" class="py-20 bg-[#F30775] text-center relative overflow-hidden">
+     Elemento decorativo 
+    <div class="absolute -top-10 -right-10 w-40 h-40 bg-[#FEB008] rounded-full opacity-30"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-title mb-6">Vamos conversar?</h2>
+      <p class="text-white/90 mb-8">Preencha o formulário abaixo e nossa equipe retornará em breve.</p>
+      <form class="space-y-4">
+        <input type="text" placeholder="Seu nome" class="w-full p-3 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#FEB008]" />
+        <input type="email" placeholder="Seu e-mail" class="w-full p-3 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#FEB008]" />
+        <textarea placeholder="Sua mensagem" class="w-full p-3 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#FEB008]"></textarea>
+        <button class="bg-[#FF530D] hover:bg-[#FEB008] text-white px-6 py-3 rounded-full transition font-title">Enviar</button>
+      </form>
+    </div>
+  </section>-->
+
+  <!-- FOOTER 
+  <footer class="bg-[#2C2C2C] py-6 text-center text-gray-400 text-sm">
+    © 2025 SheSocial - Todos os direitos reservados.
+  </footer>-->
 
   <script>
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    let menuOpen = false;
+
     menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        mobileMenu.classList.remove('hidden');
+        // animação do ícone hamburguer para X
+        menuBtn.children[0].classList.add('rotate-45', 'translate-y-1.5');
+        menuBtn.children[1].classList.add('opacity-0');
+        menuBtn.children[2].classList.add('-rotate-45', '-translate-y-1.5');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuBtn.children[0].classList.remove('rotate-45', 'translate-y-1.5');
+        menuBtn.children[1].classList.remove('opacity-0');
+        menuBtn.children[2].classList.remove('-rotate-45', '-translate-y-1.5');
+      }
     });
 
+    // Fechar menu ao clicar em algum link (mobile)
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuOpen = false;
+        mobileMenu.classList.add('hidden');
+        menuBtn.children[0].classList.remove('rotate-45', 'translate-y-1.5');
+        menuBtn.children[1].classList.remove('opacity-0');
+        menuBtn.children[2].classList.remove('-rotate-45', '-translate-y-1.5');
+      });
+    });
   </script>
-
-  <!-- Whatsapp --> 
-  <a id="whatsapp-button" href="https://api.whatsapp.com/send?phone=554330392838&text=Ol%C3%A1,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os!" 
-    target="_blank" aria-label="Fale conosco pelo WhatsApp"
-    class="fixed bottom-6 right-6 z-40 flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-lg animate-pulse-soft hover:scale-105 transition-all duration-500">
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6" />
-    <span class="font-medium">Fale conosco</span>
-  </a>
-
-  <!-- POP-UP DE DESCONTO -->
-  <div id="popup" class="fixed bottom-6 left-6 z-50 hidden">
-    <div id="popupContent"
-      class="relative bg-white border-l-4 border-[#5CAE36] rounded-xl shadow-xl w-80 p-4 slide-in-left transition-all duration-300 ease-in-out">
-
-      <!-- Botão Fechar -->
-      <button onclick="closePopup()"
-        class="absolute top-2 right-2 text-white bg-[#1A3210] w-6 h-6 rounded-full flex items-center justify-center text-sm hover:bg-[#16300e] transition">
-        &times;
-      </button>
-
-      <!-- Conteúdo -->
-      <div class="space-y-2 pr-6">
-        <p class="text-sm font-semibold text-[#1A3210]">🎉 Promoção Especial</p>
-        <p class="text-sm text-[#444]">Ganhe <span class="text-[#5CAE36] font-bold">15% de desconto</span> em qualquer
-          serviço da Previna Ambiental!</p>
-        <a href="https://api.whatsapp.com/send?phone=554330392838&text=Ol%C3%A1!%20Acabei%20de%20ganhar%20os%2015%25%20de%20desconto%20no%20site!"
-          target="_blank"
-          class="inline-block mt-2 text-sm font-medium text-[#5CAE36] hover:underline">Fale conosco agora</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Cookie -->
-  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg z-50 flex flex-col md:flex-row items-center justify-between gap-4">
-    <p class="text-sm text-gray-700">Usamos cookies para melhorar sua experiência e para fins de análise. Ao continuar, você concorda com nossa <a href="politica-privacidade.html" class="underline text-[#5CAE36]" target="_blank">Política de Privacidade</a>.</p>
-    <button id="accept-cookies" class="bg-[#5CAE36] text-white px-4 py-2 rounded hover:bg-green-700 transition">Aceitar</button>
-  </div>
-  
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const cookieBanner = document.getElementById('cookie-banner');
-    const acceptBtn = document.getElementById('accept-cookies');
-    const whatsappBtn = document.getElementById('whatsapp-button');
-    const popup = document.getElementById('popup');
-    const popupContent = document.getElementById('popupContent');
-
-    // === BANNER DE COOKIES ===
-    const cookiesAceitos = localStorage.getItem('cookieAccepted') === 'true';
-
-    if (cookiesAceitos) {
-      cookieBanner?.classList.add('hidden');
-      whatsappBtn?.classList.remove('mb-20');
-    } else {
-      cookieBanner?.classList.remove('hidden');
-      whatsappBtn?.classList.add('mb-20');
-    }
-
-    acceptBtn?.addEventListener('click', () => {
-      localStorage.setItem('cookieAccepted', 'true');
-      cookieBanner?.classList.add('hidden');
-      whatsappBtn?.classList.remove('mb-20');
-    });
-
-    // === POP-UP PROMOCIONAL ===
-    setTimeout(() => {
-      popup?.classList.remove('hidden');
-    }, 4000);
-
-    // Função para fechar o pop-up com animação
-    window.closePopup = function () {
-      popupContent?.classList.remove('slide-in-left');
-      popupContent?.classList.add('slide-out-left');
-
-      setTimeout(() => {
-        popup.style.display = 'none';
-      }, 500);
-    };
-  });
-</script>
+  <script src="./public/assets/js/main.js"></script>
 
 </body>
 </html>
