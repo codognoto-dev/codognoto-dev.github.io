@@ -132,106 +132,44 @@
     opacity: 0;
   }
 
-  /*Cases*/
-   /* Container para o efeito infinito */
-  .scrolling-container-top,
-  .scrolling-container-mid-top,
-  .scrolling-container-mid-bottom,
-  .scrolling-container-bottom {
-    width: fit-content;
-    display: flex;
-  }
+ /* Cases */
+.scrolling-words-top {
+  animation: scrollLeftToRight 40s linear infinite;
+}
 
-  /* Animações suaves e infinitas */
-  .scrolling-words-top {
-    animation: scrollLeftToRight 40s linear infinite;
-    display: flex;
-  }
-  
-  .scrolling-words-mid-top {
-    animation: scrollRightToLeft 45s linear infinite;
-    display: flex;
-  }
-  
-  .scrolling-words-mid-bottom {
-    animation: scrollLeftToRight 50s linear infinite;
-    display: flex;
-  }
-  
-  .scrolling-words-bottom {
-    animation: scrollRightToLeft 40s linear infinite;
-    display: flex;
-  }
-  
-  @keyframes scrollLeftToRight {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  @keyframes scrollRightToLeft {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(0); }
-  }
+.scrolling-words-mid-top {
+  animation: scrollRightToLeft 45s linear infinite;
+}
 
-  /* Bolinhas separadoras */
-  .separator-dot {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    opacity: 0.3;
-    border-radius: 50%;
-    vertical-align: middle;
-  }
-  
-  .separator-dot-sm {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    opacity: 0.25;
-    border-radius: 50%;
-    vertical-align: middle;
-  }
+.scrolling-words-mid-bottom {
+  animation: scrollLeftToRight 50s linear infinite;
+}
 
-  /* Ajustes responsivos */
-    @media (max-width: 640px) {
-    /* Aumente esses valores conforme necessário */
-    .scrolling-words-top span,
-    .scrolling-words-bottom span {
-      font-size: 8rem; /* Aumentei de 5rem para 6rem */
-      margin-left: 2.5rem; /* Ajuste conforme necessário */
-      margin-right: 2.5rem;
-    }
-    
-    .scrolling-words-mid-top span,
-    .scrolling-words-mid-bottom span {
-      font-size: 7rem; /* Aumentei de 4rem para 5rem */
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
-    
-    /* Ajuste proporcional das bolinhas */
-    .separator-dot {
-      width: 18px; /* Aumentei de 16px */
-      height: 18px;
-    }
-    
-    .separator-dot-sm {
-      width: 14px; /* Aumentei de 12px */
-      height: 14px;
-    }
-  }
+.scrolling-words-bottom {
+  animation: scrollRightToLeft 40s linear infinite;
+}
 
-  /* Para telas muito pequenas (opcional) */
-  @media (max-width: 400px) {
-    .scrolling-words-top span,
-    .scrolling-words-bottom span {
-      font-size: 5rem; /* Tamanho ligeiramente menor para telas muito pequenas */
-    }
-    
-    .scrolling-words-mid-top span,
-    .scrolling-words-mid-bottom span {
-      font-size: 4rem;
-    }
-  }
+@keyframes scrollLeftToRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes scrollRightToLeft {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+/* Elementos gráficos - Apenas propriedades não cobertas pelo Tailwind */
+.she-separator {
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Efeitos hover específicos não cobertos pelo Tailwind */
+.case-card:hover {
+  border-color: rgba(243, 7, 117, 0.4);
+}
+
+.cta-button:hover {
+  border-color: #F30775;
+}
