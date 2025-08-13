@@ -128,11 +128,30 @@
   }
 
   /* Estado inicial dos elementos animados */
-  .js-animate {
-    opacity: 0;
-  }
+ .js-animate {
+  opacity: 0;
+}
 
- /* Cases */
+/* Animation Containers - Hardware Acceleration */
+.scrolling-container-top,
+.scrolling-container-mid-top,
+.scrolling-container-mid-bottom,
+.scrolling-container-bottom {
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Text Animation Styles - Fixed Version */
+.scrolling-words-top,
+.scrolling-words-mid-top,
+.scrolling-words-mid-bottom,
+.scrolling-words-bottom {
+  display: flex;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
 .scrolling-words-top {
   animation: scrollLeftToRight 40s linear infinite;
 }
@@ -149,27 +168,43 @@
   animation: scrollRightToLeft 40s linear infinite;
 }
 
+/* Fixed Keyframes with pixel-perfect adjustments */
 @keyframes scrollLeftToRight {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  100% { transform: translateX(calc(-100% - 1px)); }
 }
 
 @keyframes scrollRightToLeft {
-  0% { transform: translateX(-100%); }
+  0% { transform: translateX(calc(-100% - 1px)); }
   100% { transform: translateX(0); }
 }
 
-/* Elementos gráficos*/
+/* Graphic Elements with performance optimizations */
 .she-separator {
   flex-shrink: 0;
   object-fit: contain;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
-/* Efeitos hover específicos não cobertos pelo Tailwind */
+/* Hover Effects */
 .case-card:hover {
   border-color: rgba(243, 7, 117, 0.4);
 }
 
 .cta-button:hover {
   border-color: #F30775;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 640px) {
+  .scrolling-words-top,
+  .scrolling-words-bottom {
+    animation-duration: 60s; /* Slower on mobile */
+  }
+  
+  .scrolling-words-mid-top,
+  .scrolling-words-mid-bottom {
+    animation-duration: 70s; /* Slower on mobile */
+  }
 }
