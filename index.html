@@ -8,6 +8,10 @@
 
   <!-- Tipografia -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <link rel="stylesheet" href="./public/assets/css/style.css" />
 </head>
@@ -48,30 +52,40 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center text-center px-6 pt-20 overflow-hidden">
-        <!-- Vídeo de fundo -->
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="./public/assets/imagens/video/video-hero.mp4" type="video/mp4" />Seu navegador não suporta o vídeo de fundo.
-        </video>
-
-        <!-- Overlay escuro -->
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-
-        <!-- Estrelas decorativas -->
-        <div class="absolute top-10 left-10 w-40 h-40 star-entry star-left" style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;" aria-label="Estrela decorativa" role="img"></div>
-
-        <div class="absolute bottom-10 right-10 w-32 h-32 star-entry star-right" style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;" aria-label="Estrela decorativa" role="img"></div>
-
-        <!-- Conteúdo texto -->
-        <div class="relative z-10 max-w-3xl text-white font-title animate-text">
-            <h1 class="text-4xl md:text-5xl leading-tight mb-6">
-                Marketing com
-                <span class="text-[#F30775] font-body">performance, presença e propósito</span><br />
-                nada menos que resultado — por quem faz.
-            </h1>
-        </div>
-    </section>
+  <!-- HERO -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center text-center px-6 pt-20 overflow-hidden">
+      <!-- Vídeo de fundo -->
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+          <source src="./public/assets/imagens/video/video-hero.mp4" type="video/mp4" />
+          Seu navegador não suporta o vídeo de fundo.
+      </video>  
+      <!-- Overlay escuro -->
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div> 
+      <!-- Estrelas decorativas -->
+      <div class="absolute top-10 left-10 w-40 h-40 star-entry star-left"
+          style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;"
+          aria-label="Estrela decorativa" role="img">
+      </div>
+      <div class="absolute bottom-10 right-10 w-32 h-32 star-entry star-right z-10"
+          style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;"
+          aria-label="Estrela decorativa" role="img">
+      </div>  
+      <!-- Conteúdo texto + botão -->
+      <div class="relative z-10 max-w-3xl text-white font-title animate-text flex flex-col items-center">
+          <h1 class="text-4xl md:text-5xl leading-tight mb-6">
+              Marketing com
+              <span class="text-[#F30775] font-body">performance, presença e propósito.</span><br />
+              Seu <span class="text-[#FF530D] font-body">tempo vale ouro</span>, e a gente sabe disso.
+          </h1> 
+          <!-- Botão -->
+          <div class="mt-8 js-animate" data-animation="fade-in-up" data-delay="600">
+              <button
+                  class="bg-gradient-to-r from-[#F30775] to-[#FF530D] text-white font-bold text-lg py-4 px-10 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                  Fale com uma de nossas especialistas!
+              </button>
+          </div>
+      </div>
+  </section>
 
     <!--SOLUÇÕES-->
     <section id="solucoes" class="relative overflow-hidden w-full py-20 pb-32">
@@ -188,7 +202,7 @@
         </div>
     </section>
 
-
+<!--Cases-->
 <section id="cases" class="relative py-20 sm:py-28 overflow-hidden bg-gradient-to-br from-[#F30775] via-[#FF530D] to-[#FEB008]">
 <!-- Faixas de texto animadas -->
 <div class="absolute inset-0 overflow-hidden z-0 flex flex-col justify-between">
@@ -315,20 +329,44 @@
 
     <!--Cases-->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-12 sm:mt-16">
-  <!-- Coluna Esquerda (Cases 1 e 2) -->
+
   <div class="space-y-4 sm:space-y-6">
     <!-- Case 1 -->
-    <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-lg overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#F30775] hover:shadow-xl">
-      <div class="relative overflow-hidden h-40 sm:h-48">
-        <img src="./public/assets/imagens/cases/case1.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Case 1" />
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-        <span class="absolute bottom-3 left-3 bg-[#F30775] text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">+200%</span>
-      </div>
-      <div class="p-4">
-        <h3 class="text-xl font-title text-white mb-2">Estratégia Digital</h3>
-        <p class="text-gray-300 text-sm leading-relaxed">Transformação digital completa para marca de moda.</p>
+<div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-lg overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#F30775] hover:shadow-xl">
+  <div class="relative overflow-hidden h-56 sm:h-64 bg-black flex items-center justify-center">
+
+    <!-- Swiper container -->
+    <div class="swiper h-full w-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide flex items-center justify-center bg-black">
+          <img src="./public/assets/imagens/clientes/cases/mb01.PNG" class="max-h-full max-w-full object-contain" alt="Case 1 - Foto 1" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide flex items-center justify-center bg-black">
+          <img src="./public/assets/imagens/clientes/cases/mb02.PNG" class="max-h-full max-w-full object-contain" alt="Case 1 - Foto 2" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide flex items-center justify-center bg-black">
+          <img src="./public/assets/imagens/clientes/cases/mb03.PNG" class="max-h-full max-w-full object-contain" alt="Case 1 - Foto 3" />
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide flex items-center justify-center bg-black">
+          <img src="./public/assets/imagens/clientes/cases/mb04.PNG" class="max-h-full max-w-full object-contain" alt="Case 1 - Foto 4" />
+        </div>
       </div>
     </div>
+
+    <!-- Overlay e selo -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent pointer-events-none"></div>
+    <span class="absolute bottom-3 left-3 bg-[#F30775] text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">+200%</span>
+  </div>
+
+  <div class="p-4">
+    <h3 class="text-xl font-title text-white mb-2">Rebranding Mundo das Bolas</h3>
+    <p class="text-gray-300 text-sm leading-relaxed">Realizamos um rebranding completo para a Mundo das Bolas, revitalizando sua identidade visual e estratégia de marca. Tudo para posicioná-los de forma ainda mais impactante no mercado!</p>
+  </div>
+</div>
 
     <!-- Case 2 -->
     <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-lg overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#FF530D] hover:shadow-xl">

@@ -47,3 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(element);
     });
   });
+
+//SWIPER CASE 01
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      speed: 800
+    });
+  });
