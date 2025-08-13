@@ -159,7 +159,7 @@
   100% { transform: translateX(0); }
 }
 
-/* Elementos gráficos - Apenas propriedades não cobertas pelo Tailwind */
+/* Elementos gráficos*/
 .she-separator {
   flex-shrink: 0;
   object-fit: contain;
