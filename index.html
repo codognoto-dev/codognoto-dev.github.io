@@ -61,16 +61,20 @@
       </video>  
       <!-- Overlay escuro -->
       <div class="absolute inset-0 bg-black bg-opacity-60"></div> 
-      <!-- Estrelas decorativas -->
-      <div class="absolute top-10 left-10 w-40 h-40 star-entry star-left
-                  md:w-20 md:h-20
-                  sm:w-16 sm:h-16"
+      <!-- Estrela superior esquerda -->
+      <div class="absolute top-10 left-10 w-24 h-24 star-entry star-left
+                  lg:w-40 lg:h-40
+                  md:w-32 md:h-32
+                  sm:w-20 sm:h-20"
           style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;"
           aria-label="Estrela decorativa" role="img">
       </div>
-      <div class="absolute bottom-10 right-10 w-32 h-32 star-entry star-right z-10
-                  md:w-16 md:h-16
-                  sm:w-12 sm:h-12"
+      
+      <!-- Estrela inferior direita -->
+      <div class="absolute bottom-10 right-10 w-20 h-20 star-entry star-right z-10
+                  lg:w-36 lg:h-36
+                  md:w-28 md:h-28
+                  sm:w-16 sm:h-16"
           style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;"
           aria-label="Estrela decorativa" role="img">
       </div>
@@ -194,12 +198,12 @@
         </div>
     </section>
 
-<!--Cases-->
-<section id="cases" class="relative py-20 sm:py-28 overflow-hidden bg-gradient-to-br from-[#F30775] via-[#FF530D] to-[#FEB008]">
-  <!-- Faixas de texto animadas -->
-  <div class="absolute inset-0 overflow-hidden z-0 flex flex-col justify-between">
-      <!-- Faixa 1 -->
-      <div class="w-full py-6 overflow-hidden">
+  <!--Cases-->
+  <section id="cases" class="relative py-20 sm:py-28 overflow-hidden bg-gradient-to-br from-[#F30775] via-[#FF530D] to-[#FEB008]">
+    <!-- Faixas de texto animadas -->
+    <div class="absolute inset-0 overflow-hidden z-0 flex flex-col justify-between">
+        <!-- Faixa 1 -->
+        <div class="w-full py-6 overflow-hidden">
       <div class="scrolling-container-top flex">
         <div class="scrolling-words-top flex whitespace-nowrap items-center">
           <span class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10">Performance</span>
@@ -222,10 +226,10 @@
           <img src="./public/assets/imagens/elementos/elemento05.svg" class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10" alt="" />
         </div>
       </div>
-      </div>
+        </div>
 
-      <!-- Faixa 2 -->
-      <div class="w-full py-6 overflow-hidden">
+        <!-- Faixa 2 -->
+        <div class="w-full py-6 overflow-hidden">
       <div class="scrolling-container-mid-top flex">
         <div class="scrolling-words-mid-top flex whitespace-nowrap items-center">
           <span class="text-white/20 font-black text-7xl sm:text-8xl lg:text-9xl uppercase mx-8">Estratégia</span>
@@ -248,10 +252,10 @@
           <img src="./public/assets/imagens/elementos/elemento05.svg" class="she-separator w-12 h-12 sm:w-20 sm:h-20 mx-4 sm:mx-8" alt="" />
         </div>
       </div>
-      </div>
+        </div>
 
-      <!-- Faixa 3 -->
-      <div class="w-full py-6 overflow-hidden">
+        <!-- Faixa 3 -->
+        <div class="w-full py-6 overflow-hidden">
       <div class="scrolling-container-mid-bottom flex">
         <div class="scrolling-words-mid-bottom flex whitespace-nowrap items-center">
           <span class="text-white/15 font-black text-7xl sm:text-8xl lg:text-9xl uppercase mx-8">Presença</span>
@@ -274,10 +278,10 @@
           <img src="./public/assets/imagens/elementos/elemento07.svg" class="she-separator w-10 h-10 sm:w-16 sm:h-16 mx-3 sm:mx-6" alt="" />
         </div>
       </div>
-      </div>
+        </div>
 
-      <!-- Faixa 4 (Fundo - direita para esquerda) -->
-      <div class="w-full py-6 overflow-hidden">
+        <!-- Faixa 4 (Fundo - direita para esquerda) -->
+        <div class="w-full py-6 overflow-hidden">
       <div class="scrolling-container-bottom flex">
         <div class="scrolling-words-bottom flex whitespace-nowrap items-center">
           <span class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10">Sucesso</span>
@@ -300,65 +304,65 @@
           <img src="./public/assets/imagens/elementos/elemento02.svg" class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10" alt="" />
         </div>
       </div>
-      </div>
-  </div>
-  
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Cabeçalho -->
-    <div class="text-center mb-16 js-animate" data-animation="fade-in-up" data-delay="100">
-      <span class="inline-block text-white font-title mb-3 text-lg md:text-xl tracking-wider bg-black/20 px-4 py-1 rounded-full">CASES</span>
-      <h2 class="text-4xl md:text-5xl font-title mb-6 text-white">
-        <span class="font-bold">Resultados que</span> 
-        <span class="text-[#2C2C2C]">transformam negócios</span>
-      </h2>
-      <div class="max-w-3xl mx-auto px-4 sm:px-0">
-        <p class="text-white/90 leading-relaxed text-base md:text-lg">
-          Estratégias que <span class="font-semibold">elevam marcas</span> e geram 
-          <span class="font-semibold">crescimento real</span>. Confira nossos cases e inspire-se.
-        </p>
-      </div>
+        </div>
     </div>
-  
-    <!--Cases-->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-12 sm:mt-16">
 
-      <!-- Coluna Esquerda (2 cards) -->
-      <div class="space-y-4 sm:space-y-6">
-        <!-- Case 1 - Mundo das Bolas -->
-<div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-lg overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#F30775] hover:shadow-xl h-auto md:h-[480px] flex flex-col js-animate" data-animation="fade-in-up" data-delay="150">
-  <div class="relative overflow-hidden bg-black flex-none flex items-center justify-center aspect-[16/9] md:aspect-[16/7]">
-    <!-- Swiper container -->
-    <div class="swiper h-full w-full">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide flex items-center justify-center bg-black">
-          <img src="./public/assets/imagens/clientes/cases/mb01.jpg" class="w-full h-full object-cover" alt="Case 1 - Foto 1" />
-        </div>
-        <div class="swiper-slide flex items-center justify-center bg-black">
-          <img src="./public/assets/imagens/clientes/cases/mb02.jpg" class="w-full h-full object-cover" alt="Case 1 - Foto 2" />
-        </div>
-        <div class="swiper-slide flex items-center justify-center bg-black">
-          <img src="./public/assets/imagens/clientes/cases/mb03.jpg" class="w-full h-full object-cover" alt="Case 1 - Foto 3" />
-        </div>
-        <div class="swiper-slide flex items-center justify-center bg-black">
-          <img src="./public/assets/imagens/clientes/cases/mb04.jpg" class="w-full h-full object-cover" alt="Case 1 - Foto 4" />
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Cabeçalho -->
+      <div class="text-center mb-16 js-animate" data-animation="fade-in-up" data-delay="100">
+        <span class="inline-block text-white font-title mb-3 text-lg md:text-xl tracking-wider bg-black/20 px-4 py-1 rounded-full">CASES</span>
+        <h2 class="text-4xl md:text-5xl font-title mb-6 text-white">
+          <span class="font-bold">Resultados que</span> 
+          <span class="text-[#2C2C2C]">transformam negócios</span>
+        </h2>
+        <div class="max-w-3xl mx-auto px-4 sm:px-0">
+          <p class="text-white/90 leading-relaxed text-base md:text-lg">
+            Estratégias que <span class="font-semibold">elevam marcas</span> e geram 
+            <span class="font-semibold">crescimento real</span>. Confira nossos cases e inspire-se.
+          </p>
         </div>
       </div>
-    </div>
-    <!-- Overlay e selo -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent pointer-events-none"></div>
-    <span class="absolute bottom-3 left-3 bg-[#F30775] text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">+200%</span>
-  </div>
-  <div class="p-4 flex-1 flex flex-col">
-    <h3 class="text-xl font-title text-white mb-2">Rebranding Mundo das Bolas</h3>
-    <p class="text-gray-300 text-sm leading-relaxed flex-1">
-      Renovamos a identidade visual e estratégica da Mundo das Bolas, e-commerce líder no segmento esportivo. Desenvolvemos uma nova identidade visual moderna e um reposicionamento completo de marca, elevando seu impacto no mercado.
-    </p>
-  </div>
-</div>
+    
+      <!--Cases-->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-12 sm:mt-16">
 
-        <!-- Case 2 - CR10 Odontológica (Versão corrigida) -->
-        <div class="hidden md:flex bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-lg overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#FF530D] hover:shadow-xl h-[460px] md:h-[480px] flex-col js-animate" data-animation="fade-in-up" data-delay="200">
+        <!-- Coluna Esquerda (2 cards) -->
+        <div class="space-y-4 sm:space-y-6">
+          <!-- Case 1 - Mundo das Bolas -->
+  <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-lg overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#F30775] hover:shadow-xl h-auto md:h-[480px] flex flex-col js-animate" data-animation="fade-in-up" data-delay="150">
+    <div class="relative overflow-hidden bg-black flex-none flex items-center justify-center aspect-[16/9] md:aspect-[16/7]">
+      <!-- Swiper container -->
+      <div class="swiper h-full w-full">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide flex items-center justify-center bg-black">
+            <img src="./public/assets/imagens/clientes/cases/mb01.jpg" class="w-full h-full object-cover" alt="Case 1 - Foto 1" />
+          </div>
+          <div class="swiper-slide flex items-center justify-center bg-black">
+            <img src="./public/assets/imagens/clientes/cases/mb02.jpg" class="w-full h-full object-cover" alt="Case 1 - Foto 2" />
+          </div>
+          <div class="swiper-slide flex items-center justify-center bg-black">
+            <img src="./public/assets/imagens/clientes/cases/mb03.jpg" class="w-full h-full object-cover" alt="Case 1 - Foto 3" />
+          </div>
+          <div class="swiper-slide flex items-center justify-center bg-black">
+            <img src="./public/assets/imagens/clientes/cases/mb04.jpg" class="w-full h-full object-cover" alt="Case 1 - Foto 4" />
+          </div>
+        </div>
+      </div>
+      <!-- Overlay e selo -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent pointer-events-none"></div>
+      <span class="absolute bottom-3 left-3 bg-[#F30775] text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">+200%</span>
+    </div>
+    <div class="p-4 flex-1 flex flex-col">
+      <h3 class="text-xl font-title text-white mb-2">Rebranding Mundo das Bolas</h3>
+      <p class="text-gray-300 text-sm leading-relaxed flex-1">
+        Renovamos a identidade visual e estratégica da Mundo das Bolas, e-commerce líder no segmento esportivo. Desenvolvemos uma nova identidade visual moderna e um reposicionamento completo de marca, elevando seu impacto no mercado.
+      </p>
+    </div>
+  </div>
+
+          <!-- Case 2 - CR10 Odontológica (Versão corrigida) -->
+          <div class="hidden md:flex bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-lg overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#FF530D] hover:shadow-xl h-[460px] md:h-[480px] flex-col js-animate" data-animation="fade-in-up" data-delay="200">
           <div class="relative overflow-hidden h-64 flex-none">
             <video autoplay muted loop playsinline class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
               <source src="./public/assets/imagens/clientes/cases/rc10.mp4" type="video/mp4" />
@@ -372,109 +376,109 @@
               Posicionamos a CR10 Clínica Odontológica no mercado de Apucarana com um lançamento impactante, destacando tratamentos odontológicos de alta tecnologia através de uma estratégia completa de comunicação e ações direcionadas.
             </p>
           </div>
+          </div>
+
+          <!-- Versão Mobile -->
+          <div class="relative md:hidden bg-[#1E1E1E] rounded-lg overflow-hidden border border-white/10 hover:border-[#FF530D] hover:shadow-xl transition-all duration-500 group h-[460px] js-animate" data-animation="fade-in-up" data-delay="200">
+            <!-- Vídeo de Fundo -->
+            <video 
+              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+              autoplay loop muted playsinline
+            >
+              <source src="./public/assets/imagens/clientes/cases/rc10-mobile.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos HTML5.
+            </video>
+
+            <!-- Overlay Gradiente -->
+            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+
+            <!-- Conteúdo -->
+            <div class="absolute bottom-0 left-0 w-full p-6 text-white">
+              <span class="inline-block bg-[#FF530D] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-3">
+                +400%
+              </span>
+              <h3 class="text-2xl font-title mb-3">CR10 Clínica Odontológica</h3>
+              <p class="text-sm text-gray-200 leading-relaxed">
+                Posicionamos a CR10 Clínica Odontológica no mercado de Apucarana com um lançamento impactante, destacando tratamentos odontológicos de alta tecnologia através de uma estratégia completa de comunicação e ações direcionadas.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <!-- Versão Mobile -->
-        <div class="relative md:hidden bg-[#1E1E1E] rounded-lg overflow-hidden border border-white/10 hover:border-[#FF530D] hover:shadow-xl transition-all duration-500 group h-[460px] js-animate" data-animation="fade-in-up" data-delay="200">
-          <!-- Vídeo de Fundo -->
-          <video 
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-            autoplay loop muted playsinline
-          >
-            <source src="./public/assets/imagens/clientes/cases/rc10-mobile.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos HTML5.
-          </video>
+        <!-- Coluna Direita (1 card grande) - TADA Asian Food -->
+        <div class="relative bg-[#1E1E1E] rounded-lg overflow-hidden border border-white/10 hover:border-[#FEB008] hover:shadow-xl transition-all duration-500 group h-[460px] md:h-[980px] js-animate" data-animation="fade-in-up" data-delay="250">
+      <!-- Vídeo de Fundo -->
+      <video 
+        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+        autoplay loop muted playsinline
+      >
+        <source src="./public/assets/imagens/clientes/cases/tada.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+      </video>
 
-          <!-- Overlay Gradiente -->
-          <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+      <!-- Overlay Gradiente -->
+      <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
 
-          <!-- Conteúdo -->
-          <div class="absolute bottom-0 left-0 w-full p-6 text-white">
-            <span class="inline-block bg-[#FF530D] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-3">
-              +400%
-            </span>
-            <h3 class="text-2xl font-title mb-3">CR10 Clínica Odontológica</h3>
-            <p class="text-sm text-gray-200 leading-relaxed">
-              Posicionamos a CR10 Clínica Odontológica no mercado de Apucarana com um lançamento impactante, destacando tratamentos odontológicos de alta tecnologia através de uma estratégia completa de comunicação e ações direcionadas.
-            </p>
+      <!-- Conteúdo -->
+      <div class="absolute bottom-0 left-0 w-full p-6 text-white">
+        <span class="inline-block bg-[#FEB008] text-[#1E1E1E] text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-3">
+          +350%
+        </span>
+        <h3 class="text-2xl font-title mb-3">TADA Asian Food</h3>
+        <p class="text-sm text-gray-200 leading-relaxed">
+          Planejamos e executamos o lançamento do Restaurante Tada, com campanha estratégica que uniu identidade visual marcante, presença digital impactante e ações para atrair e fidelizar clientes.
+        </p>
+      </div>
+        </div>
+      </div>
+
+      <!-- Sticker Flutuante Ajustado -->
+      <div class="relative -mt-7 md:-mt-20 mb-2 md:mb-10 z-20 js-animate" data-animation="fade-in-up" data-delay="275">
+        <div class="flex justify-center">
+          <div class="w-56 h-56 md:w-64 md:h-64 rotate-[-8deg] hover:rotate-2 transition-all duration-500">
+            <img src="./public/assets/imagens/sticker-frase.png" 
+                 alt="Sticker decorativo" 
+                 class="w-full h-full object-contain drop-shadow-[0_10px_15px_rgba(254,176,8,0.4)] hover:drop-shadow-[0_15px_20px_rgba(254,176,8,0.6)] transition-all duration-300">
           </div>
         </div>
       </div>
 
-      <!-- Coluna Direita (1 card grande) - TADA Asian Food -->
-      <div class="relative bg-[#1E1E1E] rounded-lg overflow-hidden border border-white/10 hover:border-[#FEB008] hover:shadow-xl transition-all duration-500 group h-[460px] md:h-[980px] js-animate" data-animation="fade-in-up" data-delay="250">
-    <!-- Vídeo de Fundo -->
-    <video 
-      class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-      autoplay loop muted playsinline
-    >
-      <source src="./public/assets/imagens/clientes/cases/tada.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos HTML5.
-    </video>
-    
-    <!-- Overlay Gradiente -->
-    <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
-    
-    <!-- Conteúdo -->
-    <div class="absolute bottom-0 left-0 w-full p-6 text-white">
-      <span class="inline-block bg-[#FEB008] text-[#1E1E1E] text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-3">
-        +350%
-      </span>
-      <h3 class="text-2xl font-title mb-3">TADA Asian Food</h3>
-      <p class="text-sm text-gray-200 leading-relaxed">
-        Planejamos e executamos o lançamento do Restaurante Tada, com campanha estratégica que uniu identidade visual marcante, presença digital impactante e ações para atrair e fidelizar clientes.
-      </p>
-    </div>
-      </div>
-    </div>
+      <!-- Seção de Marcas -->
+      <div class="mt-5 bg-black/20 rounded-2xl p-6 sm:p-10 backdrop-blur-sm border border-white/10 js-animate" data-animation="fade-in-up" data-delay="300">
+        <h3 class="text-center text-white mb-10 sm:mb-12 text-2xl sm:text-3xl md:text-4xl font-title js-animate" data-animation="fade-in-up" data-delay="350">
+          Marcas que <span class="text-[#FEB008]">confiam</span> na SHE
+        </h3>
+        <div class="grid grid-cols-2 md:flex flex-wrap justify-center items-stretch gap-4 md:gap-8 lg:gap-12 px-4">
+          <!-- Item 1 -->
+          <div class="bg-white/90 p-3 sm:p-4 rounded-xl hover:scale-105 md:hover:scale-[1.03] transition-all duration-300 flex items-center justify-center h-full js-animate" data-animation="fade-in-up" data-delay="400">
+            <img src="./public/assets/imagens/clientes/cliente1.jpg" alt="Cliente 1" class="h-14 sm:h-16 md:h-20 lg:h-24 object-contain object-center w-full">
+          </div>
 
-    <!-- Sticker Flutuante Ajustado -->
-    <div class="relative -mt-7 md:-mt-20 mb-2 md:mb-10 z-20 js-animate" data-animation="fade-in-up" data-delay="275">
-      <div class="flex justify-center">
-        <div class="w-56 h-56 md:w-64 md:h-64 rotate-[-8deg] hover:rotate-2 transition-all duration-500">
-          <img src="./public/assets/imagens/sticker-frase.png" 
-               alt="Sticker decorativo" 
-               class="w-full h-full object-contain drop-shadow-[0_10px_15px_rgba(254,176,8,0.4)] hover:drop-shadow-[0_15px_20px_rgba(254,176,8,0.6)] transition-all duration-300">
+          <!-- Item 2 -->
+          <div class="bg-white/90 p-3 sm:p-4 rounded-xl hover:scale-105 md:hover:scale-[1.03] transition-all duration-300 flex items-center justify-center h-full js-animate" data-animation="fade-in-up" data-delay="450">
+            <img src="./public/assets/imagens/clientes/cliente2.jpeg" alt="Cliente 2" class="h-14 sm:h-16 md:h-20 lg:h-24 object-contain object-center w-full">
+          </div>
+
+          <!-- Item 3 -->
+          <div class="bg-white/90 p-3 sm:p-4 rounded-xl hover:scale-105 md:hover:scale-[1.03] transition-all duration-300 flex items-center justify-center h-full js-animate" data-animation="fade-in-up" data-delay="500">
+            <img src="./public/assets/imagens/clientes/cliente3.jpeg" alt="Cliente 3" class="h-14 sm:h-16 md:h-20 lg:h-24 object-contain object-center w-full">
+          </div>
+
+          <!-- Item 4 -->
+          <div class="bg-white/90 p-3 sm:p-4 rounded-xl hover:scale-105 md:hover:scale-[1.03] transition-all duration-300 flex items-center justify-center h-full js-animate" data-animation="fade-in-up" data-delay="550">
+            <img src="./public/assets/imagens/clientes/cliente4.jpeg" alt="Cliente 4" class="h-14 sm:h-16 md:h-20 lg:h-24 object-contain object-center w-full">
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Seção de Marcas -->
-    <div class="mt-5 bg-black/20 rounded-2xl p-6 sm:p-10 backdrop-blur-sm border border-white/10 js-animate" data-animation="fade-in-up" data-delay="300">
-      <h3 class="text-center text-white mb-10 sm:mb-12 text-2xl sm:text-3xl md:text-4xl font-title js-animate" data-animation="fade-in-up" data-delay="350">
-        Marcas que <span class="text-[#FEB008]">confiam</span> na SHE
-      </h3>
-      <div class="grid grid-cols-2 md:flex flex-wrap justify-center items-stretch gap-4 md:gap-8 lg:gap-12 px-4">
-        <!-- Item 1 -->
-        <div class="bg-white/90 p-3 sm:p-4 rounded-xl hover:scale-105 md:hover:scale-[1.03] transition-all duration-300 flex items-center justify-center h-full js-animate" data-animation="fade-in-up" data-delay="400">
-          <img src="./public/assets/imagens/clientes/cliente1.jpg" alt="Cliente 1" class="h-14 sm:h-16 md:h-20 lg:h-24 object-contain object-center w-full">
-        </div>
-
-        <!-- Item 2 -->
-        <div class="bg-white/90 p-3 sm:p-4 rounded-xl hover:scale-105 md:hover:scale-[1.03] transition-all duration-300 flex items-center justify-center h-full js-animate" data-animation="fade-in-up" data-delay="450">
-          <img src="./public/assets/imagens/clientes/cliente2.jpeg" alt="Cliente 2" class="h-14 sm:h-16 md:h-20 lg:h-24 object-contain object-center w-full">
-        </div>
-
-        <!-- Item 3 -->
-        <div class="bg-white/90 p-3 sm:p-4 rounded-xl hover:scale-105 md:hover:scale-[1.03] transition-all duration-300 flex items-center justify-center h-full js-animate" data-animation="fade-in-up" data-delay="500">
-          <img src="./public/assets/imagens/clientes/cliente3.jpeg" alt="Cliente 3" class="h-14 sm:h-16 md:h-20 lg:h-24 object-contain object-center w-full">
-        </div>
-
-        <!-- Item 4 -->
-        <div class="bg-white/90 p-3 sm:p-4 rounded-xl hover:scale-105 md:hover:scale-[1.03] transition-all duration-300 flex items-center justify-center h-full js-animate" data-animation="fade-in-up" data-delay="550">
-          <img src="./public/assets/imagens/clientes/cliente4.jpeg" alt="Cliente 4" class="h-14 sm:h-16 md:h-20 lg:h-24 object-contain object-center w-full">
-        </div>
+      <!-- CTA Final -->
+      <div class="text-center mt-20 js-animate" data-animation="fade-in-up" data-delay="600">
+        <button class="bg-black text-white font-bold py-4 px-12 rounded-full hover:bg-[#1E1E1E] transition-all duration-300 transform hover:scale-105 text-lg border-2 border-white/20 hover:border-[#F30775] shadow-lg">
+          Ver todos os cases
+        </button>
       </div>
     </div>
-
-    <!-- CTA Final -->
-    <div class="text-center mt-20 js-animate" data-animation="fade-in-up" data-delay="600">
-      <button class="bg-black text-white font-bold py-4 px-12 rounded-full hover:bg-[#1E1E1E] transition-all duration-300 transform hover:scale-105 text-lg border-2 border-white/20 hover:border-[#F30775] shadow-lg">
-        Ver todos os cases
-      </button>
-    </div>
-  </div>
-</section>
+  </section>
 
 <!-- Seção de Formulário -->
 <section class="relative py-16 sm:py-24 overflow-hidden">
@@ -534,6 +538,252 @@
       </div>
     </div>
   </div>
+</section>
+
+<!-- FERRAMENTAS/SOFTWARE -->
+<section id="ferramentas" class="relative py-20 sm:py-28 overflow-hidden bg-gradient-to-br from-[#F30775] via-[#FF530D] to-[#FEB008]">
+    <!-- Faixas de texto animadas -->
+    <div class="absolute inset-0 overflow-hidden z-0 flex flex-col justify-between">
+        <!-- Faixa 1 -->
+        <div class="w-full py-6 overflow-hidden">
+            <div class="scrolling-container-top flex">
+                <div class="scrolling-words-top flex whitespace-nowrap items-center">
+                    <span class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10">Tecnologia</span>
+                    <img src="./public/assets/imagens/elementos/elemento02.svg" class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10" alt="" />
+                    <span class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10">Inovação</span>
+                    <img src="./public/assets/imagens/elementos/elemento07.svg" class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10" alt="" />
+                    <span class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10">Excelência</span>
+                    <img src="./public/assets/imagens/elementos/elemento05.svg" class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10" alt="" />
+                </div>
+                <div class="scrolling-words-top flex whitespace-nowrap items-center" aria-hidden="true">
+                    <span class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10">Tecnologia</span>
+                    <img src="./public/assets/imagens/elementos/elemento09.svg" class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10" alt="" />
+                    <span class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10">Inovação</span>
+                    <img src="./public/assets/imagens/elementos/elemento02.svg" class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10" alt="" />
+                    <span class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10">Excelência</span>
+                    <img src="./public/assets/imagens/elementos/elemento07.svg" class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa 2 -->
+        <div class="w-full py-6 overflow-hidden">
+            <div class="scrolling-container-bottom flex">
+                <div class="scrolling-words-bottom flex whitespace-nowrap items-center">
+                    <span class="text-white/20 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10">Precisão</span>
+                    <img src="./public/assets/imagens/elementos/elemento07.svg" class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10" alt="" />
+                    <span class="text-white/20 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10">Dados</span>
+                    <img src="./public/assets/imagens/elementos/elemento05.svg" class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10" alt="" />
+                    <span class="text-white/20 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10">Automação</span>
+                    <img src="./public/assets/imagens/elementos/elemento09.svg" class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10" alt="" />
+                </div>
+                <div class="scrolling-words-bottom flex whitespace-nowrap items-center" aria-hidden="true">
+                    <span class="text-white/20 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10">Precisão</span>
+                    <img src="./public/assets/imagens/elementos/elemento07.svg" class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10" alt="" />
+                    <span class="text-white/20 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10">Dados</span>
+                    <img src="./public/assets/imagens/elementos/elemento05.svg" class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10" alt="" />
+                    <span class="text-white/20 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10">Automação</span>
+                    <img src="./public/assets/imagens/elementos/elemento09.svg" class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container principal -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Cabeçalho -->
+        <div class="text-center mb-16 js-animate" data-animation="fade-in-up" data-delay="100">
+            <span class="inline-block text-white font-title mb-3 text-lg md:text-xl tracking-wider bg-black/20 px-4 py-1 rounded-full">TECNOLOGIA</span>
+            <h2 class="text-4xl md:text-5xl font-title mb-6 text-white">
+                <span class="font-bold">Ferramentas que</span> 
+                <span class="text-[#2C2C2C]">potencializam resultados</span>
+            </h2>
+            <div class="max-w-3xl mx-auto px-4 sm:px-0">
+                <p class="text-white/90 leading-relaxed text-base md:text-lg">
+                    Utilizamos as plataformas mais avançadas do mercado para garantir 
+                    <span class="font-semibold">performance, precisão e escalabilidade</span> em todas as nossas estratégias.
+                </p>
+            </div>
+        </div>
+
+        <!-- Grid de ferramentas -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+            <!-- Ferramenta 1 -->
+            <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-xl overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#F30775] hover:shadow-xl h-full flex flex-col items-center p-6 js-animate" data-animation="fade-in-up" data-delay="150">
+                <div class="w-20 h-20 mb-4 flex items-center justify-center bg-white/10 rounded-xl group-hover:bg-[#F30775]/20 transition-all p-3">
+                    <img src="./public/assets/imagens/ferramentas/meta-ads.svg" alt="Meta Ads" class="h-full w-auto">
+                </div>
+                <h3 class="text-xl font-title text-white text-center mb-2">Meta Ads</h3>
+                <p class="text-sm text-gray-300 text-center">Anúncios no Facebook & Instagram</p>
+            </div>
+
+            <!-- Ferramenta 2 -->
+            <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-xl overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#FF530D] hover:shadow-xl h-full flex flex-col items-center p-6 js-animate" data-animation="fade-in-up" data-delay="200">
+                <div class="w-20 h-20 mb-4 flex items-center justify-center bg-white/10 rounded-xl group-hover:bg-[#FF530D]/20 transition-all p-3">
+                    <img src="./public/assets/imagens/ferramentas/google-ads.svg" alt="Google Ads" class="h-full w-auto">
+                </div>
+                <h3 class="text-xl font-title text-white text-center mb-2">Google Ads</h3>
+                <p class="text-sm text-gray-300 text-center">Anúncios no Google</p>
+            </div>
+
+            <!-- Ferramenta 3 -->
+            <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-xl overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#FEB008] hover:shadow-xl h-full flex flex-col items-center p-6 js-animate" data-animation="fade-in-up" data-delay="250">
+                <div class="w-20 h-20 mb-4 flex items-center justify-center bg-white/10 rounded-xl group-hover:bg-[#FEB008]/20 transition-all p-3">
+                    <img src="./public/assets/imagens/ferramentas/hotmart.svg" alt="Hotmart" class="h-full w-auto">
+                </div>
+                <h3 class="text-xl font-title text-white text-center mb-2">Hotmart</h3>
+                <p class="text-sm text-gray-300 text-center">Plataforma de infoprodutos</p>
+            </div>
+
+            <!-- Ferramenta 4 -->
+            <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-xl overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#F30775] hover:shadow-xl h-full flex flex-col items-center p-6 js-animate" data-animation="fade-in-up" data-delay="300">
+                <div class="w-20 h-20 mb-4 flex items-center justify-center bg-white/10 rounded-xl group-hover:bg-[#F30775]/20 transition-all p-3">
+                    <img src="./public/assets/imagens/ferramentas/analytics.svg" alt="Google Analytics" class="h-full w-auto">
+                </div>
+                <h3 class="text-xl font-title text-white text-center mb-2">Google Analytics</h3>
+                <p class="text-sm text-gray-300 text-center">Análise de dados</p>
+            </div>
+
+            <!-- Ferramenta 5 -->
+            <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-xl overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#FF530D] hover:shadow-xl h-full flex flex-col items-center p-6 js-animate" data-animation="fade-in-up" data-delay="350">
+                <div class="w-20 h-20 mb-4 flex items-center justify-center bg-white/10 rounded-xl group-hover:bg-[#FF530D]/20 transition-all p-3">
+                    <img src="./public/assets/imagens/ferramentas/rd-station.svg" alt="RD Station" class="h-full w-auto">
+                </div>
+                <h3 class="text-xl font-title text-white text-center mb-2">RD Station</h3>
+                <p class="text-sm text-gray-300 text-center">Automação de marketing</p>
+            </div>
+
+            <!-- Ferramenta 6 -->
+            <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-xl overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#FEB008] hover:shadow-xl h-full flex flex-col items-center p-6 js-animate" data-animation="fade-in-up" data-delay="400">
+                <div class="w-20 h-20 mb-4 flex items-center justify-center bg-white/10 rounded-xl group-hover:bg-[#FEB008]/20 transition-all p-3">
+                    <img src="./public/assets/imagens/ferramentas/active-campaign.svg" alt="Active Campaign" class="h-full w-auto">
+                </div>
+                <h3 class="text-xl font-title text-white text-center mb-2">Active Campaign</h3>
+                <p class="text-sm text-gray-300 text-center">E-mail marketing</p>
+            </div>
+
+            <!-- Ferramenta 7 -->
+            <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-xl overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#F30775] hover:shadow-xl h-full flex flex-col items-center p-6 js-animate" data-animation="fade-in-up" data-delay="450">
+                <div class="w-20 h-20 mb-4 flex items-center justify-center bg-white/10 rounded-xl group-hover:bg-[#F30775]/20 transition-all p-3">
+                    <img src="./public/assets/imagens/ferramentas/figma.svg" alt="Figma" class="h-full w-auto">
+                </div>
+                <h3 class="text-xl font-title text-white text-center mb-2">Figma</h3>
+                <p class="text-sm text-gray-300 text-center">Design de interfaces</p>
+            </div>
+
+            <!-- Ferramenta 8 -->
+            <div class="bg-[#1E1E1E]/90 hover:bg-[#1E1E1E] rounded-xl overflow-hidden group transition-all duration-500 border border-white/10 hover:border-[#FF530D] hover:shadow-xl h-full flex flex-col items-center p-6 js-animate" data-animation="fade-in-up" data-delay="500">
+                <div class="w-20 h-20 mb-4 flex items-center justify-center bg-white/10 rounded-xl group-hover:bg-[#FF530D]/20 transition-all p-3">
+                    <img src="./public/assets/imagens/ferramentas/notion.svg" alt="Notion" class="h-full w-auto">
+                </div>
+                <h3 class="text-xl font-title text-white text-center mb-2">Notion</h3>
+                <p class="text-sm text-gray-300 text-center">Gestão de projetos</p>
+            </div>
+        </div>
+
+        <!-- Sticker Flutuante -->
+        <div class="relative mt-10 mb-10 z-20 js-animate" data-animation="fade-in-up" data-delay="550">
+            <div class="flex justify-center">
+                <div class="w-56 h-56 md:w-64 md:h-64 rotate-[-8deg] hover:rotate-2 transition-all duration-500">
+                    <img src="./public/assets/imagens/sticker-frase.png" 
+                         alt="Sticker decorativo" 
+                         class="w-full h-full object-contain drop-shadow-[0_10px_15px_rgba(254,176,8,0.4)] hover:drop-shadow-[0_15px_20px_rgba(254,176,8,0.6)] transition-all duration-300">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTERS - VERSÃO AJUSTADA -->
+<section id="newsletters" class="relative py-20 overflow-hidden bg-[#1E1E1E]">
+    <!-- Elementos decorativos -->
+    <div class="absolute top-20 left-10 w-24 h-24 opacity-20 animate-float"
+        style="background-image: url('./public/assets/imagens/elementos/elemento09.svg'); background-size: contain;"
+        aria-hidden="true">
+    </div>
+    <div class="absolute bottom-20 right-10 w-16 h-16 opacity-20 animate-float-delay"
+        style="background-image: url('./public/assets/imagens/elementos/elemento02.svg'); background-size: contain;"
+        aria-hidden="true">
+    </div>
+    
+    <!-- Focos de luz -->
+    <div class="absolute -top-40 -left-40 w-80 h-80 bg-[#F30775] opacity-10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -right-20 w-96 h-96 bg-[#FF530D] opacity-10 rounded-full blur-3xl"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <!-- Cabeçalho -->
+        <div class="text-center max-w-3xl mx-auto mb-16 js-animate" data-animation="fade-in-up">
+            <span class="inline-block text-[#F30775] font-title mb-3 text-lg md:text-xl tracking-wider bg-[#2C2C2C] px-4 py-1 rounded-full">CONTEÚDO EXCLUSIVO</span>
+            <h2 class="text-4xl md:text-5xl font-title mb-6 text-white">
+                Nossas <span class="text-[#FF530D]">Newsletters</span> Premium
+            </h2>
+            <p class="text-gray-300 leading-relaxed">
+                Receba insights valiosos e estratégias comprovadas diretamente no seu e-mail.
+            </p>
+        </div>
+
+        <!-- Grid de newsletters - AJUSTADO -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+            <!-- Newsletter SheMinds - AJUSTADO -->
+            <div class="bg-gradient-to-br from-[#2C2C2C] to-[#1E1E1E] rounded-xl overflow-hidden border border-[#3D3D3D] hover:border-[#F30775] transition-all duration-300 group">
+                <!-- Container ajustado para proporção retangular -->
+                <div class="relative w-full aspect-[3/1] md:aspect-[4/1] overflow-hidden">
+                    <img src="./public/assets/imagens/shemind.jpg" 
+                         alt="Newsletter SheMinds" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <!-- Overlay reduzido (de 70% para 50%) -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-4 md:p-6">
+                        <span class="inline-block bg-[#F30775] text-white text-xs font-bold px-3 py-1 rounded-full mb-2">Estratégia</span>
+                        <h3 class="text-xl md:text-2xl font-title text-white">SheMind</h3>
+                    </div>
+                </div>
+                <div class="p-4 md:p-6">
+                    <p class="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">
+                        Insights estratégicos, tendências de mercado e análises profundas para impulsionar seu negócio. Conteúdo para quem quer pensar além.
+                    </p>
+                    
+                    <!-- Formulário RD Station -->
+                    <div class="newsletter-form">
+                        <div role="main" id="rd-newsletter-sheminds"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter SheDrops - AJUSTADO -->
+            <div class="bg-gradient-to-br from-[#2C2C2C] to-[#1E1E1E] rounded-xl overflow-hidden border border-[#3D3D3D] hover:border-[#FF530D] transition-all duration-300 group">
+                <!-- Container ajustado para proporção retangular -->
+                <div class="relative w-full aspect-[3/1] md:aspect-[4/1] overflow-hidden">
+                    <img src="./public/assets/imagens/shedrop.jpg" 
+                         alt="Newsletter SheDrops" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <!-- Overlay reduzido (de 70% para 50%) -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-4 md:p-6">
+                        <span class="inline-block bg-[#FF530D] text-white text-xs font-bold px-3 py-1 rounded-full mb-2">Ação</span>
+                        <h3 class="text-xl md:text-2xl font-title text-white">SheDrop</h3>
+                    </div>
+                </div>
+                <div class="p-4 md:p-6">
+                    <p class="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">
+                        Drops semanais com dicas práticas, ferramentas e ações imediatas para aplicar no seu negócio. Conteúdo direto ao ponto para quem quer resultados rápidos.
+                    </p>
+                    
+                    <!-- Formulário RD Station -->
+                    <div class="newsletter-form">
+                        <div role="main" id="rd-newsletter-shedrops"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="text-center mt-12">
+            <p class="text-gray-400 text-sm">
+                <span class="text-[#FEB008]">*</span> Respeitamos sua privacidade. Você pode cancelar sua inscrição a qualquer momento.
+            </p>
+        </div>
+    </div>
 </section>
 
   <!-- SOBRE 
