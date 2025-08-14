@@ -1381,9 +1381,7 @@
             <h3 class="text-xl font-title text-white text-center mb-2">
               Social Hub
             </h3>
-            <p class="text-sm text-gray-300 text-center">
-              Automação Whatsapp
-            </p>
+            <p class="text-sm text-gray-300 text-center">Automação Whatsapp</p>
           </div>
 
           <!-- Ferramenta 4 -->
@@ -1517,7 +1515,7 @@
       </div>
     </section>
 
-    <!-- NEWSLETTERS - VERSÃO AJUSTADA -->
+    <!-- NEWSLETTERS -->
     <section
       id="newsletters"
       class="relative py-20 overflow-hidden bg-[#1E1E1E]"
@@ -1556,24 +1554,54 @@
         >
           <span
             class="inline-block text-[#F30775] font-title mb-3 text-lg md:text-xl tracking-wider bg-[#2C2C2C] px-4 py-1 rounded-full"
-            >CONTEÚDO EXCLUSIVO</span
           >
+            CONTEÚDO EXCLUSIVO
+          </span>
+
           <h2 class="text-4xl md:text-5xl font-title mb-6 text-white">
             Nossas <span class="text-[#FF530D]">Newsletters</span> Premium
           </h2>
-          <p class="text-gray-300 leading-relaxed">
-            Receba insights valiosos e estratégias comprovadas diretamente no
-            seu e-mail.
-          </p>
+
+          <div
+            class="text-gray-300 text-lg md:text-xl leading-relaxed space-y-4"
+          >
+            <p class="font-medium">
+              Marketing é direção. Mentalidade é combustível.<br
+                class="hidden sm:block"
+              />
+              E toda grande ação começa com um insight certo — aqui, você recebe
+              dois.
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 pt-2"
+            >
+              <div
+                class="bg-[#2C2C2C]/60 px-4 py-2 rounded-lg border-l-4 border-[#FF530D]"
+              >
+                <p class="font-bold text-white">SheDrop</p>
+                <p class="text-sm md:text-base">Seu marketing no ponto</p>
+              </div>
+
+              <div
+                class="bg-[#2C2C2C]/60 px-4 py-2 rounded-lg border-l-4 border-[#F30775]"
+              >
+                <p class="font-bold text-white">SheMind</p>
+                <p class="text-sm md:text-base">Sua mentalidade no jogo</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Grid de newsletters - AJUSTADO -->
+        <!-- Grid de newsletters -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-          <!-- Newsletter SheMinds - AJUSTADO -->
+          <!-- Newsletter SheMinds -->
           <div
-            class="bg-gradient-to-br from-[#2C2C2C] to-[#1E1E1E] rounded-xl overflow-hidden border border-[#3D3D3D] hover:border-[#F30775] transition-all duration-300 group"
+            class="bg-gradient-to-br from-[#2C2C2C] to-[#1E1E1E] rounded-xl overflow-hidden border border-[#3D3D3D] hover:border-[#F30775] transition-all duration-300 group relative js-animate"
+            data-animation="slide-in-left"
+            data-delay="0"
           >
-            <!-- Container ajustado para proporção retangular -->
+            <!-- Thumbnail -->
             <div
               class="relative w-full aspect-[3/1] md:aspect-[4/1] overflow-hidden"
             >
@@ -1582,39 +1610,82 @@
                 alt="Newsletter SheMinds"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
               />
-              <!-- Overlay reduzido (de 70% para 50%) -->
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
-              ></div>
-              <div class="absolute bottom-0 left-0 p-4 md:p-6">
-                <span
-                  class="inline-block bg-[#F30775] text-white text-xs font-bold px-3 py-1 rounded-full mb-2"
-                  >Estratégia</span
-                >
-                <h3 class="text-xl md:text-2xl font-title text-white">
-                  SheMind
-                </h3>
-              </div>
             </div>
+
+            <!-- Conteúdo textual -->
             <div class="p-4 md:p-6">
+              <div class="flex justify-between items-start mb-3">
+                <div class="flex items-center">
+                  <span
+                    class="inline-block bg-[#F30775] text-white text-xs font-bold px-3 py-1 rounded-full mr-3"
+                    >Estratégia</span
+                  >
+                  <h3 class="text-xl md:text-2xl font-title text-white">
+                    SheMind
+                  </h3>
+                </div>
+                <!-- Seta com animação de pulo -->
+                <button
+                  class="newsletter-toggle text-gray-400 hover:text-[#F30775] transition-all duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 arrow-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+              </div>
+
               <p class="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">
                 Insights estratégicos, tendências de mercado e análises
                 profundas para impulsionar seu negócio. Conteúdo para quem quer
                 pensar além.
               </p>
 
-              <!-- Formulário RD Station -->
-              <div class="newsletter-form">
-                <div role="main" id="rd-newsletter-sheminds"></div>
+              <!-- Formulário (escondido por padrão) -->
+              <div class="newsletter-form hidden transition-all duration-300">
+                <div role="main" id="rd-newsletter-sheminds">
+                  <div class="mb-4">
+                    <input
+                      type="text"
+                      placeholder="Seu nome"
+                      class="w-full bg-[#3D3D3D] border border-[#4D4D4D] rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F30775] focus:border-transparent"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      type="email"
+                      placeholder="Seu melhor e-mail"
+                      class="w-full bg-[#3D3D3D] border border-[#4D4D4D] rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F30775] focus:border-transparent"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-[#F30775] hover:bg-[#D90667] text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                  >
+                    Assinar Newsletter
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Newsletter SheDrops - AJUSTADO -->
+          <!-- Newsletter SheDrops -->
           <div
-            class="bg-gradient-to-br from-[#2C2C2C] to-[#1E1E1E] rounded-xl overflow-hidden border border-[#3D3D3D] hover:border-[#FF530D] transition-all duration-300 group"
+            class="bg-gradient-to-br from-[#2C2C2C] to-[#1E1E1E] rounded-xl overflow-hidden border border-[#3D3D3D] hover:border-[#FF530D] transition-all duration-300 group relative js-animate"
+            data-animation="fade-in-right"
+            data-delay="0"
           >
-            <!-- Container ajustado para proporção retangular -->
+            <!-- Thumbnail -->
             <div
               class="relative w-full aspect-[3/1] md:aspect-[4/1] overflow-hidden"
             >
@@ -1623,30 +1694,71 @@
                 alt="Newsletter SheDrops"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
               />
-              <!-- Overlay reduzido (de 70% para 50%) -->
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
-              ></div>
-              <div class="absolute bottom-0 left-0 p-4 md:p-6">
-                <span
-                  class="inline-block bg-[#FF530D] text-white text-xs font-bold px-3 py-1 rounded-full mb-2"
-                  >Ação</span
-                >
-                <h3 class="text-xl md:text-2xl font-title text-white">
-                  SheDrop
-                </h3>
-              </div>
             </div>
+
+            <!-- Conteúdo textual -->
             <div class="p-4 md:p-6">
+              <div class="flex justify-between items-start mb-3">
+                <div class="flex items-center">
+                  <span
+                    class="inline-block bg-[#FF530D] text-white text-xs font-bold px-3 py-1 rounded-full mr-3"
+                    >Ação</span
+                  >
+                  <h3 class="text-xl md:text-2xl font-title text-white">
+                    SheDrop
+                  </h3>
+                </div>
+                <!-- Seta com animação de pulo -->
+                <button
+                  class="newsletter-toggle text-gray-400 hover:text-[#FF530D] transition-all duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 arrow-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+              </div>
+
               <p class="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">
                 Drops semanais com dicas práticas, ferramentas e ações imediatas
                 para aplicar no seu negócio. Conteúdo direto ao ponto para quem
                 quer resultados rápidos.
               </p>
 
-              <!-- Formulário RD Station -->
-              <div class="newsletter-form">
-                <div role="main" id="rd-newsletter-shedrops"></div>
+              <!-- Formulário (escondido por padrão) -->
+              <div class="newsletter-form hidden transition-all duration-300">
+                <div role="main" id="rd-newsletter-shedrops">
+                  <div class="mb-4">
+                    <input
+                      type="text"
+                      placeholder="Seu nome"
+                      class="w-full bg-[#3D3D3D] border border-[#4D4D4D] rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF530D] focus:border-transparent"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      type="email"
+                      placeholder="Seu melhor e-mail"
+                      class="w-full bg-[#3D3D3D] border border-[#4D4D4D] rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF530D] focus:border-transparent"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-[#FF530D] hover:bg-[#E04A0A] text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                  >
+                    Assinar Newsletter
+                  </button>
+                </div>
               </div>
             </div>
           </div>

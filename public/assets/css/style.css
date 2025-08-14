@@ -228,5 +228,33 @@
   }
 
 
-
-
+/*NEWSLETTERS*/
+ @keyframes jump {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-6px) rotate(0); }
+  }
+  
+  @keyframes jump-rotated {
+    0%, 100% { transform: translateY(0) rotate(180deg); }
+    50% { transform: translateY(-6px) rotate(180deg); }
+  }
+  
+  .arrow-icon {
+    animation: jump 1.2s infinite ease-in-out;
+    transition: all 0.3s ease;
+  }
+  
+  .arrow-icon.active {
+    animation: jump-rotated 1.2s infinite ease-in-out;
+  }
+  
+  /* Quando o formulário estiver ativo */
+  .newsletter-form.active {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

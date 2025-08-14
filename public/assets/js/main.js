@@ -61,3 +61,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+//NEWSLETTERS
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.newsletter-toggle');
+    
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const card = this.closest('.group');
+        const form = card.querySelector('.newsletter-form');
+        const arrow = this.querySelector('.arrow-icon');
+        
+        // Alternar estado
+        form.classList.toggle('active');
+        arrow.classList.toggle('active');
+      });
+    });
+    
+    // Parar animação após 15 segundos se não houver interação
+    setTimeout(() => {
+      const arrows = document.querySelectorAll('.arrow-icon:not(.active)');
+      arrows.forEach(arrow => {
+        arrow.style.animation = 'none';
+      });
+    }, 15000);
+  });
