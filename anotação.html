@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Hunters</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6">
+    <div class="flex items-center space-x-2">
+      <div class="w-10 h-10 bg-green-400 rounded"></div>
+      <span class="font-bold text-xl">digital hunters.</span>
+    </div>
+    <ul class="flex space-x-6">
+      <li><a href="#" class="hover:text-green-400">Главная</a></li>
+      <li><a href="#" class="hover:text-green-400">Команда</a></li>
+      <li><a href="#" class="hover:text-green-400">Проекты</a></li>
+      <li><a href="#" class="hover:text-green-400">Новости</a></li>
+    </ul>
+    <button class="bg-green-400 px-4 py-2 rounded hover:bg-green-500">Связаться с нами</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative flex justify-center items-center text-center h-[90vh]">
+    <img src="./public/assets/imagens/bg-hero.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="relative z-10">
+      <h1 class="text-6xl font-extrabold">
+        DIGITAL <span class="text-transparent bg-clip-text bg-green-400">HUNTERS</span>
+      </h1>
+      <p class="mt-4 text-lg">Студия разработки Mobile и XR игр</p>
+      <button class="mt-8 bg-green-400 text-black px-6 py-3 rounded-lg hover:bg-green-500 transition">Обсудить проект</button>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section class="relative bg-gray-800 py-20 px-6 text-center overflow-hidden">
+    <h2 class="text-3xl font-bold mb-4">О НАС</h2>
+    <p class="max-w-3xl mx-auto text-gray-300">
+      Digital Hunters — студия, специализирующаяся на создании увлекательных мобильных и VR/AR игр.
+      Наша команда профессионалов использует передовые технологии и творческий подход, чтобы погрузить
+      игроков в уникальные интерактивные миры.
+    </p>
+    <!-- Estrelas metálicas -->
+    <div class="absolute top-10 left-10 w-16 h-16 bg-white/20 rounded-full transform rotate-45"></div>
+    <div class="absolute top-10 right-10 w-16 h-16 bg-white/20 rounded-full transform rotate-45"></div>
+  </section>
+
+  <!-- Faixa decorativa -->
+  <div class="bg-green-400 h-16 flex justify-center items-center">
+    <div class="flex space-x-4 text-black">
+      <span>🎮</span>
+      <span>🕹️</span>
+      <span>👾</span>
+      <span>🎮</span>
+      <span>🕹️</span>
+    </div>
+  </div>
+
+  <!-- Projetos -->
+  <section class="py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">ПРОЕКТЫ</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Projeto 1 -->
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
+        <img src="https://via.placeholder.com/400x250" alt="Projeto 1" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-xl mb-2">Следж-хоккей</h3>
+          <p class="text-gray-300 text-sm mb-2">VR</p>
+          <p class="text-gray-400 text-sm">Окунитесь в захватывающий мир фэнтези...</p>
+        </div>
+      </div>
+      <!-- Projeto 2 -->
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
+        <img src="https://via.placeholder.com/400x250" alt="Projeto 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-xl mb-2">Рыцарь Света: Эпическое Приключение</h3>
+          <p class="text-gray-300 text-sm mb-2">для браузеров | мобильная игра</p>
+          <p class="text-gray-400 text-sm">Окунитесь в захватывающий мир фэнтези...</p>
+        </div>
+      </div>
+      <!-- Projeto 3 -->
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
+        <img src="https://via.placeholder.com/400x250" alt="Projeto 3" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-xl mb-2">Метаместорождение</h3>
+          <p class="text-gray-300 text-sm mb-2">VR</p>
+          <p class="text-gray-400 text-sm">Окунитесь в захватывающий мир фэнтези...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
