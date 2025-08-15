@@ -1121,17 +1121,16 @@
           </div>
 
           <!-- Lado direito - Imagem ilustrativa -->
-<div class="lg:w-1/2 relative h-auto min-h-[250px] sm:min-h-[400px] js-animate" data-animation="fade-in-left">
-  <div class="relative w-full h-full flex items-center justify-center p-4">
-    <div class="relative w-full max-w-md mx-auto h-full">
-      <!-- Imagem com alinhamento diferente no desktop -->
-      <img src="./public/assets/imagens/bg-hero.jpg" alt="Propósito She Social"
-        class="w-full h-auto max-h-[400px] object-contain sm:object-cover object-center lg:object-[center_bottom] z-20 rounded-xl shadow-2xl"
-        loading="eager" width="400" height="300"
-        onerror="this.onerror=null;this.src='./assets/imagens/proposito-fallback.png'">
-
-      <!-- Efeito de brilho -->
-      <div class="absolute inset-0 bg-[#F30775] opacity-10 rounded-xl blur-2xl z-10"></div>
+<div class="lg:w-1/2 relative js-animate" data-animation="fade-in-left">
+  <!-- Container principal responsivo -->
+  <div class="relative w-full mx-auto">
+    <!-- Container da imagem com proporção 9:16 -->
+    <div class="w-full max-w-[300px] h-[533px] mx-auto lg:max-w-[400px] lg:h-[711px]">
+      <img src="./public/assets/imagens/bg-hero.jpg" 
+           alt="Propósito She Social"
+           class="w-full h-full object-cover object-top rounded-none lg:rounded-xl"
+           loading="eager"
+           onerror="this.onerror=null;this.src='./assets/imagens/proposito-fallback.png'">
     </div>
   </div>
 </div>
