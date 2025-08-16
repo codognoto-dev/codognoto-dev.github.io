@@ -1,216 +1,1556 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheSocial | Estratégia, Criatividade e Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SheSocial | Estratégia, Criatividade e Performance</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tipografia -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Tipografia -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./public/assets/css/style.css" />
-
-</head>
-
-<body class="bg-[#2C2C2C] text-white font-body">
-  <!-- HEADER -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-[#2C2C2C]/90 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <img src="./public/assets/imagens/she-logo.svg" alt="Logo SheSocial" class="h-10 w-auto" />
+  <body class="bg-[#2C2C2C] text-white font-body">
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-[#2C2C2C]/90 backdrop-blur-md"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img
+            src="./public/assets/imagens/she-logo.svg"
+            alt="Logo SheSocial"
+            class="h-10 w-auto"
+          />
+        </div>
+        <!-- Menu Desktop -->
+        <nav
+          class="hidden md:flex space-x-8 text-sm uppercase tracking-wide font-title"
+        >
+          <a href="index.html" class="hover:text-[#F30775]">Home</a>
+          <a href="solucoes.html" class="hover:text-[#F30775]">Soluções</a>
+          <a href="quemsomos.html" class="hover:text-[#F30775]">Quem Somos</a>
+          <a href="shesisters.html" class="hover:text-[#F30775]">She Sisters</a>
+        </nav>
+        <!-- Botão CTA Desktop -->
+        <a
+          href="index.html#contato"
+          class="hidden md:inline-block bg-[#FF530D] hover:bg-[#FEB008] text-white px-5 py-2 rounded-full text-sm transition font-title"
+        >
+          Vamos conversar
+        </a>
+        <!-- Botão Menu Hambúrguer Mobile -->
+        <button
+          id="menu-btn"
+          aria-label="Abrir menu"
+          class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none"
+        >
+          <span
+            class="block w-8 h-0.5 bg-white rounded-sm transition-transform origin-left"
+          ></span>
+          <span class="block w-8 h-0.5 bg-white rounded-sm"></span>
+          <span
+            class="block w-8 h-0.5 bg-white rounded-sm transition-transform origin-left"
+          ></span>
+        </button>
       </div>
-      <!-- Menu Desktop -->
-      <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wide font-title">
-        <a href="index.html" class="hover:text-[#F30775]">Home</a>
-        <a href="solucoes.html" class="hover:text-[#F30775]">Soluções</a>
-        <a href="quemsomos.html" class="hover:text-[#F30775]">Quem Somos</a>
-        <a href="shesisters.html" class="hover:text-[#F30775]">She Sisters</a>
+      <!-- Menu Mobile -->
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#2C2C2C] border-t border-gray-700 uppercase tracking-wide font-title text-center"
+      >
+        <a
+          href="index.html"
+          class="block py-4 border-b border-gray-700 hover:text-[#F30775]"
+          >Home</a
+        >
+        <a
+          href="solucoes.html"
+          class="block py-4 border-b border-gray-700 hover:text-[#F30775]"
+          >Soluções</a
+        >
+        <a
+          href="quemsomos.html"
+          class="block py-4 border-b border-gray-700 hover:text-[#F30775]"
+          >Quem Somos</a
+        >
+        <a
+          href="shesisters.html"
+          class="block py-4 border-b border-gray-700 hover:text-[#F30775]"
+          >She Sisters</a
+        >
+        <a
+          href="index.html#contato"
+          class="block py-4 hover:text-[#FEB008] font-semibold"
+          >Vamos conversar</a
+        >
       </nav>
-      <!-- Botão CTA Desktop -->
-      <a href="index.html#contato"
-        class="hidden md:inline-block bg-[#FF530D] hover:bg-[#FEB008] text-white px-5 py-2 rounded-full text-sm transition font-title">
-        Vamos conversar
-      </a>
-      <!-- Botão Menu Hambúrguer Mobile -->
-      <button id="menu-btn" aria-label="Abrir menu"
-        class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none">
-        <span class="block w-8 h-0.5 bg-white rounded-sm transition-transform origin-left"></span>
-        <span class="block w-8 h-0.5 bg-white rounded-sm"></span>
-        <span class="block w-8 h-0.5 bg-white rounded-sm transition-transform origin-left"></span>
-      </button>
-    </div>
-    <!-- Menu Mobile -->
-    <nav id="mobile-menu"
-      class="hidden md:hidden bg-[#2C2C2C] border-t border-gray-700 uppercase tracking-wide font-title text-center">
-      <a href="index.html" class="block py-4 border-b border-gray-700 hover:text-[#F30775]">Home</a>
-      <a href="solucoes.html" class="block py-4 border-b border-gray-700 hover:text-[#F30775]">Soluções</a>
-      <a href="quemsomos.html" class="block py-4 border-b border-gray-700 hover:text-[#F30775]">Quem Somos</a>
-      <a href="shesisters.html" class="block py-4 border-b border-gray-700 hover:text-[#F30775]">She Sisters</a>
-      <a href="index.html#contato" class="block py-4 hover:text-[#FEB008] font-semibold">Vamos conversar</a>
-    </nav>
-  </header>
+    </header>
 
+    <main>
+      <!-- Hero Section para Soluções -->
+      <section
+        class="relative min-h-[60vh] flex items-center justify-center text-center px-6 pt-32 pb-20 overflow-hidden"
+      >
+        <!-- Imagem de fundo -->
+        <div
+          class="absolute inset-0 w-full h-full js-animate"
+          data-animation="fade-in"
+        >
+          <img
+            src="./public/assets/imagens/bg-hero.jpg"
+            alt="Background Soluções"
+            class="w-full h-full object-cover"
+          />
+        </div>
 
+        <!-- Overlay escuro -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-60 js-animate"
+          data-animation="fade-in"
+          data-delay="100"
+        ></div>
 
-
-  <!-- RODAPÉ -->
-  <footer class="relative bg-[#1A1A1A] text-gray-300 pt-20 pb-10 overflow-hidden">
-    <!-- Efeitos de background -->
-    <div class="absolute top-0 left-0 w-full h-full opacity-10">
-      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#F30775] rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#FF530D] rounded-full blur-3xl"></div>
-    </div>
-
-    <!-- Elementos decorativos -->
-    <div class="absolute top-10 left-10 w-16 h-16 opacity-10 animate-float"
-      style="background-image: url('./public/assets/imagens/elementos/elemento05.svg'); background-size: contain;"
-      aria-hidden="true"></div>
-    <div class="absolute bottom-10 right-10 w-12 h-12 opacity-10 animate-float-delay"
-      style="background-image: url('./public/assets/imagens/elementos/elemento07.svg'); background-size: contain;"
-      aria-hidden="true"></div>
-
-    <div class="container mx-auto px-6 relative z-10">
-      <!-- Conteúdo principal do rodapé -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
-        <!-- Coluna 1: Logo e sobre -->
-        <div>
-          <div class="mb-6">
-            <img src="./public/assets/imagens/she-logo-rodape.png" alt="She Social" class="h-14">
-          </div>
-          <p class="text-gray-400 mb-6">
-            Transformando conexões digitais em resultados reais. Marketing com propósito e estratégias que geram
-            impacto.
+        <!-- Conteúdo -->
+        <div class="relative z-10 max-w-5xl mx-auto">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-title mb-6 leading-tight js-animate"
+            data-animation="fade-in-up"
+            data-delay="200"
+          >
+            Soluções <span class="text-[#F30775] font-body">SHE</span>
+          </h1>
+          <p
+            class="text-xl text-gray-300 max-w-3xl mx-auto mb-8 js-animate"
+            data-animation="fade-in-up"
+            data-delay="300"
+          >
+            Cada serviço é pensado para gerar performance, presença e resultados
+            reais para seu negócio.
           </p>
-          <div class="flex space-x-4">
-            <a href="https://www.facebook.com/share/16Sp1uuWY2/?mibextid=wwXIfr" target="_blank" class="text-gray-400 hover:text-[#F30775] transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/shesocial.ag/" target="_blank" class="text-gray-400 hover:text-[#F30775] transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-              </svg>
-            </a>
-            <!--<a href="#" target="_blank" class="text-gray-400 hover:text-[#F30775] transition-colors">
+          <div class="js-animate" data-animation="fade-in-up" data-delay="400">
+            <button
+              class="bg-gradient-to-r from-[#F30775] to-[#FF530D] text-white font-bold py-4 px-12 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Falar com especialista
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Serviços -->
+      <section class="relative py-20 overflow-hidden">
+        <!-- BG gradiente (sem animação) -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-[#1E1E1E] via-[#2C2C2C] to-[#1E1E1E]"
+        ></div>
+
+        <!-- Elementos decorativos (sem animação) -->
+        <div
+          class="absolute -top-20 -left-20 w-72 h-72 bg-[#F30775] opacity-20 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-96 h-96 bg-[#FF530D] opacity-20 rounded-full blur-3xl"
+        ></div>
+
+        <!-- Elementos decorativos SHE adicionais (sem animação) -->
+        <div class="absolute top-1/4 left-10 w-24 h-24 opacity-30">
+          <img
+            src="./public/assets/imagens/elementos/elemento05.svg"
+            alt="Elemento decorativo SHE"
+            class="w-full h-full"
+          />
+        </div>
+        <div class="absolute bottom-1/3 right-12 w-20 h-20 opacity-30">
+          <img
+            src="./public/assets/imagens/elementos/elemento07.svg"
+            alt="Elemento decorativo SHE"
+            class="w-full h-full"
+          />
+        </div>
+        <div class="absolute top-1/3 right-1/4 w-16 h-16 opacity-25">
+          <img
+            src="./public/assets/imagens/elementos/elemento09.svg"
+            alt="Elemento decorativo SHE"
+            class="w-full h-full"
+          />
+        </div>
+
+        <div class="relative container mx-auto px-6">
+          <!-- Cabeçalho com elemento decorativo -->
+          <div
+            class="text-center mb-16 relative js-animate"
+            data-animation="fade-in-up"
+          >
+            <span
+              class="inline-block text-[#FF530D] font-title mb-3 text-lg md:text-xl tracking-wider bg-[#2C2C2C] px-4 py-1 rounded-full js-animate"
+              data-animation="fade-in"
+              data-delay="100"
+            >
+              SOLUÇÕES
+            </span>
+            <h2
+              class="text-4xl md:text-5xl font-title mb-6 js-animate"
+              data-animation="fade-in-up"
+              data-delay="200"
+            >
+              O que <span class="text-[#F30775]">oferecemos</span>
+            </h2>
+            <p
+              class="text-gray-400 max-w-2xl mx-auto js-animate"
+              data-animation="fade-in-up"
+              data-delay="300"
+            >
+              Soluções completas para cada etapa da jornada do seu negócio no
+              digital.
+            </p>
+          </div>
+
+          <!-- Grid de Serviços -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Serviço 1 -->
+            <div
+              class="bg-[#2C2C2C]/80 hover:bg-[#2C2C2C] border-l-4 border-[#F30775] p-8 rounded-xl transition-all duration-300 hover:shadow-xl relative overflow-hidden js-animate"
+              data-animation="slide-in-up"
+              data-delay="100"
+            >
+              <div class="absolute -right-6 -bottom-6 w-24 h-24 opacity-10">
+                <img
+                  src="./public/assets/imagens/elementos/elemento09.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="w-16 h-16 mb-6 bg-[#F30775]/20 rounded-lg flex items-center justify-center js-animate"
+                data-animation="fade-in"
+                data-delay="150"
+              >
+                <img
+                  src="./public/assets/imagens/icons/traffic-icon.svg"
+                  alt="Ícone Tráfego"
+                  class="w-10"
+                />
+              </div>
+              <h3
+                class="text-2xl font-title mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="200"
+              >
+                Tráfego Pago & Performance
+              </h3>
+              <p
+                class="text-gray-400 mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="250"
+              >
+                Campanhas estratégicas no Meta Ads, Google Ads e TikTok que
+                convertem visitantes em clientes.
+              </p>
+              <ul
+                class="space-y-2 text-gray-300 text-sm js-animate"
+                data-animation="fade-in-up"
+                data-delay="300"
+              >
+                <li class="flex items-start">
+                  <span class="text-[#F30775] mr-2">✓</span> Gestão de campanhas
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#F30775] mr-2">✓</span> Otimização contínua
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#F30775] mr-2">✓</span> Relatórios mensais
+                </li>
+              </ul>
+            </div>
+
+            <!-- Serviço 2 -->
+            <div
+              class="bg-[#2C2C2C]/80 hover:bg-[#2C2C2C] border-l-4 border-[#FF530D] p-8 rounded-xl transition-all duration-300 hover:shadow-xl relative overflow-hidden js-animate"
+              data-animation="slide-in-up"
+              data-delay="200"
+            >
+              <div class="absolute -left-4 -top-4 w-20 h-20 opacity-10">
+                <img
+                  src="./public/assets/imagens/elementos/elemento07.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="w-16 h-16 mb-6 bg-[#FF530D]/20 rounded-lg flex items-center justify-center js-animate"
+                data-animation="fade-in"
+                data-delay="250"
+              >
+                <img
+                  src="./public/assets/imagens/icons/social-icon.svg"
+                  alt="Ícone Social"
+                  class="w-10"
+                />
+              </div>
+              <h3
+                class="text-2xl font-title mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="300"
+              >
+                Social Media & Conteúdo
+              </h3>
+              <p
+                class="text-gray-400 mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="350"
+              >
+                Gestão completa de redes sociais com conteúdo estratégico para
+                engajar seu público.
+              </p>
+              <ul
+                class="space-y-2 text-gray-300 text-sm js-animate"
+                data-animation="fade-in-up"
+                data-delay="400"
+              >
+                <li class="flex items-start">
+                  <span class="text-[#FF530D] mr-2">✓</span> Planejamento de
+                  conteúdo
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#FF530D] mr-2">✓</span> Gestão de
+                  comunidades
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#FF530D] mr-2">✓</span> Relatórios de
+                  performance
+                </li>
+              </ul>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div
+              class="bg-[#2C2C2C]/80 hover:bg-[#2C2C2C] border-l-4 border-[#FEB008] p-8 rounded-xl transition-all duration-300 hover:shadow-xl relative overflow-hidden js-animate"
+              data-animation="slide-in-up"
+              data-delay="300"
+            >
+              <div class="absolute -right-4 -top-4 w-16 h-16 opacity-10">
+                <img
+                  src="./public/assets/imagens/elementos/elemento05.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="w-16 h-16 mb-6 bg-[#FEB008]/20 rounded-lg flex items-center justify-center js-animate"
+                data-animation="fade-in"
+                data-delay="350"
+              >
+                <img
+                  src="./public/assets/imagens/icons/design-icon.svg"
+                  alt="Ícone Design"
+                  class="w-10"
+                />
+              </div>
+              <h3
+                class="text-2xl font-title mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="400"
+              >
+                Design & Criação
+              </h3>
+              <p
+                class="text-gray-400 mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="450"
+              >
+                Identidade visual marcante e peças criativas que destacam sua
+                marca no mercado.
+              </p>
+              <ul
+                class="space-y-2 text-gray-300 text-sm js-animate"
+                data-animation="fade-in-up"
+                data-delay="500"
+              >
+                <li class="flex items-start">
+                  <span class="text-[#FEB008] mr-2">✓</span> Branding completo
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#FEB008] mr-2">✓</span> Criação de peças
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#FEB008] mr-2">✓</span> Manual de marca
+                </li>
+              </ul>
+            </div>
+
+            <!-- Serviço 4 -->
+            <div
+              class="bg-[#2C2C2C]/80 hover:bg-[#2C2C2C] border-l-4 border-[#F30775] p-8 rounded-xl transition-all duration-300 hover:shadow-xl relative overflow-hidden js-animate"
+              data-animation="slide-in-up"
+              data-delay="400"
+            >
+              <div class="absolute -bottom-4 -left-4 w-20 h-20 opacity-10">
+                <img
+                  src="./public/assets/imagens/elementos/elemento02.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="w-16 h-16 mb-6 bg-[#F30775]/20 rounded-lg flex items-center justify-center js-animate"
+                data-animation="fade-in"
+                data-delay="450"
+              >
+                <img
+                  src="./public/assets/imagens/icons/plan-icon.svg"
+                  alt="Ícone Planejamento"
+                  class="w-10"
+                />
+              </div>
+              <h3
+                class="text-2xl font-title mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="500"
+              >
+                Planejamento Estratégico
+              </h3>
+              <p
+                class="text-gray-400 mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="550"
+              >
+                Diagnóstico completo e plano de ação personalizado para
+                alavancar seus resultados.
+              </p>
+              <ul
+                class="space-y-2 text-gray-300 text-sm js-animate"
+                data-animation="fade-in-up"
+                data-delay="600"
+              >
+                <li class="flex items-start">
+                  <span class="text-[#F30775] mr-2">✓</span> Análise de mercado
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#F30775] mr-2">✓</span> Definição de
+                  personas
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#F30775] mr-2">✓</span> Roadmap estratégico
+                </li>
+              </ul>
+            </div>
+
+            <!-- Serviço 5 -->
+            <div
+              class="bg-[#2C2C2C]/80 hover:bg-[#2C2C2C] border-l-4 border-[#FF530D] p-8 rounded-xl transition-all duration-300 hover:shadow-xl relative overflow-hidden js-animate"
+              data-animation="slide-in-up"
+              data-delay="500"
+            >
+              <div class="absolute -right-4 -bottom-4 w-24 h-24 opacity-10">
+                <img
+                  src="./public/assets/imagens/elementos/elemento09.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="w-16 h-16 mb-6 bg-[#FF530D]/20 rounded-lg flex items-center justify-center js-animate"
+                data-animation="fade-in"
+                data-delay="550"
+              >
+                <img
+                  src="./public/assets/imagens/icons/web-icon.svg"
+                  alt="Ícone Website"
+                  class="w-10"
+                />
+              </div>
+              <h3
+                class="text-2xl font-title mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="600"
+              >
+                Website & Inbound
+              </h3>
+              <p
+                class="text-gray-400 mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="650"
+              >
+                Desenvolvimento de sites otimizados e estratégias de atração de
+                leads qualificados.
+              </p>
+              <ul
+                class="space-y-2 text-gray-300 text-sm js-animate"
+                data-animation="fade-in-up"
+                data-delay="700"
+              >
+                <li class="flex items-start">
+                  <span class="text-[#FF530D] mr-2">✓</span> Criação de websites
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#FF530D] mr-2">✓</span> Landing pages
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#FF530D] mr-2">✓</span> SEO básico
+                </li>
+              </ul>
+            </div>
+
+            <!-- Serviço 6 -->
+            <div
+              class="bg-[#2C2C2C]/80 hover:bg-[#2C2C2C] border-l-4 border-[#FEB008] p-8 rounded-xl transition-all duration-300 hover:shadow-xl relative overflow-hidden js-animate"
+              data-animation="slide-in-up"
+              data-delay="600"
+            >
+              <div class="absolute -top-4 -left-4 w-16 h-16 opacity-10">
+                <img
+                  src="./public/assets/imagens/elementos/elemento07.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="w-16 h-16 mb-6 bg-[#FEB008]/20 rounded-lg flex items-center justify-center js-animate"
+                data-animation="fade-in"
+                data-delay="650"
+              >
+                <img
+                  src="./public/assets/imagens/icons/video-icon.svg"
+                  alt="Ícone Vídeo"
+                  class="w-10"
+                />
+              </div>
+              <h3
+                class="text-2xl font-title mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="700"
+              >
+                Produção de Vídeo
+              </h3>
+              <p
+                class="text-gray-400 mb-4 js-animate"
+                data-animation="fade-in-up"
+                data-delay="750"
+              >
+                Conteúdo audiovisual profissional para fortalecer sua
+                comunicação nas redes.
+              </p>
+              <ul
+                class="space-y-2 text-gray-300 text-sm js-animate"
+                data-animation="fade-in-up"
+                data-delay="800"
+              >
+                <li class="flex items-start">
+                  <span class="text-[#FEB008] mr-2">✓</span> Videoclipes
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#FEB008] mr-2">✓</span> Reels/TikToks
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#FEB008] mr-2">✓</span> Edição profissional
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Como Trabalhamos -->
+      <section
+        class="relative py-20 sm:py-28 overflow-hidden bg-gradient-to-br from-[#F30775] via-[#FF530D] to-[#FEB008]"
+      >
+        <!-- Faixas de texto animadas (mantidas sem alteração) -->
+        <div
+          class="absolute inset-0 overflow-hidden z-0 flex flex-col justify-between"
+        >
+          <!-- Faixa superior -->
+          <div class="w-full py-6 overflow-hidden">
+            <div class="scrolling-container-top flex">
+              <div
+                class="scrolling-words-top flex whitespace-nowrap items-center"
+              >
+                <span
+                  class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10"
+                  >Performance</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento02.svg"
+                  class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10"
+                  >Resultados</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento07.svg"
+                  class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10"
+                  >Crescimento</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento05.svg"
+                  class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10"
+                  >Conversões</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento09.svg"
+                  class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10"
+                  alt=""
+                />
+              </div>
+              <div
+                class="scrolling-words-top flex whitespace-nowrap items-center"
+                aria-hidden="true"
+              >
+                <span
+                  class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10"
+                  >Performance</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento09.svg"
+                  class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10"
+                  >Resultados</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento02.svg"
+                  class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10"
+                  >Crescimento</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento07.svg"
+                  class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-9xl sm:text-[9rem] lg:text-[11rem] uppercase mx-10"
+                  >Conversões</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento05.svg"
+                  class="she-separator w-16 h-16 sm:w-24 sm:h-24 mx-6 sm:mx-10"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Faixa inferior -->
+          <div class="w-full py-6 overflow-hidden">
+            <div class="scrolling-container-bottom flex">
+              <div
+                class="scrolling-words-bottom flex whitespace-nowrap items-center"
+              >
+                <span
+                  class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10"
+                  >Sucesso</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento07.svg"
+                  class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10"
+                  >Excelência</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento05.svg"
+                  class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10"
+                  >ROI</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento09.svg"
+                  class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10"
+                  >Performance</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento02.svg"
+                  class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10"
+                  alt=""
+                />
+              </div>
+              <div
+                class="scrolling-words-bottom flex whitespace-nowrap items-center"
+                aria-hidden="true"
+              >
+                <span
+                  class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10"
+                  >Sucesso</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento07.svg"
+                  class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10"
+                  >Excelência</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento05.svg"
+                  class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10"
+                  >ROI</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento09.svg"
+                  class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10"
+                  alt=""
+                />
+                <span
+                  class="text-white/25 font-black text-8xl sm:text-9xl lg:text-[10rem] uppercase mx-10"
+                  >Performance</span
+                >
+                <img
+                  src="./public/assets/imagens/elementos/elemento02.svg"
+                  class="she-separator w-20 h-20 sm:w-22 sm:h-22 mx-5 sm:mx-10"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container principal -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Cabeçalho -->
+          <div class="text-center mb-16 js-animate" data-animation="fade-in-up">
+            <span
+              class="inline-block text-white font-title mb-3 text-lg md:text-xl tracking-wider bg-black/30 px-4 py-1 rounded-full js-animate"
+              data-animation="fade-in"
+              data-delay="100"
+              >NOSSO MÉTODO</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-title mb-6 text-white js-animate"
+              data-animation="fade-in-up"
+              data-delay="200"
+            >
+              Como
+              <span class="text-[#2C2C2C] font-bold"
+                >alcançamos resultados</span
+              >
+            </h2>
+            <div
+              class="max-w-3xl mx-auto px-4 sm:px-0 js-animate"
+              data-animation="fade-in-up"
+              data-delay="300"
+            >
+              <p class="text-white/90 leading-relaxed text-base md:text-lg">
+                Um processo claro e eficiente para transformar sua presença
+                digital.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card de etapas com fundo escuro -->
+          <div
+            class="mt-5 bg-black/20 rounded-2xl p-6 sm:p-10 backdrop-blur-sm border border-white/10 js-animate"
+            data-animation="fade-in-up"
+            data-delay="400"
+          >
+            <!-- Processo interligado - Versão simplificada para mobile -->
+            <div class="relative">
+              <!-- Linhas de conexão APENAS DESKTOP -->
+              <div
+                class="hidden md:flex absolute top-[80px] left-0 right-0 h-2 z-0 js-animate"
+                data-animation="fade-in"
+                data-delay="500"
+              >
+                <div class="w-1/4 h-full bg-[#F30775]"></div>
+                <div class="w-1/4 h-full bg-[#FF530D]"></div>
+                <div class="w-1/4 h-full bg-[#FEB008]"></div>
+                <div class="w-1/4 h-full bg-[#F30775]"></div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                <!-- Passo 1 -->
+                <div
+                  class="text-center flex flex-col items-center js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="600"
+                >
+                  <div
+                    class="w-20 h-20 mb-6 bg-[#F30775] rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+                  >
+                    1
+                  </div>
+                  <h3 class="text-2xl font-title mb-3 text-white">
+                    Diagnóstico
+                  </h3>
+                  <p class="text-white/85 px-4">
+                    Análise completa do seu negócio, mercado e objetivos.
+                  </p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div
+                  class="text-center flex flex-col items-center js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="700"
+                >
+                  <div
+                    class="w-20 h-20 mb-6 bg-[#FF530D] rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+                  >
+                    2
+                  </div>
+                  <h3 class="text-2xl font-title mb-3 text-white">
+                    Estratégia
+                  </h3>
+                  <p class="text-white/85 px-4">
+                    Plano de ação personalizado para seu crescimento.
+                  </p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div
+                  class="text-center flex flex-col items-center js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="800"
+                >
+                  <div
+                    class="w-20 h-20 mb-6 bg-[#FEB008] rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+                  >
+                    3
+                  </div>
+                  <h3 class="text-2xl font-title mb-3 text-white">Execução</h3>
+                  <p class="text-white/85 px-4">
+                    Implementação com excelência por nossa equipe.
+                  </p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div
+                  class="text-center flex flex-col items-center js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="900"
+                >
+                  <div
+                    class="w-20 h-20 mb-6 bg-[#F30775] rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+                  >
+                    4
+                  </div>
+                  <h3 class="text-2xl font-title mb-3 text-white">
+                    Otimização
+                  </h3>
+                  <p class="text-white/85 px-4">
+                    Ajustes contínuos para maximizar seus resultados.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sticker Flutuante -->
+          <div
+            class="relative mt-10 mb-10 z-20 js-animate"
+            data-animation="fade-in"
+            data-delay="1000"
+          >
+            <div class="flex justify-center">
+              <div
+                class="w-56 h-56 md:w-64 md:h-64 rotate-[-8deg] hover:rotate-2 transition-all duration-500"
+              >
+                <img
+                  src="./public/assets/imagens/sticker-frase.png"
+                  alt="Processo SHE"
+                  class="w-full h-full object-contain drop-shadow-[0_10px_15px_rgba(0,0,0,0.4)] hover:drop-shadow-[0_15px_20px_rgba(0,0,0,0.6)] transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Diferenciais -->
+      <section class="relative py-20 overflow-hidden">
+        <!-- BG gradiente com elementos decorativos (sem animação) -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-[#1E1E1E] via-[#2C2C2C] to-[#1E1E1E]"
+        >
+          <!-- Elementos decorativos SHE (sem animação) -->
+          <div class="absolute top-10 left-10 w-24 h-24 opacity-10">
+            <img
+              src="./public/assets/imagens/elementos/elemento05.svg"
+              alt="Elemento decorativo SHE"
+              class="w-full h-full"
+            />
+          </div>
+          <div class="absolute bottom-10 right-10 w-20 h-20 opacity-10">
+            <img
+              src="./public/assets/imagens/elementos/elemento07.svg"
+              alt="Elemento decorativo SHE"
+              class="w-full h-full"
+            />
+          </div>
+          <div class="absolute top-1/3 right-20 w-16 h-16 opacity-10">
+            <img
+              src="./public/assets/imagens/elementos/elemento09.svg"
+              alt="Elemento decorativo SHE"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+
+        <!-- Focos de luz decorativos (sem animação) -->
+        <div
+          class="absolute -top-20 -left-20 w-72 h-72 bg-[#F30775] opacity-15 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-96 h-96 bg-[#FF530D] opacity-15 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute top-1/3 left-1/2 w-80 h-80 bg-[#F30775] opacity-10 rounded-full blur-3xl"
+        ></div>
+
+        <div class="relative container mx-auto px-6">
+          <!-- Cabeçalho com elemento decorativo -->
+          <div
+            class="text-center mb-16 relative js-animate"
+            data-animation="fade-in-up"
+          >
+            <span
+              class="inline-block text-[#FF530D] font-title mb-3 text-lg md:text-xl tracking-wider bg-[#2C2C2C] px-4 py-1 rounded-full js-animate"
+              data-animation="fade-in"
+              data-delay="100"
+            >
+              DIFERENCIAIS
+            </span>
+            <h2
+              class="text-4xl md:text-5xl font-title mb-6 js-animate"
+              data-animation="fade-in-up"
+              data-delay="200"
+            >
+              Por que escolher a <span class="text-[#F30775]">SheSocial</span>?
+            </h2>
+          </div>
+
+          <!-- Grid de Diferenciais -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Diferencial 1 -->
+            <div
+              class="bg-[#2C2C2C]/50 hover:bg-[#2C2C2C] p-8 rounded-xl border border-white/10 hover:border-[#F30775]/50 transition-all duration-300 relative overflow-hidden group js-animate"
+              data-animation="slide-in-up"
+              data-delay="100"
+            >
+              <div
+                class="absolute -right-6 -bottom-6 w-24 h-24 opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+              >
+                <img
+                  src="./public/assets/imagens/elementos/elemento09.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex items-start mb-4">
+                <div
+                  class="w-12 h-12 bg-[#F30775]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#F30775]/30 transition-colors duration-300 js-animate"
+                  data-animation="fade-in"
+                  data-delay="150"
+                >
+                  <img
+                    src="./public/assets/imagens/icons/check-icon.svg"
+                    alt="Ícone"
+                    class="w-6"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-title js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="200"
+                >
+                  Foco em Resultados
+                </h3>
+              </div>
+              <p
+                class="text-gray-400 js-animate"
+                data-animation="fade-in-up"
+                data-delay="250"
+              >
+                Métricas claras e acompanhamento constante para garantir que
+                cada ação gere retorno.
+              </p>
+            </div>
+
+            <!-- Diferencial 2 -->
+            <div
+              class="bg-[#2C2C2C]/50 hover:bg-[#2C2C2C] p-8 rounded-xl border border-white/10 hover:border-[#FF530D]/50 transition-all duration-300 relative overflow-hidden group js-animate"
+              data-animation="slide-in-up"
+              data-delay="200"
+            >
+              <div
+                class="absolute -left-4 -top-4 w-20 h-20 opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+              >
+                <img
+                  src="./public/assets/imagens/elementos/elemento07.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex items-start mb-4">
+                <div
+                  class="w-12 h-12 bg-[#FF530D]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#FF530D]/30 transition-colors duration-300 js-animate"
+                  data-animation="fade-in"
+                  data-delay="250"
+                >
+                  <img
+                    src="./public/assets/imagens/icons/team-icon.svg"
+                    alt="Ícone"
+                    class="w-6"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-title js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="300"
+                >
+                  Equipe Especializada
+                </h3>
+              </div>
+              <p
+                class="text-gray-400 js-animate"
+                data-animation="fade-in-up"
+                data-delay="350"
+              >
+                Profissionais certificados e com vasta experiência em marketing
+                digital.
+              </p>
+            </div>
+
+            <!-- Diferencial 3 -->
+            <div
+              class="bg-[#2C2C2C]/50 hover:bg-[#2C2C2C] p-8 rounded-xl border border-white/10 hover:border-[#FEB008]/50 transition-all duration-300 relative overflow-hidden group js-animate"
+              data-animation="slide-in-up"
+              data-delay="300"
+            >
+              <div
+                class="absolute -right-4 -top-4 w-16 h-16 opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+              >
+                <img
+                  src="./public/assets/imagens/elementos/elemento05.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex items-start mb-4">
+                <div
+                  class="w-12 h-12 bg-[#FEB008]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#FEB008]/30 transition-colors duration-300 js-animate"
+                  data-animation="fade-in"
+                  data-delay="350"
+                >
+                  <img
+                    src="./public/assets/imagens/icons/transparency-icon.svg"
+                    alt="Ícone"
+                    class="w-6"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-title js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="400"
+                >
+                  Transparência
+                </h3>
+              </div>
+              <p
+                class="text-gray-400 js-animate"
+                data-animation="fade-in-up"
+                data-delay="450"
+              >
+                Relatórios detalhados e reuniões periódicas para acompanhar cada
+                etapa.
+              </p>
+            </div>
+
+            <!-- Diferencial 4 -->
+            <div
+              class="bg-[#2C2C2C]/50 hover:bg-[#2C2C2C] p-8 rounded-xl border border-white/10 hover:border-[#F30775]/50 transition-all duration-300 relative overflow-hidden group js-animate"
+              data-animation="slide-in-up"
+              data-delay="400"
+            >
+              <div
+                class="absolute -bottom-4 -left-4 w-20 h-20 opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+              >
+                <img
+                  src="./public/assets/imagens/elementos/elemento02.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex items-start mb-4">
+                <div
+                  class="w-12 h-12 bg-[#F30775]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#F30775]/30 transition-colors duration-300 js-animate"
+                  data-animation="fade-in"
+                  data-delay="450"
+                >
+                  <img
+                    src="./public/assets/imagens/icons/strategy-icon.svg"
+                    alt="Ícone"
+                    class="w-6"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-title js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="500"
+                >
+                  Estratégia Integrada
+                </h3>
+              </div>
+              <p
+                class="text-gray-400 js-animate"
+                data-animation="fade-in-up"
+                data-delay="550"
+              >
+                Todas as frentes de atuação alinhadas para um resultado
+                consistente.
+              </p>
+            </div>
+
+            <!-- Diferencial 5 -->
+            <div
+              class="bg-[#2C2C2C]/50 hover:bg-[#2C2C2C] p-8 rounded-xl border border-white/10 hover:border-[#FF530D]/50 transition-all duration-300 relative overflow-hidden group js-animate"
+              data-animation="slide-in-up"
+              data-delay="500"
+            >
+              <div
+                class="absolute -right-4 -bottom-4 w-24 h-24 opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+              >
+                <img
+                  src="./public/assets/imagens/elementos/elemento09.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex items-start mb-4">
+                <div
+                  class="w-12 h-12 bg-[#FF530D]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#FF530D]/30 transition-colors duration-300 js-animate"
+                  data-animation="fade-in"
+                  data-delay="550"
+                >
+                  <img
+                    src="./public/assets/imagens/icons/tech-icon.svg"
+                    alt="Ícone"
+                    class="w-6"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-title js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="600"
+                >
+                  Tecnologia
+                </h3>
+              </div>
+              <p
+                class="text-gray-400 js-animate"
+                data-animation="fade-in-up"
+                data-delay="650"
+              >
+                Ferramentas premium para análise, automação e gestão de
+                campanhas.
+              </p>
+            </div>
+
+            <!-- Diferencial 6 -->
+            <div
+              class="bg-[#2C2C2C]/50 hover:bg-[#2C2C2C] p-8 rounded-xl border border-white/10 hover:border-[#FEB008]/50 transition-all duration-300 relative overflow-hidden group js-animate"
+              data-animation="slide-in-up"
+              data-delay="600"
+            >
+              <div
+                class="absolute -top-4 -left-4 w-16 h-16 opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+              >
+                <img
+                  src="./public/assets/imagens/elementos/elemento07.svg"
+                  alt="Elemento decorativo SHE"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex items-start mb-4">
+                <div
+                  class="w-12 h-12 bg-[#FEB008]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#FEB008]/30 transition-colors duration-300 js-animate"
+                  data-animation="fade-in"
+                  data-delay="650"
+                >
+                  <img
+                    src="./public/assets/imagens/icons/support-icon.svg"
+                    alt="Ícone"
+                    class="w-6"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-title js-animate"
+                  data-animation="fade-in-up"
+                  data-delay="700"
+                >
+                  Suporte Dedicado
+                </h3>
+              </div>
+              <p
+                class="text-gray-400 js-animate"
+                data-animation="fade-in-up"
+                data-delay="750"
+              >
+                Atendimento personalizado e suporte ágil para todas as suas
+                necessidades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção CTA -->
+      <section
+        class="relative py-20 bg-gradient-to-r from-[#F30775] to-[#FF530D] overflow-hidden"
+      >
+        <!-- Background pattern (sem animação) -->
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute top-0 left-0 w-full h-full pattern-dots pattern-gray-800 pattern-bg-transparent pattern-opacity-20 pattern-size-8"
+          ></div>
+        </div>
+
+        <div class="relative container mx-auto px-6 text-center">
+          <!-- Título com animação -->
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-title mb-6 text-[#2C2C2C] js-animate"
+            data-animation="fade-in-up"
+          >
+            Pronto para transformar seu negócio?
+          </h2>
+
+          <!-- Parágrafo com animação -->
+          <p
+            class="text-xl text-[#F6D1E5] max-w-3xl mx-auto mb-8 js-animate"
+            data-animation="fade-in-up"
+            data-delay="200"
+          >
+            Agende uma conversa com nossa equipe e descubra como podemos ajudar
+            sua marca a crescer.
+          </p>
+
+          <!-- Botão com animação -->
+          <div class="js-animate" data-animation="fade-in-up" data-delay="400">
+            <button
+              class="bg-white text-[#1E1E1E] font-bold py-4 px-12 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Falar com especialista
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer
+      class="relative bg-[#1A1A1A] text-gray-300 pt-20 pb-10 overflow-hidden"
+    >
+      <!-- Efeitos de background -->
+      <div class="absolute top-0 left-0 w-full h-full opacity-10">
+        <div
+          class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#F30775] rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#FF530D] rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <!-- Elementos decorativos -->
+      <div
+        class="absolute top-10 left-10 w-16 h-16 opacity-10 animate-float"
+        style="
+          background-image: url('./public/assets/imagens/elementos/elemento05.svg');
+          background-size: contain;
+        "
+        aria-hidden="true"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-12 h-12 opacity-10 animate-float-delay"
+        style="
+          background-image: url('./public/assets/imagens/elementos/elemento07.svg');
+          background-size: contain;
+        "
+        aria-hidden="true"
+      ></div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <!-- Conteúdo principal do rodapé -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16"
+        >
+          <!-- Coluna 1: Logo e sobre -->
+          <div>
+            <div class="mb-6">
+              <img
+                src="./public/assets/imagens/she-logo-rodape.png"
+                alt="She Social"
+                class="h-14"
+              />
+            </div>
+            <p class="text-gray-400 mb-6">
+              Transformando conexões digitais em resultados reais. Marketing com
+              propósito e estratégias que geram impacto.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.facebook.com/share/16Sp1uuWY2/?mibextid=wwXIfr"
+                target="_blank"
+                class="text-gray-400 hover:text-[#F30775] transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/shesocial.ag/"
+                target="_blank"
+                class="text-gray-400 hover:text-[#F30775] transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <!--<a href="#" target="_blank" class="text-gray-400 hover:text-[#F30775] transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
               </svg>
             </a>-->
-            <a href="https://www.linkedin.com/company/shesocialmedia/posts/?feedView=all" target="_blank" class="text-gray-400 hover:text-[#F30775] transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-              </svg>
-            </a>
+              <a
+                href="https://www.linkedin.com/company/shesocialmedia/posts/?feedView=all"
+                target="_blank"
+                class="text-gray-400 hover:text-[#F30775] transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Links rápidos -->
+          <div>
+            <h3 class="text-white font-title text-xl mb-6">Links Rápidos</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >Soluções</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >Quem Somos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >She Sisters</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Serviços -->
+          <div>
+            <h3 class="text-white font-title text-xl mb-6">Soluções</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >Marketing Digital</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >Gestão de Redes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >Tráfego Pago</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >Branding</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#F30775] transition-colors"
+                  >Consultoria</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna 4: Newsletter -->
+          <div>
+            <h3 class="text-white font-title text-xl mb-6">Newsletter</h3>
+            <p class="text-gray-400 mb-4">
+              Assine nossas newsletters e receba conteúdos exclusivos
+              diretamente no seu e-mail.
+            </p>
+            <div class="space-y-4">
+              <a
+                href="index.html#newsletters"
+                class="block w-full bg-gradient-to-r from-[#F30775] to-[#FF530D] text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300 text-center"
+              >
+                Assinar
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Coluna 2: Links rápidos -->
-        <div>
-          <h3 class="text-white font-title text-xl mb-6">Links Rápidos</h3>
-          <ul class="space-y-3">
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">Home</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">Soluções</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">Quem Somos</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">She Sisters</a></li>
-          </ul>
-        </div>
-
-        <!-- Coluna 3: Serviços -->
-        <div>
-          <h3 class="text-white font-title text-xl mb-6">Soluções</h3>
-          <ul class="space-y-3">
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">Marketing Digital</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">Gestão de Redes</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">Tráfego Pago</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">Branding</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-[#F30775] transition-colors">Consultoria</a></li>
-          </ul>
-        </div>
-
-        <!-- Coluna 4: Newsletter -->
-<div>
-  <h3 class="text-white font-title text-xl mb-6">Newsletter</h3>
-  <p class="text-gray-400 mb-4">
-    Assine nossas newsletters e receba conteúdos exclusivos diretamente no seu e-mail.
-  </p>
-  <div class="space-y-4">
-    <a href="index.html#newsletters"
-      class="block w-full bg-gradient-to-r from-[#F30775] to-[#FF530D] text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300 text-center">
-      Assinar
-    </a>
-  </div>
-</div>
-      </div>
-
-      <!-- Direitos autorais e links legais -->
-      <div class="pt-8 border-t border-[#3D3D3D] flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
-          <p class="text-gray-500 text-sm">
-            &copy; 2025 She Social. Todos os direitos reservados.
-          </p>
-        </div>
-        <div class="flex space-x-6">
-          <a href="#" class="text-gray-500 hover:text-[#F30775] text-sm transition-colors">Termos de Serviço</a>
-          <a href="#" class="text-gray-500 hover:text-[#F30775] text-sm transition-colors">Política de Privacidade</a>
-          <a href="#" class="text-gray-500 hover:text-[#F30775] text-sm transition-colors">Cookies</a>
+        <!-- Direitos autorais e links legais -->
+        <div
+          class="pt-8 border-t border-[#3D3D3D] flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="mb-4 md:mb-0">
+            <p class="text-gray-500 text-sm">
+              &copy; 2025 She Social. Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-500 hover:text-[#F30775] text-sm transition-colors"
+              >Termos de Serviço</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-[#F30775] text-sm transition-colors"
+              >Política de Privacidade</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-[#F30775] text-sm transition-colors"
+              >Cookies</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      let menuOpen = false;
 
-  <script>
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    let menuOpen = false;
-
-    menuBtn.addEventListener("click", () => {
-      menuOpen = !menuOpen;
-      if (menuOpen) {
-        mobileMenu.classList.remove("hidden");
-        // animação do ícone hamburguer para X
-        menuBtn.children[0].classList.add("rotate-45", "translate-y-1.5");
-        menuBtn.children[1].classList.add("opacity-0");
-        menuBtn.children[2].classList.add("-rotate-45", "-translate-y-1.5");
-      } else {
-        mobileMenu.classList.add("hidden");
-        menuBtn.children[0].classList.remove("rotate-45", "translate-y-1.5");
-        menuBtn.children[1].classList.remove("opacity-0");
-        menuBtn.children[2].classList.remove(
-          "-rotate-45",
-          "-translate-y-1.5"
-        );
-      }
-    });
-
-    // Fechar menu ao clicar em algum link (mobile)
-    mobileMenu.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        menuOpen = false;
-        mobileMenu.classList.add("hidden");
-        menuBtn.children[0].classList.remove("rotate-45", "translate-y-1.5");
-        menuBtn.children[1].classList.remove("opacity-0");
-        menuBtn.children[2].classList.remove(
-          "-rotate-45",
-          "-translate-y-1.5"
-        );
+      menuBtn.addEventListener("click", () => {
+        menuOpen = !menuOpen;
+        if (menuOpen) {
+          mobileMenu.classList.remove("hidden");
+          // animação do ícone hamburguer para X
+          menuBtn.children[0].classList.add("rotate-45", "translate-y-1.5");
+          menuBtn.children[1].classList.add("opacity-0");
+          menuBtn.children[2].classList.add("-rotate-45", "-translate-y-1.5");
+        } else {
+          mobileMenu.classList.add("hidden");
+          menuBtn.children[0].classList.remove("rotate-45", "translate-y-1.5");
+          menuBtn.children[1].classList.remove("opacity-0");
+          menuBtn.children[2].classList.remove(
+            "-rotate-45",
+            "-translate-y-1.5"
+          );
+        }
       });
-    });
-  </script>
-  <script src="./public/assets/js/main.js"></script>
 
-</body>
-
+      // Fechar menu ao clicar em algum link (mobile)
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuOpen = false;
+          mobileMenu.classList.add("hidden");
+          menuBtn.children[0].classList.remove("rotate-45", "translate-y-1.5");
+          menuBtn.children[1].classList.remove("opacity-0");
+          menuBtn.children[2].classList.remove(
+            "-rotate-45",
+            "-translate-y-1.5"
+          );
+        });
+      });
+    </script>
+    <script src="./public/assets/js/main.js"></script>
+  </body>
 </html>
