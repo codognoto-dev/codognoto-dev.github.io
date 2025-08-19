@@ -128,6 +128,167 @@
   }
 
   /* Estado inicial dos elementos animados */
-  .js-animate {
-    opacity: 0;
+ .js-animate {
+  opacity: 0;
+}
+
+/* Animation Containers - Hardware Acceleration */
+.scrolling-container-top,
+.scrolling-container-mid-top,
+.scrolling-container-mid-bottom,
+.scrolling-container-bottom {
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Text Animation Styles - Fixed Version */
+.scrolling-words-top,
+.scrolling-words-mid-top,
+.scrolling-words-mid-bottom,
+.scrolling-words-bottom {
+  display: flex;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.scrolling-words-top {
+  animation: scrollLeftToRight 40s linear infinite;
+}
+
+.scrolling-words-mid-top {
+  animation: scrollRightToLeft 45s linear infinite;
+}
+
+.scrolling-words-mid-bottom {
+  animation: scrollLeftToRight 50s linear infinite;
+}
+
+.scrolling-words-bottom {
+  animation: scrollRightToLeft 40s linear infinite;
+}
+
+/* Fixed Keyframes with pixel-perfect adjustments */
+@keyframes scrollLeftToRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 1px)); }
+}
+
+@keyframes scrollRightToLeft {
+  0% { transform: translateX(calc(-100% - 1px)); }
+  100% { transform: translateX(0); }
+}
+
+/* Graphic Elements with performance optimizations */
+.she-separator {
+  flex-shrink: 0;
+  object-fit: contain;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Hover Effects */
+.case-card:hover {
+  border-color: rgba(243, 7, 117, 0.4);
+}
+
+.cta-button:hover {
+  border-color: #F30775;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 640px) {
+  .scrolling-words-top,
+  .scrolling-words-bottom {
+    animation-duration: 60s; /* Slower on mobile */
   }
+  
+  .scrolling-words-mid-top,
+  .scrolling-words-mid-bottom {
+    animation-duration: 70s; /* Slower on mobile */
+  }
+}
+
+/*Seta Form*/
+ @keyframes pulse-horizontal {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(8px);
+    }
+  }
+  .animate-pulse-horizontal {
+    animation: pulse-horizontal 2s ease-in-out infinite;
+    transition: all 0.3s ease;
+  }
+  .animate-pulse-horizontal:hover {
+    animation-play-state: paused;
+    transform: translateX(4px);
+  }
+
+
+/*NEWSLETTERS*/
+@keyframes ping-slow {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(5px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.animate-ping-slow {
+    animation: ping-slow 1.5s infinite;
+}
+/* Estilo para a seta quando ativa */
+.arrow-icon.active {
+    transform: rotate(180deg);
+    animation: none;
+}
+/* Transição do formulário */
+.newsletter-form {
+    display: none;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+.newsletter-form.active {
+    display: block;
+    max-height: 500px;
+    opacity: 1;
+}
+
+/*SOLUÇÕES PAGE###########*/
+    /* Animação da faixa de texto */
+    .scrolling-container-top,
+    .scrolling-container-bottom {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .scrolling-words-top {
+        display: inline-flex;
+        animation: scroll-text-top 40s linear infinite;
+    }
+    
+    .scrolling-words-bottom {
+        display: inline-flex;
+        animation: scroll-text-bottom 50s linear infinite;
+    }
+    
+    @keyframes scroll-text-top {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    
+    @keyframes scroll-text-bottom {
+        0% { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
+    }
