@@ -1,0 +1,238 @@
+/*=========================
+HEADER
+==========================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    transition:.4s;
+
+    background:rgba(251,248,252,.72);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(75,44,94,.08);
+
+}
+
+.header.scrolled{
+
+    background:rgba(255,255,255,.95);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+
+}
+
+.navbar{
+
+    height:96px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/*=========================
+LOGO
+==========================*/
+
+.logo img{
+
+    height:78px;
+
+    transition:.35s;
+
+}
+
+.header.scrolled .logo img{
+
+    height:65px;
+
+}
+
+/*=========================
+MENU DESKTOP
+==========================*/
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:42px;
+
+}
+
+.nav-menu a{
+
+    position:relative;
+
+    font-size:.96rem;
+
+    font-weight:500;
+
+    color:var(--color-text);
+
+    transition:.35s;
+
+}
+
+.nav-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-gold);
+
+    transition:.35s;
+
+}
+
+.nav-menu a:hover{
+
+    color:var(--color-primary);
+
+}
+
+.nav-menu a:hover::after{
+
+    width:100%;
+
+}
+
+/*=========================
+BOTÃO
+==========================*/
+
+.btn-header{
+
+    background:var(--color-primary);
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(75,44,94,.18);
+
+}
+
+.btn-header:hover{
+
+    background:var(--color-primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================
+MOBILE
+==========================*/
+
+.mobile-cta{
+
+    display:none;
+
+}
+
+.menu-toggle{
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    width:48px;
+    height:48px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    z-index:1002;
+
+}
+
+.menu-toggle span{
+
+    position:absolute;
+
+    left:10px;
+
+    width:26px;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:var(--color-primary);
+
+    transition:.35s;
+
+}
+
+.menu-toggle span:nth-child(1){
+
+    top:14px;
+
+}
+
+.menu-toggle span:nth-child(2){
+
+    top:22px;
+
+}
+
+.menu-toggle span:nth-child(3){
+
+    top:30px;
+
+}
+
+.menu-toggle.active span:nth-child(1){
+
+    top:22px;
+
+    transform:rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+    top:22px;
+
+    transform:rotate(-45deg);
+
+}

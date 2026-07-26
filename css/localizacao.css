@@ -1,0 +1,397 @@
+/*==================================================
+LOCALIZAÇÃO
+==================================================*/
+
+.location{
+
+    padding:120px 0;
+
+    background:var(--color-lilac);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================
+LAYOUT
+==================================*/
+
+.location-content{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:50px;
+
+    align-items:start;
+
+    margin-top:70px;
+
+}
+
+
+/*==================================
+MAPA
+==================================*/
+
+.location-map{
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 20px 45px rgba(44,26,56,.08);
+
+    background:var(--color-white);
+
+}
+
+.location-map iframe{
+
+    width:100%;
+
+    height:100%;
+
+    min-height:620px;
+
+    border:none;
+
+    display:block;
+
+}
+
+
+/*==================================
+COLUNA DIREITA
+==================================*/
+
+.location-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+
+/*==================================
+CARDS
+==================================*/
+
+.info-card{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding:24px;
+
+    background:var(--color-white);
+
+    border-radius:22px;
+
+    box-shadow:
+    0 10px 30px rgba(44,26,56,.06);
+
+    transition:all .35s var(--ease);
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 18px 35px rgba(44,26,56,.10);
+
+}
+
+
+.info-card img{
+
+    width:46px;
+
+    height:46px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+
+.info-card h3{
+
+    font-family:var(--font-display);
+
+    font-size:1.3rem;
+
+    color:var(--color-primary);
+
+    margin-bottom:8px;
+
+}
+
+
+.info-card p{
+
+    color:var(--color-text-soft);
+
+    line-height:1.8;
+
+}
+
+
+/*==================================
+BOTÕES
+==================================*/
+
+.location-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:10px;
+
+}
+
+
+.location-buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    padding:18px 26px;
+
+    border-radius:18px;
+
+    font-weight:700;
+
+    transition:all .35s var(--ease);
+
+}
+
+
+.location-buttons img{
+
+    width:24px;
+
+    height:24px;
+
+    object-fit:contain;
+
+}
+
+
+.btn-map{
+
+    background:var(--color-white);
+
+    color:var(--color-primary);
+
+    border:2px solid var(--color-primary);
+
+}
+
+
+.btn-map:hover{
+
+    background:var(--color-primary);
+
+    color:var(--color-white);
+
+    transform:translateY(-3px);
+
+}
+
+
+.btn-whatsapp{
+
+    background:var(--color-primary);
+
+    color:var(--color-white);
+
+}
+
+
+.btn-whatsapp:hover{
+
+    background:var(--color-primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+.location{
+
+    padding:90px 0;
+
+}
+
+.location-content{
+
+    grid-template-columns:1fr;
+
+}
+
+.location-map iframe{
+
+    min-height:450px;
+
+}
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.location{
+
+    padding:80px 0;
+
+}
+
+.location-content{
+
+    gap:35px;
+
+}
+
+.location-map{
+
+    border-radius:22px;
+
+}
+
+.location-map iframe{
+
+    min-height:350px;
+
+}
+
+.info-card{
+
+    padding:20px;
+
+    gap:16px;
+
+}
+
+.info-card img{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+.info-card h3{
+
+    font-size:1.15rem;
+
+}
+
+.location-warning{
+
+    padding:20px;
+
+}
+
+.location-buttons a{
+
+    padding:16px 20px;
+
+}
+
+}
+
+
+/*==================================================
+CELULARES PEQUENOS
+==================================================*/
+
+@media(max-width:480px){
+
+.location{
+
+    padding:70px 0;
+
+}
+
+.location-map{
+
+    border-radius:18px;
+
+}
+
+.location-map iframe{
+
+    min-height:300px;
+
+}
+
+.info-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    align-items:center;
+
+}
+
+.info-card img{
+
+    width:42px;
+
+    height:42px;
+
+}
+
+.location-warning{
+
+    text-align:center;
+
+}
+
+.location-buttons a{
+
+    font-size:.95rem;
+
+}
+
+.location-buttons img{
+
+    width:20px;
+
+    height:20px;
+
+}
+
+}

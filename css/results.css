@@ -1,0 +1,469 @@
+/*==================================================
+RESULTADOS
+==================================================*/
+
+.results{
+
+    padding:120px 0;
+
+    background:var(--color-lilac);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================
+CARD
+==================================*/
+
+.results-card{
+
+    margin-top:70px;
+
+    background:var(--color-white);
+
+    border-radius:32px;
+
+    padding:40px;
+
+    display:grid;
+
+    grid-template-columns:70px 1fr 70px;
+
+    align-items:center;
+
+    gap:30px;
+
+    box-shadow:
+    0 15px 45px rgba(44,26,56,.08);
+
+}
+
+
+
+/*==================================
+SETAS
+==================================*/
+
+.result-arrow{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    background:var(--color-bg);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.5rem;
+
+    color:var(--color-primary);
+
+    transition:all .35s var(--ease);
+
+    border:1px solid rgba(75,44,94,.08);
+
+}
+
+.result-arrow:hover{
+
+    background:var(--color-primary);
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/*==================================
+IMAGENS
+==================================*/
+
+.results-images{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+
+
+.result-image{
+
+    position:relative;
+
+}
+
+
+
+.result-image img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    border-radius:24px;
+
+    display:block;
+
+    transition:
+        opacity .4s ease,
+        transform .6s ease;
+
+}
+
+.results-card.fade .result-image img{
+
+    animation:fadeImages .45s;
+
+}
+
+@keyframes fadeImages{
+
+    from{
+
+        opacity:.3;
+
+        transform:scale(1.03);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/*==================================
+BADGE
+==================================*/
+
+.badge{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    z-index:5;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.9);
+
+    color:var(--color-primary);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+/*==================================
+TEXTO
+==================================*/
+
+.result-info{
+
+    margin:45px auto 0;
+
+    max-width:720px;
+
+    text-align:center;
+
+}
+
+
+
+#result-category{
+
+    display:inline-block;
+
+    color:var(--color-gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+
+
+#result-title{
+
+    font-family:var(--font-display);
+
+    font-size:clamp(2rem,3vw,3rem);
+
+    color:var(--color-primary-dark);
+
+    margin-bottom:20px;
+
+    line-height:1.2;
+
+}
+
+
+
+#result-description{
+
+    color:var(--color-text-soft);
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================
+PAGINAÇÃO
+==================================*/
+
+.result-pagination{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+
+
+.result-pagination button{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#d7c8df;
+
+    transition:.35s;
+
+}
+
+
+
+.result-pagination button.active{
+
+    width:38px;
+
+    border-radius:999px;
+
+    background:var(--color-gold);
+
+}
+
+
+
+/*==================================
+ANIMAÇÃO
+==================================*/
+
+.fade{
+
+    animation:fadeResult .5s ease;
+
+}
+
+
+
+@keyframes fadeResult{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+.results{
+
+    padding:90px 0;
+
+}
+
+.results-card{
+
+    padding:30px;
+
+    grid-template-columns:50px 1fr 50px;
+
+    gap:20px;
+
+}
+
+.result-arrow{
+
+    width:48px;
+
+    height:48px;
+
+}
+
+}
+
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.results-card{
+
+    grid-template-columns:1fr;
+
+    padding:25px;
+
+}
+
+.result-arrow{
+
+    display:none;
+
+}
+
+.results-images{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+.result-image img{
+
+    aspect-ratio:16/10;
+
+}
+
+.result-info{
+
+    margin-top:35px;
+
+}
+
+#result-title{
+
+    font-size:2rem;
+
+}
+
+}
+
+
+
+/*==================================================
+CELULARES PEQUENOS
+==================================================*/
+
+@media(max-width:480px){
+
+.results{
+
+    padding:70px 0;
+
+}
+
+.results-card{
+
+    padding:18px;
+
+    border-radius:24px;
+
+}
+
+.result-image img{
+
+    border-radius:18px;
+
+}
+
+.badge{
+
+    top:12px;
+
+    left:12px;
+
+    font-size:.72rem;
+
+    padding:7px 14px;
+
+}
+
+#result-title{
+
+    font-size:1.7rem;
+
+}
+
+#result-description{
+
+    font-size:.95rem;
+
+}
+
+}

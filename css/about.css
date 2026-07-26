@@ -1,0 +1,332 @@
+/* =====================================================
+   ABOUT / DIFERENCIAIS
+===================================================== */
+
+.about{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:#F3EAF7;
+
+    overflow:hidden;
+
+}
+
+
+/* =========================
+   TÍTULO DA SEÇÃO
+========================= */
+
+.section-title{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+
+.section-title span{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:var(--color-gold);
+
+}
+
+
+.section-title h2{
+
+    font-family:var(--font-display);
+
+    font-size:clamp(2.2rem,3vw,3.2rem);
+
+    line-height:1.15;
+
+    color:var(--color-primary-dark);
+
+    margin-bottom:20px;
+
+}
+
+
+.section-title p{
+
+    color:var(--color-text-soft);
+
+    font-size:1.05rem;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+
+
+/* =========================
+   GRID DOS CARDS
+========================= */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+
+
+/* =========================
+   CARD
+========================= */
+
+.about-card{
+
+    position:relative;
+
+    background:var(--color-white);
+
+    padding:40px 30px;
+
+    border-radius:var(--radius-lg);
+
+    border:1px solid rgba(75,44,94,.08);
+
+    transition:
+
+        transform var(--dur-mid) var(--ease),
+
+        box-shadow var(--dur-mid) var(--ease);
+
+    overflow:hidden;
+
+    box-shadow: 0 15px 40px rgba(75,44,94,.08);
+
+}
+
+
+
+/* brilho suave no hover */
+
+.about-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(235,222,241,.35),
+
+        transparent
+
+    );
+
+    transition:.8s;
+
+}
+
+
+.about-card:hover::before{
+
+    left:100%;
+
+}
+
+
+.about-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+        0 25px 60px rgba(75,44,94,.12);
+
+}
+
+
+
+/* =========================
+   ÍCONE
+========================= */
+
+.icon{
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:28px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.55);
+
+    border:1px solid rgba(75,44,94,.08);
+
+    transition:.35s;
+
+}
+
+
+.icon img{
+
+    width:34px;
+
+    height:34px;
+
+    object-fit:contain;
+
+}
+
+.about-card:hover .icon{
+
+    transform:translateY(-5px);
+
+    background:var(--color-white);
+
+    box-shadow:
+
+    0 12px 30px rgba(75,44,94,.12);
+
+}
+
+
+
+.about-card h3{
+
+    font-family:var(--font-display);
+
+    font-size:1.45rem;
+
+    color:var(--color-primary-dark);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.about-card p{
+
+    color:var(--color-text-soft);
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+
+/* Tablet */
+
+@media(max-width:1100px){
+
+
+    .about-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+
+    .about{
+
+        padding:80px 0;
+
+    }
+
+
+    .section-title{
+
+        margin-bottom:45px;
+
+    }
+
+
+    .section-title h2{
+
+        font-size:2rem;
+
+    }
+
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+    .about-card{
+
+        padding:35px 25px;
+
+        text-align:center;
+
+    }
+
+
+    .icon{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+}

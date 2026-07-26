@@ -1,0 +1,432 @@
+/*==================================================
+DEPOIMENTOS
+==================================================*/
+
+.testimonials{
+
+    padding:120px 0;
+
+    background:var(--color-white);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================
+WRAPPER
+==================================*/
+
+.testimonial-wrapper{
+
+    display:grid;
+
+    grid-template-columns:70px 1fr 70px;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+
+/*==================================
+SETAS
+==================================*/
+
+.testimonial-arrow{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--color-bg);
+
+    border:1px solid rgba(75,44,94,.08);
+
+    color:var(--color-primary);
+
+    font-size:1.4rem;
+
+    transition:all .35s var(--ease);
+
+}
+
+.testimonial-arrow:hover{
+
+    background:var(--color-primary);
+
+    color:var(--color-white);
+
+    transform:translateY(-3px);
+
+}
+
+
+/*==================================
+CARD
+==================================*/
+
+.testimonial-card{
+
+    position:relative;
+
+    max-width:760px;
+
+    width:100%;
+
+    margin:auto;
+
+    padding:70px 60px;
+
+    background:var(--color-bg);
+
+    border-radius:30px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 20px 45px rgba(44,26,56,.08);
+
+}
+
+
+/*==================================
+ASPAS
+==================================*/
+
+.quote-icon{
+
+    position:absolute;
+
+    top:-30px;
+
+    left:30px;
+
+    font-family:var(--font-display);
+
+    font-size:12rem;
+
+    line-height:1;
+
+    color:rgba(75,44,94,.06);
+
+    user-select:none;
+
+}
+
+
+/*==================================
+ESTRELAS
+==================================*/
+
+.testimonial-stars{
+
+    font-size:1.3rem;
+
+    letter-spacing:6px;
+
+    color:var(--color-gold);
+
+    margin-bottom:35px;
+
+}
+
+
+/*==================================
+TEXTO
+==================================*/
+
+#testimonial-text{
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:1.2rem;
+
+    line-height:2;
+
+    color:var(--color-text);
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+
+/*==================================
+AUTOR
+==================================*/
+
+.testimonial-author{
+
+    margin-top:45px;
+
+}
+
+
+#testimonial-name{
+
+    font-family:var(--font-display);
+
+    font-size:1.6rem;
+
+    color:var(--color-primary);
+
+    margin-bottom:8px;
+
+}
+
+
+#testimonial-location{
+
+    color:var(--color-text-soft);
+
+    font-size:.95rem;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/*==================================
+PAGINAÇÃO
+==================================*/
+
+.testimonial-pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:45px;
+
+}
+
+
+.testimonial-pagination button{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#d6cadf;
+
+    transition:.35s;
+
+}
+
+
+.testimonial-pagination button.active{
+
+    width:38px;
+
+    border-radius:50px;
+
+    background:var(--color-gold);
+
+}
+
+
+
+/*==================================
+ANIMAÇÃO
+==================================*/
+
+.testimonial-card.fade{
+
+    animation:testimonialFade .45s ease;
+
+}
+
+
+@keyframes testimonialFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+.testimonials{
+
+    padding:90px 0;
+
+}
+
+.testimonial-wrapper{
+
+    grid-template-columns:55px 1fr 55px;
+
+    gap:20px;
+
+}
+
+.testimonial-card{
+
+    padding:55px 40px;
+
+}
+
+.quote-icon{
+
+    font-size:9rem;
+
+}
+
+}
+
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.testimonial-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.testimonial-arrow{
+
+    display:none;
+
+}
+
+.testimonial-card{
+
+    padding:40px 25px;
+
+    border-radius:24px;
+
+}
+
+.quote-icon{
+
+    font-size:7rem;
+
+    top:-10px;
+
+    left:15px;
+
+}
+
+.testimonial-stars{
+
+    font-size:1.1rem;
+
+    letter-spacing:4px;
+
+}
+
+#testimonial-text{
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+}
+
+#testimonial-name{
+
+    font-size:1.35rem;
+
+}
+
+}
+
+
+
+/*==================================================
+CELULARES PEQUENOS
+==================================================*/
+
+@media(max-width:480px){
+
+.testimonials{
+
+    padding:70px 0;
+
+}
+
+.testimonial-card{
+
+    padding:35px 20px;
+
+}
+
+.quote-icon{
+
+    font-size:5rem;
+
+}
+
+.testimonial-stars{
+
+    font-size:1rem;
+
+    margin-bottom:25px;
+
+}
+
+#testimonial-text{
+
+    font-size:.95rem;
+
+}
+
+#testimonial-name{
+
+    font-size:1.2rem;
+
+}
+
+#testimonial-location{
+
+    font-size:.85rem;
+
+}
+
+}

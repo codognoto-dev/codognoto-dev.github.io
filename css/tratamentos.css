@@ -1,0 +1,361 @@
+/* =====================================================
+   TREATMENTS
+===================================================== */
+
+
+.treatments{
+
+    padding:130px 0;
+
+    background:var(--color-primary-dark);
+
+}
+
+
+
+.treatments .section-title span{
+
+    color:var(--color-gold);
+
+}
+
+
+.treatments .section-title h2{
+
+    color:var(--color-white);
+
+}
+
+
+.treatments .section-title p{
+
+    color:rgba(255,255,255,.7);
+
+}
+
+
+
+/* =====================================================
+   LISTA
+===================================================== */
+
+
+.treatments-list{
+
+    margin-top:70px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+/* =====================================================
+   ITEM
+===================================================== */
+
+
+.treatment-item{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+
+
+.treatment-item.active{
+
+    border-color:var(--color-gold);
+
+}
+
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+
+.treatment-header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 35px;
+
+    color:white;
+
+}
+
+
+
+.treatment-header span{
+
+    font-family:var(--font-display);
+
+    font-size:1.6rem;
+
+}
+
+
+
+.treatment-header strong{
+
+    font-size:2rem;
+
+    font-weight:300;
+
+    color:var(--color-gold);
+
+    transition:.3s;
+
+}
+
+
+
+.treatment-item.active 
+.treatment-header strong{
+
+    transform:rotate(45deg);
+
+}
+
+
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+
+.treatment-body{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:40px;
+
+    padding:0 35px 35px;
+
+}
+
+
+
+.treatment-body img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+}
+
+
+
+.treatment-body h3{
+
+    font-family:var(--font-display);
+
+    color:white;
+
+    font-size:2.2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.treatment-body p{
+
+    color:rgba(255,255,255,.75);
+
+    max-width:500px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.treatment-body a{
+
+    display:inline-flex;
+
+    background:var(--color-gold);
+
+    color:var(--color-primary-dark);
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+
+.treatment-body a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* =====================================================
+   ANIMAÇÃO
+===================================================== */
+
+
+.treatment-body{
+
+    animation:fadeTreatment .5s ease;
+
+}
+
+
+
+@keyframes fadeTreatment{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(10px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* =====================================================
+   DESKTOP - itens fechados
+===================================================== */
+
+
+.treatment-item:not(.active) 
+.treatment-body{
+
+    display:none;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+
+@media(max-width:900px){
+
+
+.treatments{
+
+    padding:90px 0;
+
+}
+
+
+.treatment-body{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.treatment-body img{
+
+    height:300px;
+
+}
+
+
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+
+@media(max-width:600px){
+
+
+.treatment-header{
+
+    padding:22px;
+
+}
+
+
+.treatment-header span{
+
+    font-size:1.25rem;
+
+}
+
+
+.treatment-body{
+
+    padding:0 22px 25px;
+
+    gap:25px;
+
+}
+
+
+
+.treatment-body img{
+
+    height:220px;
+
+}
+
+
+.treatment-body h3{
+
+    font-size:1.8rem;
+
+}
+
+
+}
