@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PJ Flow — Protótipo Operacional</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">PJ</div>
+        <div>
+          <strong>PJ Flow</strong>
+          <span>Protótipo Operacional</span>
+        </div>
+      </div>
+      <nav id="nav">
+        <button data-view="dashboard" class="nav-item active">Visão geral</button>
+        <button data-view="newcase" class="nav-item">Nova abertura</button>
+        <button data-view="cases" class="nav-item">Aberturas</button>
+        <button data-view="rules" class="nav-item">Matriz de regras</button>
+        <button data-view="errors" class="nav-item">Base de erros</button>
+        <button data-view="about" class="nav-item">Sobre o piloto</button>
+      </nav>
+      <div class="sidebar-foot">Cooperativa 1 · LTDA · v0.2</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">Visão geral</h1>
+          <p id="pageSubtitle">Acompanhe aberturas, bloqueios e progresso do piloto.</p>
+        </div>
+        <div class="top-actions">
+          <button id="exportBtn" class="btn secondary">Exportar dados</button>
+          <label class="btn secondary file-label">Importar dados<input id="importInput" type="file" accept="application/json" hidden></label>
+          <button id="newCaseTop" class="btn primary">+ Nova abertura</button>
+        </div>
+      </header>
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
